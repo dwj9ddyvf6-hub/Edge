@@ -1,0 +1,33 @@
+Independent final audit — October 24, 2026 UTC
+
+Scope
+Reviewed SKILL.md, references/adaptive-control.md, adaptive-learning.md, adaptive-sources.md, desk-runtime.md in /root/.codex/skills/remote-skills/skill-6adbf874c518819199faa0d9b89784f2; reviewed scratch kernel/arbiter.py, test_arbiter.py and kernel_notes.md. Compared packaged scripts with scratch kernel. No reviewed source was edited and no live actions were taken.
+
+Verdict
+No mathematical or implementation blocker found within the explicitly claimed offline finite-menu scope. The reference selector consistently implements paired worst-model incremental utility, one strict hurdle, named common scenario/unit alignment, candidate-specific freshness, immutable inputs, incumbent remediation gating, signed two-sided limits and conservative joint pending-fill reservations. It explicitly does not estimate models, certify evidence, enforce runtime wall-clock deadlines or execute orders. Those omissions are correctly declared rather than represented as completed runtime behavior.
+
+Recommended corrections before delivery
+1. Medium: ambiguous/inverted operational sentence.
+Path: /root/.codex/skills/remote-skills/skill-6adbf874c518819199faa0d9b89784f2/references/desk-runtime.md:78
+Text: “No new entries can coexist with active position management.”
+A literal reading says entry activity and position management cannot coexist. The surrounding table evidently means that a no-new-entry state does not prevent continued protection/management of existing positions. Suggested replacement: “A state that disables new entries can coexist with active management of existing positions.” This is a clarity correction to an operationally consequential distinction.
+
+2. Low: oversized integer validation violates the advertised exception type.
+Path: /workspace/scratch/f5c1e77ad2df/edge_v2/kernel/arbiter.py:64-66 (same helper in packaged scripts/adaptive_arbiter.py).
+_number accepts int as a type but calls math.isfinite directly. UtilityVector(('stress',), 'USD', (10**400,)) raises OverflowError, while the contract says malformed inputs raise ValueError. This does not select an unsafe action, and it is not a live-path defect, but callers catching only the promised ValueError may handle it incorrectly. Catch OverflowError from finite-number conversion and re-raise ValueError, or narrow/document accepted numeric range. Add one focused regression test if changed.
+
+Validation evidence
+- Ran python -m unittest discover -s . -v from /workspace/scratch/f5c1e77ad2df/edge_v2/kernel: all 20 tests passed.
+- Independently checked both robust-score illustrations and the no-trade derivative condition; arithmetic and stated assumptions are consistent.
+- Checked bounded-product supermartingale construction, Ville threshold and alpha_total*w_j/[r(r+1)] spending sum; correct under the full-filtration conditional null explicitly stated. Text correctly distinguishes rejecting that strong null from proving current/future profitability.
+- Citation-ID scan: 31 register IDs, no undefined IDs referenced by the reviewed prose. C08 is an explicit old-source alias; 31 minus that alias equals the claimed 30 new entries.
+- Spot-checked primary metadata/abstracts for C07, L01, L09. C07 is the 2012 UAI paper reissued by PMLR in October 2026; L01 is the 2021 paper with August 2022 revision; L09 has the stated March 15, 2026 revision and accepted-JRSS-B author-record note. No mismatch found. DOI retrieval for L03 returned 403, so no independent full-source verification is claimed for it.
+- Packaged arbiter differs from scratch only in the opening scope adjective and test command; packaged tests differ only in module import name. Functional implementation matches reviewed scratch code.
+
+Citation evidence URLs checked in this audit
+https://proceedings.mlr.press/r10/hay12a.html
+https://arxiv.org/abs/1810.08240
+https://arxiv.org/abs/2402.09698
+
+Residual limits, not blockers
+This audit did not independently reproduce the full literature inspection declared by the source register, replicate market results, or validate external utilities/scenarios/fill envelopes. There are no claimed market results to authenticate. The finite Cartesian-product method is deliberately conservative and its limited computation cap is explicitly described. Source mapping and core mathematical claims are internally coherent; the documentation appropriately distinguishes an engineering synthesis from robust-control, causal-identification or live-runtime guarantees.
