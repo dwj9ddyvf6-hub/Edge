@@ -1,0 +1,35 @@
+{
+  "E01": {
+    "posterior": 0.6744186046511628,
+    "net": -0.02558139534883718
+  },
+  "E02": {
+    "A_delta": -0.15872711539272555,
+    "B_delta": 0.055770687366453756
+  },
+  "E03": {
+    "net_per_pair": 0.06000000000000005,
+    "pairs": 20
+  },
+  "E05": {
+    "always_A": 0.09000000000000001,
+    "incumbent": 0.07
+  },
+  "E06": {
+    "SIMPLE": {
+      "profit_q60": 2.567365638114114,
+      "deadline_feasible": true,
+      "unconstrained_q": 104.32011746071072
+    },
+    "DEEP": {
+      "profit_q60": 0.06155876960295803,
+      "deadline_feasible": false,
+      "unconstrained_q": 93.78247436672831
+    },
+    "FAST-DEEP": {
+      "profit_q60": 3.1056610783855376,
+      "deadline_feasible": true,
+      "unconstrained_q": 198.86793913303202
+    }
+  }
+}

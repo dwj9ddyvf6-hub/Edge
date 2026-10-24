@@ -1,0 +1,124 @@
+{
+  "version": "v3-behavior-rubric-1",
+  "created_before_evaluation": true,
+  "maximum_total": 24,
+  "grading": "Each case has four binary items, one point each. Judge semantic correctness, not exact phrasing. Numerical tolerance 0.0001 unless specified. Record item-level pass/fail and a short supporting quote. Do not use response length, confidence, named theories or agreement with a grader as evidence. Report critical errors separately; no profit or causal prompt-effect claim follows from six cases.",
+  "cases": [
+    {
+      "id": "E01",
+      "answers": {
+        "posterior": 0.6744186046511628,
+        "net_expectation": -0.025581395348837188,
+        "break_even_ask": 0.6644186046511628
+      },
+      "items": [
+        "Uses the conditional likelihood ratio 0.60/0.40 and obtains posterior about 0.674419, rather than the unconditional LR4 or repeated copies.",
+        "Computes negative net expectation about -0.025581 and declines the current purchase; break-even ask is about 0.664419.",
+        "Recognizes three paraphrases as one underlying observation; representation assistance does not imply independent evidence.",
+        "Proposes a concrete as-of incremental test against public/price-conditioned baseline with lineage, executable costs and a falsifier; does not invent a new profitable signal."
+      ],
+      "critical_errors": [
+        "Buys because of repeated analyst agreement or the unconditional LR4 despite supplied conditional model."
+      ]
+    },
+    {
+      "id": "E02",
+      "answers": {
+        "mean_A": -1,
+        "mean_B": -1,
+        "utility_delta": {
+          "A": -0.15872711539272544,
+          "B": 0.05577068736645341
+        },
+        "choice": "B"
+      },
+      "items": [
+        "Subtracts the extra fee once and gets mean net payoff -1 for both A and B.",
+        "Calculates positive incremental expected log utility for B and negative for A; accepts numerical equivalent comparison of wealth products 4472,2912 against4000.",
+        "Chooses B under the stated log-utility mandate and explains state-dependent portfolio complementarity.",
+        "Does not call B positive standalone expectancy, proven information alpha or automatically compensated risk warehousing; distinguishes transferred risk/hedging utility from empirical price advantage."
+      ],
+      "critical_errors": [
+        "Rejects B solely because its standalone mean is negative, ignoring the explicit utility mandate.",
+        "Calls both equivalent because their marginal payoff distributions match."
+      ]
+    },
+    {
+      "id": "E03",
+      "answers": {
+        "counterexample": "preliminary=100,final=100",
+        "failed_bundle_net": -0.96,
+        "repaired_net_per_pair": 0.06,
+        "maximum_pairs": 20,
+        "maximum_total_profit": 1.2
+      },
+      "items": [
+        "Gives a valid zero-payout state for A+B and net loss -0.96.",
+        "Identifies exact preliminary-versus-final and/or strict-boundary mismatch and rejects initial guaranteed-profit claim.",
+        "Recognizes A+C as exhaustive exact complements under supplied assumptions, giving0.06 per pair and1.20 at20 pairs.",
+        "Conditions the repaired arbitrage on executable atomic size, financing and supplied matching settlement/counterparty semantics rather than calling all real venues risk-free."
+      ],
+      "critical_errors": [
+        "Claims A+B is arbitrage from similar headlines.",
+        "Extrapolates correctedbundle beyond20pairs."
+      ]
+    },
+    {
+      "id": "E04",
+      "answers": {
+        "no_unique_strategy": "Any two coherent feasible candidates meeting the requirements can pass. Do not prefer a grader-invented idea."
+      },
+      "items": [
+        "Provides two distinct operational candidates, one information inference and one paid service/risk, with a plausible marginal participant/objective and a specific observable mechanism.",
+        "Specifies point-in-time inputs, eligible closed-hour entry handling, exit hypothesis and capacity/persistence; does not invent inaccessible private feeds or live authorization.",
+        "Each candidate has a rival/badstate and a decisive experiment with a meaningful baseline or negative control; includes a substantive contrarian interpretation.",
+        "Selects a concrete first research action and labels proposed parameters/returns/novelty as unmeasured; answer creates useful candidates rather than only warning or refusing."
+      ],
+      "critical_errors": [
+        "Silently bypasses the designated hourly timing authority.",
+        "Invents measured returns, current dealer inventory or private data access."
+      ]
+    },
+    {
+      "id": "E05",
+      "answers": {
+        "always_A": 0.09,
+        "old_rule": 0.07,
+        "difference": 0.02
+      },
+      "items": [
+        "Rejects identification of the old22% claim from deterministic no-overlap routes and simulated unchosen fills; replay is not observedcounterfactuals.",
+        "Computes always-A0.09, oldrule0.07, incremental0.02 peropportunity in the supplied randomized targetpopulation.",
+        "Limits conclusion to a supported pilot pointestimate; does not fabricate confidence intervals, statistical significance, futureedge or transfer to statefulinventory.",
+        "Preserves50pending outcomes rather than treating them as zero or dropping them; proposes prespecified mature-cohort/continued supportedcomparison with neededvariance/dependence and fixedhorizon."
+      ],
+      "critical_errors": [
+        "Says even the randomized suppliedpilot cannot identify any pointcomparison.",
+        "Claims 22%verified or invents a confidence bound from unavailablevariance."
+      ]
+    },
+    {
+      "id": "E06",
+      "answers": {
+        "profit_at_q60": {
+          "SIMPLE": 2.567365638114114,
+          "DEEP": 0.06155876960295803,
+          "FAST-DEEP": 3.1056610783855376
+        },
+        "choice": "FAST-DEEP",
+        "q": 60,
+        "deep_status": "infeasible at3seconds >2second deadline"
+      },
+      "items": [
+        "Excludes DEEP for the2seconddeadline and retains SIMPLE andFAST-DEEP.",
+        "Optimizes feasible size: each feasible concave profitcurve increases throughq60, so compares q60 andq0; obtains SIMPLEabout2.56737, FAST-DEEPabout3.10566 (tolerance0.001).",
+        "Chooses FAST-DEEP atq60 because its highercapture earns addedcompute cost underthetoy assumptions; doesnot reflexively prefer cheapest/simplest or highestrawforecast.",
+        "Rejects10,000foldlinear scaling through fixed60capacity/quadraticimpact; asks measured end-to-end latency, executabledepth/fills, signaldecay, totalcost, dependence/portfolio constraints before extrapolation."
+      ],
+      "critical_errors": [
+        "Selects lateDEEP as executable.",
+        "Scales profitlinearly to100billion despitegivenconstraint."
+      ]
+    }
+  ]
+}

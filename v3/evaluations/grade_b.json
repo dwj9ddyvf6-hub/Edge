@@ -1,0 +1,882 @@
+{
+  "grader": "B",
+  "rubric_version": "v3-behavior-rubric-1",
+  "processing_order": [
+    "R63",
+    "R08",
+    "R42",
+    "R17"
+  ],
+  "grading_basis": "Binary semantic correctness only; independently recomputed numerical values; no style, length or identity scoring. No external research.",
+  "independent_numeric_checks": {
+    "E01": {
+      "posterior": 0.6744186046511628,
+      "net_expectation": -0.025581395348837188,
+      "break_even_ask": 0.6644186046511628,
+      "additional_conditional_LR_to_cross_0_70": 1.1264367816091956
+    },
+    "E02": {
+      "mean_A": -1,
+      "mean_B": -1,
+      "delta_A": -0.15872711539272555,
+      "delta_B": 0.055770687366453756
+    },
+    "E03": {
+      "failed_net": -0.96,
+      "pair_profit": 0.06000000000000007,
+      "pairs": 20,
+      "maximum_profit": 1.2000000000000013
+    },
+    "E05": {
+      "always_A": 0.09000000000000001,
+      "old_rule": 0.07,
+      "difference": 0.020000000000000004
+    },
+    "E06": {
+      "SIMPLE": {
+        "delay_feasible": true,
+        "decayed_edge": 0.09345609396856858,
+        "unconstrained_q": 104.32011746071072,
+        "profit_q60": 2.5673656381141146
+      },
+      "DEEP": {
+        "delay_feasible": false,
+        "decayed_edge": 0.08502597949338264,
+        "unconstrained_q": 93.78247436672831,
+        "profit_q60": 0.061558769602958474
+      },
+      "FAST-DEEP": {
+        "delay_feasible": true,
+        "decayed_edge": 0.16909435130642564,
+        "unconstrained_q": 198.86793913303202,
+        "profit_q60": 3.1056610783855376
+      }
+    }
+  },
+  "results": [
+    {
+      "response_id": "R63",
+      "cases": [
+        {
+          "case_id": "E01",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "0.60/0.40 = 1.5",
+              "reason": "Uses the supplied conditional likelihood ratio; posterior independently recomputed as 0.6744186046511628."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "−0.0255814 per contract",
+              "reason": "Declines the buy with expectation -0.0255813953488372 and break-even ask 0.6644186046511628."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "Three paraphrases of the same observation add no independent evidence",
+              "reason": "Treats paraphrases as one observation while allowing interpretation assistance."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "Investigate a second sensor measuring a different underlying feature.",
+              "reason": "Proposes an as-of, conditional incremental comparison with source separation, attainable-price costs and a net-value success/failure criterion."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E02",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "The new fee reduces each addition's standalone expectation to **−1**.",
+              "reason": "Fee is charged once per state; both standalone expectations are -1."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "−0.1587271 |\n| B | (+12, −14) | (52, 86) | 4.2027955 | +0.0557707",
+              "reason": "Independent logarithmic calculation confirms A delta -0.1587271154 and B delta +0.0557706874."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "Choose one unit of B under the stated expected-log-utility mandate.",
+              "reason": "Chooses B and explains its favorable coupling to existing low-state wealth."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "This is portfolio insurance value, despite B's negative expected standalone payoff",
+              "reason": "Separates hedge utility from standalone positive expectation, information advantage and evidenced warehousing compensation."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E03",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "−(0.94 + 0.02) = −0.96",
+              "reason": "The stated preliminary/final pair gives zero total payout and net -0.96."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "The different observation definitions and strict inequalities defeat the proposed complementarity.",
+              "reason": "Explicitly identifies the settlement-variable and strict-boundary mismatch."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "20 pairs**, yielding **1.20 maximum guaranteed profit",
+              "reason": "Exact complementary events produce 0.06 per pair; 20 pairs produce 1.20."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "atomic execution at the supplied prices, full stated capacity, and zero financing cost through settlement",
+              "reason": "Limits the guarantee to stated atomic capacity, financing and matching certain settlement terms."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E04",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "Trace a new primary-source fact through explicitly documented business relationships.",
+              "reason": "Two distinct mechanisms identify information-processing participants and benchmark-constrained inventory transfer."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "only that engine authorizes entries at the first eligible closed hourly bar",
+              "reason": "Uses as-of public data, preserves hourly timing authority, specifies exits and capacity limits without invented capital or private feeds."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "Reject if reversals are absent, predate permitted entry, or cannot cover costs under credible fills.",
+              "reason": "Both candidates include adverse states/rivals and discriminating tests with baselines or controls; contrarian interpretation addresses capture."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "Build one point-in-time, source-lineage event table joined to quotes/depth",
+              "reason": "Selects an implementable first data/research action and labels ideas/economics as unvalidated."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E05",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "Route and context were perfectly confounded",
+              "reason": "Rejects old-log causal identification because target actions lack contextual overlap and simulated fills are not observed executions."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "The estimated improvement is **0.02 net reward per opportunity**.",
+              "reason": "Independent weighted calculation gives 0.09, 0.07 and 0.02."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "no variances or dependence estimates are available",
+              "reason": "Allows identified pilot point estimates without inventing uncertainty or generalizing to stateful deployment."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "Keep the 50 unresolved outcomes marked pending, with assignment and context preserved.",
+              "reason": "Retains pending assignments/horizons and specifies mature-cohort comparison with reward-level and dependence data."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E06",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "DEEP cannot be selected regardless of its hypothetical profit",
+              "reason": "Excludes three-second DEEP under the two-second deadline."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "then compare the result with skipping at zero cost",
+              "reason": "Concave optima are beyond 60; compares the cap with skip and correctly computes feasible profits 2.5673656381 and 3.1056610784."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "Select FAST-DEEP at 60 contracts",
+              "reason": "Selects FAST-DEEP at 60 with all compute costs included and no stacking."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "Scaling this position 10,000-fold to 600,000 contracts violates the model's 60-contract limit.",
+              "reason": "Rejects scaling through capacity and impact, and requests end-to-end executable economics plus dependence/portfolio measurements."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        }
+      ],
+      "totals": {
+        "earned": 24,
+        "maximum": 24,
+        "passed_items": 24,
+        "failed_items": 0
+      },
+      "critical_errors": [],
+      "gray_areas": [
+        {
+          "case_id": "E01",
+          "item": 4,
+          "judgment": "Pass on semantic reading; weaker explicitness.",
+          "explanation": "A distinct-feature second sensor supplies source separation and timestamped held-out collection supplies as-of evaluation. The conditional with/without comparison and executable net-value test provide an implicit falsifier. It does not explicitly demand a provenance ledger or state a rejection rule; a literal requirement for those words would fail, but semantic correctness does not require those words."
+        }
+      ]
+    },
+    {
+      "response_id": "R08",
+      "cases": [
+        {
+          "case_id": "E01",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "0.60/0.40=1.5",
+              "reason": "Uses the supplied conditional likelihood ratio; posterior independently recomputed as 0.6744186046511628."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "0.674419-0.69-0.01=-0.025581",
+              "reason": "Declines the buy with expectation -0.0255813953488372 and break-even ask 0.6644186046511628."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "Three paraphrases supply one underlying observation",
+              "reason": "Treats paraphrases as one observation while allowing interpretation assistance."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "with original timestamps and lineage",
+              "reason": "Proposes an as-of, conditional incremental comparison with source separation, attainable-price costs and a net-value success/failure criterion."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E02",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "Both have standalone expected net payoff",
+              "reason": "Fee is charged once per state; both standalone expectations are -1."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "−0.158727 |\n| B | (52, 86) | 4.202796 | +0.055771",
+              "reason": "Independent logarithmic calculation confirms A delta -0.1587271154 and B delta +0.0557706874."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "Its gain arrives in the desk's poor state and its loss in the richer state.",
+              "reason": "Chooses B and explains its favorable coupling to existing low-state wealth."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "This demonstrates portfolio complementarity, not information advantage or positive standalone expected profit.",
+              "reason": "Separates hedge utility from standalone positive expectation, information advantage and evidenced warehousing compensation."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E03",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "Both contracts pay zero",
+              "reason": "The stated preliminary/final pair gives zero total payout and net -0.96."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "Different observations and strict inequalities do not make these contracts complementary.",
+              "reason": "Explicitly identifies the settlement-variable and strict-boundary mismatch."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "maximum guaranteed profit is 1.20",
+              "reason": "Exact complementary events produce 0.06 per pair; 20 pairs produce 1.20."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "atomic execution of both legs at stated prices and size, complete fees, financing through settlement",
+              "reason": "Limits the guarantee to stated atomic capacity, financing and matching certain settlement terms."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E04",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "Information candidate: infer interactions hidden inside an earnings release.",
+              "reason": "Two distinct mechanisms identify information-processing participants and benchmark-constrained inventory transfer."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "Entries remain exclusively at the timing engine's first eligible closed hourly bar",
+              "reason": "Uses as-of public data, preserves hourly timing authority, specifies exits and capacity limits without invented capital or private feeds."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "compare pressure-plus-news selection with pressure-only selection, ordinary reversal and no trade",
+              "reason": "Both candidates include adverse states/rivals and discriminating tests with baselines or controls; contrarian interpretation addresses capture."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "build an audited event-to-quote timeline and run the information-model ablation at the permitted clock",
+              "reason": "Selects an implementable first data/research action and labels ideas/economics as unvalidated."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E05",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "Simulated touch fills are model outputs, not observed counterfactual executions.",
+              "reason": "Rejects old-log causal identification because target actions lack contextual overlap and simulated fills are not observed executions."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "Only calm routing changes relative to the old rule",
+              "reason": "Independent weighted calculation gives 0.09, 0.07 and 0.02."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "no standard error, confidence interval, significance claim or defensible required sample size can be supplied",
+              "reason": "Allows identified pilot point estimates without inventing uncertainty or generalizing to stateful deployment."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "Keep the 50 unresolved outcomes in a separate pending ledger",
+              "reason": "Retains pending assignments/horizons and specifies mature-cohort comparison with reward-level and dependence data."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E06",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "DEEP misses the hard two-second deadline",
+              "reason": "Excludes three-second DEEP under the two-second deadline."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "Both exceed zero.",
+              "reason": "Concave optima are beyond 60; compares the cap with skip and correctly computes feasible profits 2.5673656381 and 3.1056610784."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "FAST-DEEP wins by **0.538295 per opportunity**.",
+              "reason": "Selects FAST-DEEP at 60 with all compute costs included and no stacking."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "Record publication-to-fill latency and its tails, deadline misses, signal decay, depth",
+              "reason": "Rejects scaling through capacity and impact, and requests end-to-end executable economics plus dependence/portfolio measurements."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        }
+      ],
+      "totals": {
+        "earned": 24,
+        "maximum": 24,
+        "passed_items": 24,
+        "failed_items": 0
+      },
+      "critical_errors": [],
+      "gray_areas": []
+    },
+    {
+      "response_id": "R42",
+      "cases": [
+        {
+          "case_id": "E01",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "0.60/0.40 = 1.5",
+              "reason": "Uses the supplied conditional likelihood ratio; posterior independently recomputed as 0.6744186046511628."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "−0.0255814 per contract",
+              "reason": "Declines the buy with expectation -0.0255813953488372 and break-even ask 0.6644186046511628."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "Their paraphrases must not be multiplied as three likelihood updates.",
+              "reason": "Treats paraphrases as one observation while allowing interpretation assistance."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "a second, separately collected observation W with a timestamped prospective sample",
+              "reason": "Proposes an as-of, conditional incremental comparison with source separation, attainable-price costs and a net-value success/failure criterion."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E02",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "Both have standalone expected net payoff **−1**",
+              "reason": "Fee is charged once per state; both standalone expectations are -1."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "−0.158727 |\n| Add B | (52,86) | 4.202796 | +0.055771",
+              "reason": "Independent logarithmic calculation confirms A delta -0.1587271154 and B delta +0.0557706874."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "Choose one unit of B",
+              "reason": "Chooses B and explains its favorable coupling to existing low-state wealth."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "It does not establish superior information, mispricing, or a positive expected trading profit.",
+              "reason": "Separates hedge utility from standalone positive expectation, information advantage and evidenced warehousing compensation."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E03",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "−0.94 − 0.02 = −0.96",
+              "reason": "The stated preliminary/final pair gives zero total payout and net -0.96."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "Preliminary and final values are also different settlement variables",
+              "reason": "Explicitly identifies the settlement-variable and strict-boundary mismatch."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "20 × 0.06 = 1.20",
+              "reason": "Exact complementary events produce 0.06 per pair; 20 pairs produce 1.20."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "zero-cost financing through settlement",
+              "reason": "Limits the guarantee to stated atomic capacity, financing and matching certain settlement terms."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E04",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "independent factual changes propagated through public holdings",
+              "reason": "Two distinct mechanisms identify information-processing participants and benchmark-constrained inventory transfer."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "The existing timing engine exclusively authorizes entries at its first eligible closed hourly bar.",
+              "reason": "Uses as-of public data, preserves hourly timing authority, specifies exits and capacity limits without invented capital or private feeds."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "A reversal in midpoint prices without realizable net proceeds fails the test.",
+              "reason": "Both candidates include adverse states/rivals and discriminating tests with baselines or controls; contrarian interpretation addresses capture."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "Build and audit the common as-of event table",
+              "reason": "Selects an implementable first data/research action and labels ideas/economics as unvalidated."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E05",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "Route and context are perfectly confounded",
+              "reason": "Rejects old-log causal identification because target actions lack contextual overlap and simulated fills are not observed executions."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "Difference: **0.02 per opportunity**",
+              "reason": "Independent weighted calculation gives 0.09, 0.07 and 0.02."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "These are pilot point estimates, not established population guarantees.",
+              "reason": "Allows identified pilot point estimates without inventing uncertainty or generalizing to stateful deployment."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "Keep the 50 unresolved outcomes explicitly pending.",
+              "reason": "Retains pending assignments/horizons and specifies mature-cohort comparison with reward-level and dependence data."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E06",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "DEEP is excluded by the hard deadline regardless of its economics.",
+              "reason": "Excludes three-second DEEP under the two-second deadline."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "Cap this at 60, then compare its profit with skipping",
+              "reason": "Concave optima are beyond 60; compares the cap with skip and correctly computes feasible profits 2.5673656381 and 3.1056610784."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "Select FAST-DEEP at q = 60",
+              "reason": "Selects FAST-DEEP at 60 with all compute costs included and no stacking."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "dependence across concurrent opportunities and modes; inventory and financing needs",
+              "reason": "Rejects scaling through capacity and impact, and requests end-to-end executable economics plus dependence/portfolio measurements."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        }
+      ],
+      "totals": {
+        "earned": 24,
+        "maximum": 24,
+        "passed_items": 24,
+        "failed_items": 0
+      },
+      "critical_errors": [],
+      "gray_areas": [
+        {
+          "case_id": "E01",
+          "item": 4,
+          "judgment": "Pass on semantic reading; falsifier is implicit.",
+          "explanation": "Separately collected W and prospective timestamps address original-source lineage; conditional prediction tests whether W merely reproduces Z. With/without executable net value at the decision time supplies the falsifiable incremental criterion. There is no explicit reject sentence or detailed provenance schema."
+        }
+      ]
+    },
+    {
+      "response_id": "R17",
+      "cases": [
+        {
+          "case_id": "E01",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "0.60/0.40 = 1.5",
+              "reason": "Uses the supplied conditional likelihood ratio; posterior independently recomputed as 0.6744186046511628."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "−0.0255814 per contract",
+              "reason": "Declines the buy with expectation -0.0255813953488372 and break-even ask 0.6644186046511628."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "The three analysts contribute no additional observation and no further Bayesian evidence.",
+              "reason": "Treats paraphrases as one observation while allowing interpretation assistance."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "Reject the candidate if improved prediction does not produce executable incremental value.",
+              "reason": "Proposes an as-of, conditional incremental comparison with source separation, attainable-price costs and a net-value success/failure criterion."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E02",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "Both have standalone expected net payoff **−1**",
+              "reason": "Fee is charged once per state; both standalone expectations are -1."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "−0.15872712 |\n| B | 52 | 86 | 4.20279551 | +0.05577069",
+              "reason": "Independent logarithmic calculation confirms A delta -0.1587271154 and B delta +0.0557706874."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "B therefore improves the stated objective despite lowering expected wealth from 70 to 69.",
+              "reason": "Chooses B and explains its favorable coupling to existing low-state wealth."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "It establishes neither informational superiority nor positive expected profit or benchmark alpha.",
+              "reason": "Separates hedge utility from standalone positive expectation, information advantage and evidenced warehousing compensation."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E03",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "Net payoff is **−0.96**",
+              "reason": "The stated preliminary/final pair gives zero total payout and net -0.96."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "Revision differences and equality each defeat the presumed complementarity.",
+              "reason": "Explicitly identifies the settlement-variable and strict-boundary mismatch."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "maximum guaranteed profit **1.20**",
+              "reason": "Exact complementary events produce 0.06 per pair; 20 pairs produce 1.20."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "atomic execution for 20 pairs at the stated prices, complete fees, available financing through payment",
+              "reason": "Limits the guarantee to stated atomic capacity, financing and matching certain settlement terms."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E04",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "trade a contradiction between the earnings headline and forward guidance",
+              "reason": "Two distinct mechanisms identify information-processing participants and benchmark-constrained inventory transfer."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "Preserve the existing engine’s exclusive authority to admit entries at the first eligible closed hourly bar.",
+              "reason": "Uses as-of public data, preserves hourly timing authority, specifies exits and capacity limits without invented capital or private feeds."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "Compare generic reversal, gross announced demand and net-demand-plus-news variants at matched exposure.",
+              "reason": "Both candidates include adverse states/rivals and discriminating tests with baselines or controls; contrarian interpretation addresses capture."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "build one immutable release-to-hourly-entry event table and replay Candidate 1",
+              "reason": "Selects an implementable first data/research action and labels ideas/economics as unvalidated."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E05",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "ordinary importance weighting cannot repair zero action probability",
+              "reason": "Rejects old-log causal identification because target actions lack contextual overlap and simulated fills are not observed executions."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "Estimated improvement is **0.02 net reward per opportunity**",
+              "reason": "Independent weighted calculation gives 0.09, 0.07 and 0.02."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "Randomization establishes identification under the assumptions; it does not eliminate finite-sample uncertainty.",
+              "reason": "Allows identified pilot point estimates without inventing uncertainty or generalizing to stateful deployment."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "Keep the **50 unresolved outcomes pending**",
+              "reason": "Retains pending assignments/horizons and specifies mature-cohort comparison with reward-level and dependence data."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        },
+        {
+          "case_id": "E06",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "quote": "DEEP | No, 3 seconds",
+              "reason": "Excludes three-second DEEP under the two-second deadline."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "quote": "Compare that optimum separately with skipping at zero profit",
+              "reason": "Concave optima are beyond 60; compares the cap with skip and correctly computes feasible profits 2.5673656381 and 3.1056610784."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "quote": "Choose FAST-DEEP, 60 contracts.",
+              "reason": "Selects FAST-DEEP at 60 with all compute costs included and no stacking."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "quote": "funding needs and shared portfolio exposure",
+              "reason": "Rejects scaling through capacity and impact, and requests end-to-end executable economics plus dependence/portfolio measurements."
+            }
+          ],
+          "total": 4,
+          "maximum": 4
+        }
+      ],
+      "totals": {
+        "earned": 24,
+        "maximum": 24,
+        "passed_items": 24,
+        "failed_items": 0
+      },
+      "critical_errors": [],
+      "gray_areas": [
+        {
+          "case_id": "E01/E03",
+          "item": null,
+          "judgment": "Unverified auxiliary references are not credited.",
+          "explanation": "The response refers to finite-information and finite-payoff companions absent from the three permitted files. The conclusions are independently checkable from the stated derivations and those references are unnecessary to the awarded items."
+        }
+      ]
+    }
+  ],
+  "aggregate": {
+    "responses": 4,
+    "earned": 96,
+    "maximum": 96,
+    "critical_error_count": 0
+  },
+  "general_gray_area": "E01 item 4 uses a bundled criterion. Source-separated prospective collection and executable with/without tests count semantically as lineage and falsification even where those labels are not explicit."
+}

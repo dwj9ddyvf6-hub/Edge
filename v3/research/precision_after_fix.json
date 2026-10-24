@@ -1,0 +1,37 @@
+{
+  "source": "/workspace/scratch/f5c1e77ad2df/edge_v3/kernel/edge_mechanics.py",
+  "sha256": "2f649523515a8d9e7a53fcd9124df769ddcf9a8440579a92c9484785a863f81a",
+  "seed": 1871,
+  "cases": 1200,
+  "decimal_precision": 80,
+  "error_metric": "abs(actual-expected)/max(1,abs(expected))",
+  "threshold": 1e-10,
+  "maximum_random_case_error": 5.898517415325459e-14,
+  "random_case_violations": [],
+  "correlated_boundary_cases": [
+    {
+      "wealth_and_liability_amount": 1000000.0,
+      "actual": 0.6931471805599453,
+      "expected": 0.6931471805599453,
+      "absolute_error": 0.0
+    },
+    {
+      "wealth_and_liability_amount": 100000000.0,
+      "actual": 0.6931471805599453,
+      "expected": 0.6931471805599453,
+      "absolute_error": 0.0
+    },
+    {
+      "wealth_and_liability_amount": 1000000000000.0,
+      "actual": 0.6931471805599453,
+      "expected": 0.6931471805599453,
+      "absolute_error": 0.0
+    },
+    {
+      "wealth_and_liability_amount": 1e+16,
+      "actual": 0.6931471805599453,
+      "expected": 0.6931471805599453,
+      "absolute_error": 0.0
+    }
+  ]
+}

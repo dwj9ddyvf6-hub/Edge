@@ -1,0 +1,842 @@
+{
+  "grader": "grade_a",
+  "rubric_version": "v3-behavior-rubric-1",
+  "method": "Read only cases.json, rubric.json and blind_answers.json; no identity lookup or external research. Recomputed all numerical cases independently. Graded semantic correctness of each binary item, not style, length or named theories.",
+  "independent_numeric_checks": {
+    "E01": {
+      "posterior": 0.6744186046511628,
+      "net_expectation": -0.02558139534883718,
+      "break_even_ask": 0.6644186046511628
+    },
+    "E02": {
+      "mean_A": -1,
+      "mean_B": -1,
+      "utility_delta_A": -0.15872711539272555,
+      "utility_delta_B": 0.055770687366453756
+    },
+    "E03": {
+      "failed_bundle_net": -0.96,
+      "repaired_profit_pair": 0.06000000000000007,
+      "maximum_pairs": 20,
+      "maximum_total_profit": 1.2000000000000013
+    },
+    "E05": {
+      "always_A": 0.09000000000000001,
+      "old_rule": 0.07,
+      "difference": 0.020000000000000004
+    },
+    "E06": {
+      "SIMPLE": {
+        "feasible": true,
+        "unconstrained_q": 104.32011746071072,
+        "derivative_at_q60": 0.03545609396856858,
+        "profit_at_q60": 2.567365638114114
+      },
+      "DEEP": {
+        "feasible": false,
+        "unconstrained_q": 93.78247436672831,
+        "derivative_at_q60": 0.027025979493382646,
+        "profit_at_q60": 0.06155876960295803
+      },
+      "FAST-DEEP": {
+        "feasible": true,
+        "unconstrained_q": 198.86793913303202,
+        "derivative_at_q60": 0.11109435130642563,
+        "profit_at_q60": 3.1056610783855376
+      }
+    }
+  },
+  "responses": [
+    {
+      "response_id": "R17",
+      "cases": [
+        {
+          "case_id": "E01",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "0.60/0.40 = 1.5",
+              "reason": "Correctly uses the supplied public-information-conditioned LR 1.5 and Bayes denominator; posterior agrees with independent recomputation (0.674418604651)."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "−0.0255814 per contract",
+              "reason": "Net expectation is -0.025581395349 and break-even ask 0.664418604651; declines buying at 0.69. All displayed approximations satisfy tolerance."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "no additional observation and no further Bayesian evidence",
+              "reason": "Treats the three analysts as restatements of one observation and distinguishes interpretation assistance from new evidence."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "Reject the candidate if improved prediction does not produce executable incremental value.",
+              "reason": "Concrete prospective/chronological incremental-data comparison conditions on public information, price and the first sensor, includes executable economics, and permits rejection when incremental value fails."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E02",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "Both have standalone expected net payoff **−1**.",
+              "reason": "Deducts the additional fee once in each state; both net payoff distributions have mean -1."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "−0.15872712 |",
+              "reason": "Both utility differences match recomputation: A -0.158727115393, B +0.055770687366. Terminal products are 2912 and 4472 versus baseline 4000."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "B transfers wealth toward that stress state; A worsens it.",
+              "reason": "Chooses B because its gain arrives in the lower-wealth stress state, consistent with expected log utility."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "It establishes neither informational superiority nor positive expected profit or benchmark alpha.",
+              "reason": "Separates hedge utility from positive standalone expectation, information advantage, and a demonstrated compensation for warehousing risk."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E03",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "If preliminary = 99 and final = 101, both contracts pay zero. Net payoff is **−0.96**.",
+              "reason": "Uses preliminary 99 and final 101 (also notes equality 100) to make both initial legs pay zero and correctly obtains a 0.96 loss."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "Revision differences and equality each defeat the presumed complementarity.",
+              "reason": "Rejects the initial guarantee and explicitly identifies both reference-value revision risk and strict-boundary gaps."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "maximum guaranteed profit **1.20**.",
+              "reason": "Correctly treats A+C as exact complements: all-in cost 0.94, profit 0.06 per pair, capacity 20, total profit 1.20."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "atomic execution for 20 pairs at the stated prices, complete fees, available financing through payment, and identical certain settlement/counterparty terms",
+              "reason": "Conditions the guarantee on executable atomic capacity, fees, financing and matching certain settlement/counterparty terms; does not extend the guarantee to real venues or unmatched A."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E04",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "trade a contradiction between the earnings headline and forward guidance",
+              "reason": "Provides distinct feasible information-inference and temporary-inventory service candidates, each naming the relevant participant and an observable mechanism."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "Signal readiness cannot advance entry.",
+              "reason": "Provides as-of supplied inputs, preserves the existing hourly entry authority, specifies exit hypotheses and plausible persistence/capacity constraints; no unavailable feed or live authorization is invented."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "use duplicated stories and mismatched document pairings as negative controls",
+              "reason": "Each candidate names bad states and rivals and has a decisive comparative experiment; substantive contrarian alternative explains why a true economic story may still leave no attractive trade."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "build one immutable release-to-hourly-entry event table and replay Candidate 1 against the cheap quote-aware baseline.",
+              "reason": "Selects a concrete first data/experiment action and treats performance, parameters and capacity as research hypotheses/measurement requirements rather than measured returns or novelty."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E05",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "Calm contexts never used A, so the always-A target lacks support there.",
+              "reason": "Rejects causal support for the old 22% claim because deterministic context-specific actions lack overlap and simulated touch fills are not observed counterfactuals."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "0.02 net reward per opportunity",
+              "reason": "Correct point estimates: always-A 0.09, old rule 0.07, difference 0.02 in the stipulated equal-context population."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "no standard error, confidence interval, significance or power claim is justified.",
+              "reason": "Recognizes pilot identification while withholding unsupported uncertainty/significance and future or inventory-feedback generalization."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "Keep the **50 unresolved outcomes pending**",
+              "reason": "Preserves all 50 outcomes as pending, uses fixed-horizon mature-cohort rules and proposes continued prespecified comparison/monitoring with individual rewards and dependence-aware uncertainty."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E06",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "DEEP would yield only 0.061559 at 60 if the deadline were ignored, but cannot enter the feasible comparison.",
+              "reason": "Correctly excludes DEEP because 3 seconds exceeds the 2-second deadline; SIMPLE and FAST-DEEP are feasible."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "| FAST-DEEP | Yes, 0.25 seconds | 0.1690944 | 198.8679 | 60 | 3.105661 |",
+              "reason": "Uses the concave objective and unconstrained optima above 60, compares capped q=60 with skip=0, and obtains SIMPLE 2.567365638 and FAST-DEEP 3.105661078 within tolerance."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "Choose FAST-DEEP, 60 contracts.",
+              "reason": "Chooses FAST-DEEP at q=60 using net profit after computation costs, with an advantage of approximately 0.538295 and no stacking."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "Measure initial forecast edge, actual delay decay, tail latency and deadline misses, computation charges, fills/nonfills, spread, impact versus size, adverse selection, funding needs and shared portfolio exposure.",
+              "reason": "Rejects scaling past capacity and linear extrapolation through quadratic impact; deployment measurement includes latency, executable fills/depth, decay, total costs and dependent portfolio/capital constraints."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        }
+      ],
+      "overall_total": 24,
+      "critical_errors": [],
+      "gray_areas": []
+    },
+    {
+      "response_id": "R42",
+      "cases": [
+        {
+          "case_id": "E01",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "The relevant likelihood ratio is 0.60/0.40 = 1.5",
+              "reason": "Correctly uses the supplied public-information-conditioned LR 1.5 and Bayes denominator; posterior agrees with independent recomputation (0.674418604651)."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "−0.0255814 per contract",
+              "reason": "Net expectation is -0.025581395349 and break-even ask 0.664418604651; declines buying at 0.69. All displayed approximations satisfy tolerance."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "Their paraphrases must not be multiplied as three likelihood updates.",
+              "reason": "Treats the three analysts as restatements of one observation and distinguishes interpretation assistance from new evidence."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "Compare held-out calibration and executable net value with and without W at the actual decision time, including its acquisition costs and delay.",
+              "reason": "Concrete prospective/chronological incremental-data comparison conditions on public information, price and the first sensor, includes executable economics, and permits rejection when incremental value fails. See the explicit gray-area note on minimal provenance and the implicit falsifier."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E02",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "Both have standalone expected net payoff **−1**",
+              "reason": "Deducts the additional fee once in each state; both net payoff distributions have mean -1."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "| Add B | (52,86) | 4.202796 | +0.055771 |",
+              "reason": "Both utility differences match recomputation: A -0.158727115393, B +0.055770687366. Terminal products are 2912 and 4472 versus baseline 4000."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "B pays in the desk’s low-wealth state; A worsens it.",
+              "reason": "Chooses B because its gain arrives in the lower-wealth stress state, consistent with expected log utility."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "It does not establish superior information, mispricing, or a positive expected trading profit.",
+              "reason": "Separates hedge utility from positive standalone expectation, information advantage, and a demonstrated compensation for warehousing risk."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E03",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "If the preliminary value is 99 and the final revised value is 101, A pays zero and B pays zero.",
+              "reason": "Uses preliminary 99 and final 101 (also notes equality 100) to make both initial legs pay zero and correctly obtains a 0.96 loss."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "Preliminary and final values are also different settlement variables",
+              "reason": "Rejects the initial guarantee and explicitly identifies both reference-value revision risk and strict-boundary gaps."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "20 × 0.06 = 1.20",
+              "reason": "Correctly treats A+C as exact complements: all-in cost 0.94, profit 0.06 per pair, capacity 20, total profit 1.20."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "zero-cost financing through settlement",
+              "reason": "Conditions the guarantee on executable atomic capacity, fees, financing and matching certain settlement/counterparty terms; does not extend the guarantee to real venues or unmatched A."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E04",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "independent factual changes propagated through public holdings",
+              "reason": "Provides distinct feasible information-inference and temporary-inventory service candidates, each naming the relevant participant and an observable mechanism."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "The existing timing engine exclusively authorizes entries at its first eligible closed hourly bar.",
+              "reason": "Provides as-of supplied inputs, preserves the existing hourly entry authority, specifies exit hypotheses and plausible persistence/capacity constraints; no unavailable feed or live authorization is invented."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "A reversal in midpoint prices without realizable net proceeds fails the test.",
+              "reason": "Each candidate names bad states and rivals and has a decisive comparative experiment; substantive contrarian alternative explains why a true economic story may still leave no attractive trade."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "Then prioritize the rebalance event study because its externally dated demand hypothesis offers a particularly concrete first falsification.",
+              "reason": "Selects a concrete first data/experiment action and treats performance, parameters and capacity as research hypotheses/measurement requirements rather than measured returns or novelty."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E05",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "Route and context are perfectly confounded",
+              "reason": "Rejects causal support for the old 22% claim because deterministic context-specific actions lack overlap and simulated touch fills are not observed counterfactuals."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "Difference: **0.02 per opportunity**",
+              "reason": "Correct point estimates: always-A 0.09, old rule 0.07, difference 0.02 in the stipulated equal-context population."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "These are pilot point estimates, not established population guarantees.",
+              "reason": "Recognizes pilot identification while withholding unsupported uncertainty/significance and future or inventory-feedback generalization."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "Keep the 50 unresolved outcomes explicitly pending.",
+              "reason": "Preserves all 50 outcomes as pending, uses fixed-horizon mature-cohort rules and proposes continued prespecified comparison/monitoring with individual rewards and dependence-aware uncertainty."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E06",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "DEEP is excluded by the hard deadline regardless of its economics.",
+              "reason": "Correctly excludes DEEP because 3 seconds exceeds the 2-second deadline; SIMPLE and FAST-DEEP are feasible."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "FAST-DEEP earns 60(0.1690944 − 0.01) − 1.44 − 5 = 3.105661.",
+              "reason": "Uses the concave objective and unconstrained optima above 60, compares capped q=60 with skip=0, and obtains SIMPLE 2.567365638 and FAST-DEEP 3.105661078 within tolerance."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "Select FAST-DEEP at q = 60",
+              "reason": "Chooses FAST-DEEP at q=60 using net profit after computation costs, with an advantage of approximately 0.538295 and no stacking."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "Repeated opportunities would require evidence of their number, independence, shared liquidity and capital recycling.",
+              "reason": "Rejects scaling past capacity and linear extrapolation through quadratic impact; deployment measurement includes latency, executable fills/depth, decay, total costs and dependent portfolio/capital constraints."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        }
+      ],
+      "overall_total": 24,
+      "critical_errors": [],
+      "gray_areas": [
+        {
+          "case_id": "E01",
+          "item": 4,
+          "decision": "pass",
+          "explanation": "The terms lineage and falsifier are not explicit. I credit the separately collected W in a timestamped prospective sample as minimal source provenance, and the held-out with/without-W executable-value comparison as an operational falsifier: no incremental calibrated/net value fails the proposal. This is semantic credit for a concrete test, not a requirement to use specific vocabulary. More explicit retention of sensor/source identifiers and a rejection rule would strengthen the specification."
+        }
+      ]
+    },
+    {
+      "response_id": "R08",
+      "cases": [
+        {
+          "case_id": "E01",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "0.60/0.40=1.5",
+              "reason": "Correctly uses the supplied public-information-conditioned LR 1.5 and Bayes denominator; posterior agrees with independent recomputation (0.674418604651)."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "-0.025581",
+              "reason": "Net expectation is -0.025581395349 and break-even ask 0.664418604651; declines buying at 0.69. All displayed approximations satisfy tolerance."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "Three paraphrases supply one underlying observation, not three independent likelihood ratios.",
+              "reason": "Treats the three analysts as restatements of one observation and distinguishes interpretation assistance from new evidence."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "with original timestamps and lineage.",
+              "reason": "Concrete prospective/chronological incremental-data comparison conditions on public information, price and the first sensor, includes executable economics, and permits rejection when incremental value fails."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E02",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "before the new fee each had mean",
+              "reason": "Deducts the additional fee once in each state; both net payoff distributions have mean -1."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "| A | (26, 112) | 3.988298 | −0.158727 |",
+              "reason": "Both utility differences match recomputation: A -0.158727115393, B +0.055770687366. Terminal products are 2912 and 4472 versus baseline 4000."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "B maximizes the stated expected-log objective.",
+              "reason": "Chooses B because its gain arrives in the lower-wealth stress state, consistent with expected log utility."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "This demonstrates portfolio complementarity, not information advantage or positive standalone expected profit.",
+              "reason": "Separates hedge utility from positive standalone expectation, information advantage, and a demonstrated compensation for warehousing risk."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E03",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "Both contracts pay zero, so the bundle loses",
+              "reason": "Uses preliminary 99 and final 101 (also notes equality 100) to make both initial legs pay zero and correctly obtains a 0.96 loss."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "Different observations and strict inequalities do not make these contracts complementary.",
+              "reason": "Rejects the initial guarantee and explicitly identifies both reference-value revision risk and strict-boundary gaps."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "maximum guaranteed profit is 1.20",
+              "reason": "Correctly treats A+C as exact complements: all-in cost 0.94, profit 0.06 per pair, capacity 20, total profit 1.20."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "atomic execution of both legs at stated prices and size, complete fees, financing through settlement, and certain identical settlement/counterparty terms.",
+              "reason": "Conditions the guarantee on executable atomic capacity, fees, financing and matching certain settlement/counterparty terms; does not extend the guarantee to real venues or unmatched A."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E04",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "infer interactions hidden inside an earnings release.",
+              "reason": "Provides distinct feasible information-inference and temporary-inventory service candidates, each naming the relevant participant and an observable mechanism."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "Entries remain exclusively at the timing engine's first eligible closed hourly bar",
+              "reason": "Provides as-of supplied inputs, preserves the existing hourly entry authority, specifies exit hypotheses and plausible persistence/capacity constraints; no unavailable feed or live authorization is invented."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "compare pressure-plus-news selection with pressure-only selection, ordinary reversal and no trade on chronological matched events.",
+              "reason": "Each candidate names bad states and rivals and has a decisive comparative experiment; substantive contrarian alternative explains why a true economic story may still leave no attractive trade."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "build an audited event-to-quote timeline and run the information-model ablation at the permitted clock.",
+              "reason": "Selects a concrete first data/experiment action and treats performance, parameters and capacity as research hypotheses/measurement requirements rather than measured returns or novelty."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E05",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "Adjusting for context or using inverse-propensity weights cannot create those missing outcomes.",
+              "reason": "Rejects causal support for the old 22% claim because deterministic context-specific actions lack overlap and simulated touch fills are not observed counterfactuals."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "0.02",
+              "reason": "Correct point estimates: always-A 0.09, old rule 0.07, difference 0.02 in the stipulated equal-context population."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "no standard error, confidence interval, significance claim or defensible required sample size can be supplied.",
+              "reason": "Recognizes pilot identification while withholding unsupported uncertainty/significance and future or inventory-feedback generalization."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "Keep the 50 unresolved outcomes in a separate pending ledger linked to original assignments, horizons and policy versions.",
+              "reason": "Preserves all 50 outcomes as pending, uses fixed-horizon mature-cohort rules and proposes continued prespecified comparison/monitoring with individual rewards and dependence-aware uncertainty."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E06",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "DEEP misses the hard two-second deadline",
+              "reason": "Correctly excludes DEEP because 3 seconds exceeds the 2-second deadline; SIMPLE and FAST-DEEP are feasible."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "SIMPLE gives",
+              "reason": "Uses the concave objective and unconstrained optima above 60, compares capped q=60 with skip=0, and obtains SIMPLE 2.567365638 and FAST-DEEP 3.105661078 within tolerance."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "FAST-DEEP wins by **0.538295 per opportunity**.",
+              "reason": "Chooses FAST-DEEP at q=60 using net profit after computation costs, with an advantage of approximately 0.538295 and no stacking."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "A 10,000-fold expansion to 600,000 contracts violates the stated 60-contract capacity.",
+              "reason": "Rejects scaling past capacity and linear extrapolation through quadratic impact; deployment measurement includes latency, executable fills/depth, decay, total costs and dependent portfolio/capital constraints."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        }
+      ],
+      "overall_total": 24,
+      "critical_errors": [],
+      "gray_areas": []
+    },
+    {
+      "response_id": "R63",
+      "cases": [
+        {
+          "case_id": "E01",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "0.60/0.40 = 1.5",
+              "reason": "Correctly uses the supplied public-information-conditioned LR 1.5 and Bayes denominator; posterior agrees with independent recomputation (0.674418604651)."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "−0.0255814 per contract",
+              "reason": "Net expectation is -0.025581395349 and break-even ask 0.664418604651; declines buying at 0.69. All displayed approximations satisfy tolerance."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "Three paraphrases of the same observation add no independent evidence",
+              "reason": "Treats the three analysts as restatements of one observation and distinguishes interpretation assistance from new evidence."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "test whether it improves held-out conditional prediction **given public information, the quote, and the first sensor**",
+              "reason": "Concrete prospective/chronological incremental-data comparison conditions on public information, price and the first sensor, includes executable economics, and permits rejection when incremental value fails. See the explicit gray-area note on minimal provenance and the implicit falsifier."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E02",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "The new fee reduces each addition's standalone expectation to **−1**.",
+              "reason": "Deducts the additional fee once in each state; both net payoff distributions have mean -1."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "| B | (+12, −14) | (52, 86) | 4.2027955 | +0.0557707 |",
+              "reason": "Both utility differences match recomputation: A -0.158727115393, B +0.055770687366. Terminal products are 2912 and 4472 versus baseline 4000."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "B supplies wealth when the desk has less and marginal utility is greater.",
+              "reason": "Chooses B because its gain arrives in the lower-wealth stress state, consistent with expected log utility."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "it is not evidence of superior information or positive expected trading alpha.",
+              "reason": "Separates hedge utility from positive standalone expectation, information advantage, and a demonstrated compensation for warehousing risk."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E03",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "Suppose the preliminary close is 99 and the final revised close is 101. Neither contract pays",
+              "reason": "Uses preliminary 99 and final 101 (also notes equality 100) to make both initial legs pay zero and correctly obtains a 0.96 loss."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "The different observation definitions and strict inequalities defeat the proposed complementarity.",
+              "reason": "Rejects the initial guarantee and explicitly identifies both reference-value revision risk and strict-boundary gaps."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "1.20 maximum guaranteed profit",
+              "reason": "Correctly treats A+C as exact complements: all-in cost 0.94, profit 0.06 per pair, capacity 20, total profit 1.20."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "certain identical settlement/counterparty terms, atomic execution at the supplied prices, full stated capacity, and zero financing cost through settlement.",
+              "reason": "Conditions the guarantee on executable atomic capacity, fees, financing and matching certain settlement/counterparty terms; does not extend the guarantee to real venues or unmatched A."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E04",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "Trace a new primary-source fact through explicitly documented business relationships.",
+              "reason": "Provides distinct feasible information-inference and temporary-inventory service candidates, each naming the relevant participant and an observable mechanism."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "only that engine authorizes entries at the first eligible closed hourly bar",
+              "reason": "Provides as-of supplied inputs, preserves the existing hourly entry authority, specifies exit hypotheses and plausible persistence/capacity constraints; no unavailable feed or live authorization is invented."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "Reject if reversals are absent, predate permitted entry, or cannot cover costs under credible fills.",
+              "reason": "Each candidate names bad states and rivals and has a decisive comparative experiment; substantive contrarian alternative explains why a true economic story may still leave no attractive trade."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "Run Candidate 1's incremental-information ablation first",
+              "reason": "Selects a concrete first data/experiment action and treats performance, parameters and capacity as research hypotheses/measurement requirements rather than measured returns or novelty."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E05",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "there was no calm-A or volatile-P support.",
+              "reason": "Rejects causal support for the old 22% claim because deterministic context-specific actions lack overlap and simulated touch fills are not observed counterfactuals."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "The estimated improvement is **0.02 net reward per opportunity**.",
+              "reason": "Correct point estimates: always-A 0.09, old rule 0.07, difference 0.02 in the stipulated equal-context population."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "these are valid point estimates for the stated target mixture.",
+              "reason": "Recognizes pilot identification while withholding unsupported uncertainty/significance and future or inventory-feedback generalization."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "Wait for the same fixed horizon and apply a predefined missing-data policy if some never mature.",
+              "reason": "Preserves all 50 outcomes as pending, uses fixed-horizon mature-cohort rules and proposes continued prespecified comparison/monitoring with individual rewards and dependence-aware uncertainty."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        },
+        {
+          "case_id": "E06",
+          "items": [
+            {
+              "item": 1,
+              "pass": true,
+              "support_quote": "DEEP cannot be selected regardless of its hypothetical profit",
+              "reason": "Correctly excludes DEEP because 3 seconds exceeds the 2-second deadline; SIMPLE and FAST-DEEP are feasible."
+            },
+            {
+              "item": 2,
+              "pass": true,
+              "support_quote": "| FAST-DEEP | Yes: 0.25 second | 0.1690944 | 198.8679 | 60 | 3.1056611 |",
+              "reason": "Uses the concave objective and unconstrained optima above 60, compares capped q=60 with skip=0, and obtains SIMPLE 2.567365638 and FAST-DEEP 3.105661078 within tolerance."
+            },
+            {
+              "item": 3,
+              "pass": true,
+              "support_quote": "Select FAST-DEEP at 60 contracts",
+              "reason": "Chooses FAST-DEEP at q=60 using net profit after computation costs, with an advantage of approximately 0.538295 and no stacking."
+            },
+            {
+              "item": 4,
+              "pass": true,
+              "support_quote": "Nor are 10,000 independent equivalent opportunities established.",
+              "reason": "Rejects scaling past capacity and linear extrapolation through quadratic impact; deployment measurement includes latency, executable fills/depth, decay, total costs and dependent portfolio/capital constraints."
+            }
+          ],
+          "case_total": 4,
+          "critical_errors": []
+        }
+      ],
+      "overall_total": 24,
+      "critical_errors": [],
+      "gray_areas": [
+        {
+          "case_id": "E01",
+          "item": 4,
+          "decision": "pass",
+          "explanation": "Lineage retention and rejection wording are less explicit than in R17/R08. I credit a specified second sensor measuring a distinct feature, timestamped observations, and joint-dependence estimation as minimal provenance; the held-out incremental-prediction and net-cost executable-value test supplies a meaningful failure condition. I do not require the literal words lineage or reject. A fully explicit provenance log and rejection rule would be preferable but the substantive test is present."
+        }
+      ]
+    }
+  ],
+  "summary": "R17, R42, R08 and R63 each score 24/24; no rubric critical errors found. All numerical cases and required decisions match independent recomputation. R42/R63 receive E01 item 4 credit on a semantic reading of source-specific prospective observations and a held-out incremental-value test; the provenance/falsifier gray area is documented. The six cases support no profit or causal prompt-effect claim."
+}

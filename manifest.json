@@ -1,6 +1,7 @@
 {
-  "scope": "Complete Trading Edge Lab authored archive in dwj9ddyvf6-hub/Edge; repository-relative paths; manifest excludes itself",
-  "source_commit": "Silicon@0fd0c817146876b0a0abcfdced76f073ac39ca59",
+  "scope": "Complete Trading Edge Lab v1-v3 authored archive; repository-relative paths; manifest excludes itself",
+  "previous_edge_commit": "e395e26c8aca0060630dd37953897670804f83bc",
+  "installed_skill_commit": "d322ce6c963171f07924a55a9ff29634ccc8fb88",
   "files": [
     {
       "path": ".gitignore",
@@ -10,33 +11,39 @@
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 2495,
-      "sha256": "e9ff1c185f98342c534605ced01e8e5c5f9f9b2727e555b6cd0d76cd683e3bdf",
-      "git_blob_sha1": "f6aafea6efeb033ef29e00bc8fa76c3b5f094bd2"
+      "bytes": 3649,
+      "sha256": "36491310b5d56bb5453266a27203c85bd44c84154f55a149f7956e0b9c6d2b80",
+      "git_blob_sha1": "33c83233ebb644324b979f1c4633e8fd14683668"
     },
     {
       "path": "README.md",
-      "bytes": 7896,
-      "sha256": "471c5921939528ea4048b89da51217ec872e4fc031b8244298dea2726e2d51c5",
-      "git_blob_sha1": "44a6638b81b77a1f353922be7a41cbda2073d3bc"
+      "bytes": 9867,
+      "sha256": "6abeb80056c738691fb03282bda19d51a8d6248278a9af1270f242d4a9beab6a",
+      "git_blob_sha1": "37397a2d7668c61358cb33e302702fdbbabb748b"
     },
     {
       "path": "Trading_Edge_Unified_Master_Prompt.txt",
-      "bytes": 35235,
-      "sha256": "78f2ec1c6266d3b4b6a1b292148615e8b647ad001b446ceb73d2d90f399e3b32",
-      "git_blob_sha1": "2e34f282c6bc014c6d030486460d52e7299702e1"
+      "bytes": 48010,
+      "sha256": "db7ddf5770e3723cacc7b6989e152a5143b68ae439560d5e42a3d0e7028612b1",
+      "git_blob_sha1": "a28784a01d84fd25207a8e550aa43a6d3da66573"
     },
     {
       "path": "scripts/README.md",
-      "bytes": 1061,
-      "sha256": "2130dc3697b9fbac1aeec3d2779ec83c13f36d0f5f44c3cf46ce657608691157",
-      "git_blob_sha1": "1021582324ea65bba6bc2bdf8424e812e9f0237e"
+      "bytes": 1424,
+      "sha256": "c1b21702d5ca24c8ae62df0f506b59ebe8ded09bc8225901a0941fcd459c5232",
+      "git_blob_sha1": "9c93bd582e5b95c3e4d01d04ea0b6f5efc8ce863"
     },
     {
       "path": "scripts/build_unified_prompt.py",
-      "bytes": 10031,
-      "sha256": "17a67dd91d6060310a0871646319dbfd319443ec1987d8d074b21aa0dee761b6",
-      "git_blob_sha1": "8f6eb8d5d448b52a04c7438b4a0be9e84cc1c655"
+      "bytes": 2941,
+      "sha256": "253d48f8bcf5499e7fe16b68cee5d42a7c3b8b5374dc734713a43b6b632dbd84",
+      "git_blob_sha1": "28fbace4997d27d6cf648de7cc2cd320008c283a"
+    },
+    {
+      "path": "scripts/build_unified_prompt_v2.py",
+      "bytes": 10036,
+      "sha256": "9bbe10baf041ed75172e0b52d1a70ec4167170b1577777b7d3740e28aef91a33",
+      "git_blob_sha1": "7dc85b77c8727d5e73655cf9d0b495e6ff512cef"
     },
     {
       "path": "scripts/render_adaptive_addendum.py",
@@ -163,6 +170,12 @@
       "bytes": 15899,
       "sha256": "0a6749eabfed2debe170ac21af11c87a0e96b21f20d594b6925e88ec92892ce5",
       "git_blob_sha1": "094479fb9adf0394b9a90258e0977d33489b7479"
+    },
+    {
+      "path": "v2/Trading_Edge_Unified_Master_Prompt_v2.1.txt",
+      "bytes": 35235,
+      "sha256": "78f2ec1c6266d3b4b6a1b292148615e8b647ad001b446ceb73d2d90f399e3b32",
+      "git_blob_sha1": "2e34f282c6bc014c6d030486460d52e7299702e1"
     },
     {
       "path": "v2/audit-findings.md",
@@ -295,6 +308,354 @@
       "bytes": 3461,
       "sha256": "3ccad4602126849458b00de07e68f7cb70ac57d8545298802f45a44cef27e209",
       "git_blob_sha1": "23fdfc6c847c78e4453a5fa2ab3e1360bab875b9"
+    },
+    {
+      "path": "v3/Trading_Edge_Frontier_Study.md",
+      "bytes": 14320,
+      "sha256": "95019b0f2da84862c8d49aa1db3afef094b6907f46484709eb8f4b6d2f594adc",
+      "git_blob_sha1": "8f42a120ec54689dee55724733659b047c88ed5a"
+    },
+    {
+      "path": "v3/evaluations/blind_answers.json",
+      "bytes": 59686,
+      "sha256": "78c94b6127062e3803a3e8ffaad3bf7cdbe73ffedb9962ff8955e3af26decb0f",
+      "git_blob_sha1": "df5f708e40a9936544338482bd5d6368eba36528"
+    },
+    {
+      "path": "v3/evaluations/cases.json",
+      "bytes": 7519,
+      "sha256": "ff3c9939262b8713c179c0186978559d633d46b0f7ce1f5492c8deba97bc6d09",
+      "git_blob_sha1": "6c73c7b3eb53c2584403748dafba37f0c69ec314"
+    },
+    {
+      "path": "v3/evaluations/condition_map.json",
+      "bytes": 103,
+      "sha256": "8503e72b6ebc3218d5cdf7b683f654ef773d9ba5fcee825a20b1b61369aab449",
+      "git_blob_sha1": "030ae87fe76d8be06975a7036045e57f418df1cf"
+    },
+    {
+      "path": "v3/evaluations/grade_a.json",
+      "bytes": 42214,
+      "sha256": "ab0ca11d690404e613f4e4cb20ed5d35a6c3211e1cfdc440c8b5abf799aaeaf9",
+      "git_blob_sha1": "b5ce94c6e28ec4ad6890b3b168c52abb9275a099"
+    },
+    {
+      "path": "v3/evaluations/grade_b.json",
+      "bytes": 35888,
+      "sha256": "e57bdc954c61a0fa9f38c9394b3a2ccd7c1f2514a33027f2092e7e80a3605927",
+      "git_blob_sha1": "c1835334908a5f603a4deafb96ae7eb1261f819e"
+    },
+    {
+      "path": "v3/evaluations/make_cases.py",
+      "bytes": 13725,
+      "sha256": "54fa1db1d160fe2d5e58f752df31a0812d0e67288893470b3d7a1ea2205ca7c9",
+      "git_blob_sha1": "f7f6be863f8ebe67e8bb05d16a152b9f7f8a28d8"
+    },
+    {
+      "path": "v3/evaluations/numeric_targets_checked.json",
+      "bytes": 761,
+      "sha256": "d0862343a8684305db3ad03a63d23c5119d716063560a031bf5b991c1a9123d2",
+      "git_blob_sha1": "af7ed05e4a758a2e9a69fd3c11af872f5b21d4b6"
+    },
+    {
+      "path": "v3/evaluations/outputs/reasoning_a.md",
+      "bytes": 15128,
+      "sha256": "1c201f2883158e034562f365a8a58779843741ba8603bf1a15576ba23ec77be9",
+      "git_blob_sha1": "83fc8616f8da7a94f932d43d5590a4cc543bb572"
+    },
+    {
+      "path": "v3/evaluations/outputs/reasoning_b.md",
+      "bytes": 14297,
+      "sha256": "c15ddc8c3b3fbac2e1b32c728a73ce009e9b56bcf128a48ee85c9332ac9ea938",
+      "git_blob_sha1": "31d8ac42cac28cf443625e1514ea14de0beb1579"
+    },
+    {
+      "path": "v3/evaluations/outputs/skill_a.md",
+      "bytes": 13631,
+      "sha256": "a5ae0bfa3c6cb2d0f1fa88239cb12c97beeae5fa5902c2d1525a540242af9f15",
+      "git_blob_sha1": "990d8ec13f9ebbce30dc9cab70c3efaa236b8336"
+    },
+    {
+      "path": "v3/evaluations/outputs/skill_b.md",
+      "bytes": 15350,
+      "sha256": "cb5364d116d88f3bb1606ca7057772807c3c709812047137d4dfa399b053219e",
+      "git_blob_sha1": "d81a57752810a73f2fcc8adfe99fd81a28da1076"
+    },
+    {
+      "path": "v3/evaluations/rubric.json",
+      "bytes": 6863,
+      "sha256": "95a15ffd054093d5afc9855d8310ae1b2990286b9b61d615dbffd38cc40b7e8e",
+      "git_blob_sha1": "e49d39ca582502c38425e0baeb2ccb7218359695"
+    },
+    {
+      "path": "v3/evaluations/skill_snapshot_hashes.json",
+      "bytes": 1684,
+      "sha256": "eab65bebefb2937abcabbd941b1f769dc4bca0aa8c3fbffe69a29fbb90e65fba",
+      "git_blob_sha1": "c98244482d32f812b9ad81954f88a9e20853c656"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/SKILL.md",
+      "bytes": 23388,
+      "sha256": "7303d8b456813bcfac4c5457b30d60be190a4c4dd23f03598e54433b63104c58",
+      "git_blob_sha1": "25eb804f3a23827acceeef7aa81d8f4c05924c41"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/agents/openai.yaml",
+      "bytes": 433,
+      "sha256": "2b7281346da7aef60abf2b59a7267dedf279c7c4ad7d5a948e2a8bc7f0027be8",
+      "git_blob_sha1": "b6712e9eb41c3ea74f8f32e787cf6e022fda381c"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/assets/icon.svg",
+      "bytes": 420,
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
+      "git_blob_sha1": "2468028d1ed0fc8009b1fc45e7bb027adaf0d079"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/references/adaptive-control.md",
+      "bytes": 21699,
+      "sha256": "ad44a6536d5a26411b76c3c3d32d15e4e4425501eaa7abf3df782141e687cacf",
+      "git_blob_sha1": "214896743d671ce58623036d6b395eac2261e6a0"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/references/adaptive-learning.md",
+      "bytes": 13530,
+      "sha256": "0215266f705a6b77d1d9244b55daee3cf4c60a4fdb5fd987e119332001bb9bc6",
+      "git_blob_sha1": "88dc6b15c889c88b36fba1eb04a0687719e641e8"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/references/adaptive-sources.md",
+      "bytes": 20213,
+      "sha256": "5753a1d6c871f31f4e0c918d26fe0c7445cf6f8bc32c28f79f0b8543f4ef6d6b",
+      "git_blob_sha1": "66054a474c8ec86cabc7dbc18905cd5f833a2260"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/references/desk-runtime.md",
+      "bytes": 12447,
+      "sha256": "dd4eedcdb601852f37bcbb92161975f4a4417200e769266fe1a56bc3bd618913",
+      "git_blob_sha1": "004481fc99a3cc76c509cb74bdbde19d79c9f213"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/references/edge-protocol.md",
+      "bytes": 15389,
+      "sha256": "cb5169223448e19d3d5696276d7ab6a0d5f735dcee1143f70ba560f2f16b3596",
+      "git_blob_sha1": "c7a4a42042e5ce116acbc8c7953961593d95db4f"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/references/foundations.md",
+      "bytes": 16344,
+      "sha256": "de9aa4a2d35f5e202fe9191fa943e7ddc34e75a14940291ddcb213399c6138ee",
+      "git_blob_sha1": "9157c7cacab5d093df683ccb97e5ce7d83683cb8"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/references/frontier-sources.md",
+      "bytes": 9565,
+      "sha256": "a10c73acfd0bb4d1360d5ba392249498f3fe49ef5e58bfe61b9fcf6d9c3c30ea",
+      "git_blob_sha1": "f13bf47ad9c7b7c9ab6c153087e1dc051bd632a8"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/references/mechanisms.md",
+      "bytes": 18468,
+      "sha256": "ebfeba403ee3bace067a3f58775364abd14294695c827a0ead4e3b043585f167",
+      "git_blob_sha1": "2285e6f5528b35f215ef517d7f7ca966659ff13e"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/references/sources.md",
+      "bytes": 39751,
+      "sha256": "dda410ec483440c714fdbbd4ee61bff9c9dfae32e4a74d813bbbfbe23a65ef9e",
+      "git_blob_sha1": "7b3cd7fe7145ae10803fa3c9908a36ef2c5d6065"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/references/validation.md",
+      "bytes": 13975,
+      "sha256": "acb4fbe620af4e719179cdf62a0a912d8e13113859bb339b32d1abab26736746",
+      "git_blob_sha1": "349943cf186b8a520d9c1af3e0cb0e7ca88bab62"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/scripts/adaptive_arbiter.py",
+      "bytes": 23146,
+      "sha256": "6e5ef54b2cf7545c0b5a9d6d3e501d0a7a67f41e0e4a99b51fc9c978a6a2481c",
+      "git_blob_sha1": "85dd1411afea637770deddb8f323a163090fc081"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/scripts/edge_mechanics.py",
+      "bytes": 11061,
+      "sha256": "1c8b5bcee68b7c8826642b18397e80597547cccf4e129f72d7ec194f7c62f32d",
+      "git_blob_sha1": "de9642dab0135a25285e53790ee4e0ceb1cbd86e"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/scripts/test_adaptive_arbiter.py",
+      "bytes": 15449,
+      "sha256": "c41e1f523845a34bb76de0a236d315f2613436cfeeecac0167710317d178bf2f",
+      "git_blob_sha1": "638a2616076033602d4891ae96844582f080d97c"
+    },
+    {
+      "path": "v3/evaluations/skill_under_test/scripts/test_edge_mechanics.py",
+      "bytes": 9300,
+      "sha256": "fa500304958a1a84256137238310623ff80cbd1fae7a0b2faf1c6166acc316a7",
+      "git_blob_sha1": "0ec18f04796a9a909ac81905af2820c6a968f16d"
+    },
+    {
+      "path": "v3/kernel-notes.md",
+      "bytes": 6046,
+      "sha256": "1316fa0fb5dbb6a9f54063f90c19d9a93fc88b9a6c755d5e25fc17548fd92ce6",
+      "git_blob_sha1": "70d5d3541a0e0ccf67f2902e52a3c458ac5e34fd"
+    },
+    {
+      "path": "v3/research/behavior.md",
+      "bytes": 21545,
+      "sha256": "f175761172e87dc471158cd2df08f9d60269076a5e7335211ccb99c7c7ece7c5",
+      "git_blob_sha1": "65819717305c16caf7a2b2b570ac383ca5b13693"
+    },
+    {
+      "path": "v3/research/check_mechanics_precision.py",
+      "bytes": 4218,
+      "sha256": "046ada6c8d014914d5b2d383209a09e1d1e08831cc5b73379b0ae03b1e123298",
+      "git_blob_sha1": "f16198a169e3a4f5fae27cf65a7faf6a321580bb"
+    },
+    {
+      "path": "v3/research/final_review.md",
+      "bytes": 7759,
+      "sha256": "f7cb8bc446ba79c8d11a1669a37092b89f61a1ec242163b08a616b472c12ba83",
+      "git_blob_sha1": "542501e25afe787bd3ae6e48ac32258ad54492e3"
+    },
+    {
+      "path": "v3/research/information.md",
+      "bytes": 13882,
+      "sha256": "9a70078f4c3029eeea441120efccd1bbdcba09f97f68dbb04b5d59d0e2d7d039",
+      "git_blob_sha1": "d4b9ed2a9358b17a7406c473181359daf5a45b5c"
+    },
+    {
+      "path": "v3/research/invention.md",
+      "bytes": 19721,
+      "sha256": "97afe83a40374d63bd1e190da57f00826acdfede7f73c55067e10182aad6f27f",
+      "git_blob_sha1": "35e495f49dfb83d39e78a943f8e48cffdbaac74a"
+    },
+    {
+      "path": "v3/research/precision_after_fix.json",
+      "bytes": 1087,
+      "sha256": "58c49b8ce8f6b6c2e469b561bb04ce987a90b3ed26d2718b48d25b753586cf4a",
+      "git_blob_sha1": "04677e337b31a64a21b098d3e90afe113f6b2446"
+    },
+    {
+      "path": "v3/research/precision_before_fix.json",
+      "bytes": 1192,
+      "sha256": "8de174c6d295969da135dd5dfec4c63935ee92c80a510d7493d1f987966cac0f",
+      "git_blob_sha1": "25dd3ec151b3538a00b4b58edf3c8f04024cdc49"
+    },
+    {
+      "path": "v3/research/risk.md",
+      "bytes": 16877,
+      "sha256": "726a19c72af44222569fbb966d1057ec2601f896f1517730b7a414f17f29e68c",
+      "git_blob_sha1": "2cbcafce6551c3b8e4df85acb97c2cdfbb221eab"
+    },
+    {
+      "path": "v3/skill/SKILL.md",
+      "bytes": 23388,
+      "sha256": "7303d8b456813bcfac4c5457b30d60be190a4c4dd23f03598e54433b63104c58",
+      "git_blob_sha1": "25eb804f3a23827acceeef7aa81d8f4c05924c41"
+    },
+    {
+      "path": "v3/skill/agents/openai.yaml",
+      "bytes": 433,
+      "sha256": "2b7281346da7aef60abf2b59a7267dedf279c7c4ad7d5a948e2a8bc7f0027be8",
+      "git_blob_sha1": "b6712e9eb41c3ea74f8f32e787cf6e022fda381c"
+    },
+    {
+      "path": "v3/skill/assets/icon.svg",
+      "bytes": 420,
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
+      "git_blob_sha1": "2468028d1ed0fc8009b1fc45e7bb027adaf0d079"
+    },
+    {
+      "path": "v3/skill/references/adaptive-control.md",
+      "bytes": 21699,
+      "sha256": "ad44a6536d5a26411b76c3c3d32d15e4e4425501eaa7abf3df782141e687cacf",
+      "git_blob_sha1": "214896743d671ce58623036d6b395eac2261e6a0"
+    },
+    {
+      "path": "v3/skill/references/adaptive-learning.md",
+      "bytes": 13530,
+      "sha256": "0215266f705a6b77d1d9244b55daee3cf4c60a4fdb5fd987e119332001bb9bc6",
+      "git_blob_sha1": "88dc6b15c889c88b36fba1eb04a0687719e641e8"
+    },
+    {
+      "path": "v3/skill/references/adaptive-sources.md",
+      "bytes": 20213,
+      "sha256": "5753a1d6c871f31f4e0c918d26fe0c7445cf6f8bc32c28f79f0b8543f4ef6d6b",
+      "git_blob_sha1": "66054a474c8ec86cabc7dbc18905cd5f833a2260"
+    },
+    {
+      "path": "v3/skill/references/desk-runtime.md",
+      "bytes": 12447,
+      "sha256": "dd4eedcdb601852f37bcbb92161975f4a4417200e769266fe1a56bc3bd618913",
+      "git_blob_sha1": "004481fc99a3cc76c509cb74bdbde19d79c9f213"
+    },
+    {
+      "path": "v3/skill/references/edge-protocol.md",
+      "bytes": 15389,
+      "sha256": "cb5169223448e19d3d5696276d7ab6a0d5f735dcee1143f70ba560f2f16b3596",
+      "git_blob_sha1": "c7a4a42042e5ce116acbc8c7953961593d95db4f"
+    },
+    {
+      "path": "v3/skill/references/foundations.md",
+      "bytes": 16344,
+      "sha256": "de9aa4a2d35f5e202fe9191fa943e7ddc34e75a14940291ddcb213399c6138ee",
+      "git_blob_sha1": "9157c7cacab5d093df683ccb97e5ce7d83683cb8"
+    },
+    {
+      "path": "v3/skill/references/frontier-sources.md",
+      "bytes": 9565,
+      "sha256": "a10c73acfd0bb4d1360d5ba392249498f3fe49ef5e58bfe61b9fcf6d9c3c30ea",
+      "git_blob_sha1": "f13bf47ad9c7b7c9ab6c153087e1dc051bd632a8"
+    },
+    {
+      "path": "v3/skill/references/mechanisms.md",
+      "bytes": 18468,
+      "sha256": "ebfeba403ee3bace067a3f58775364abd14294695c827a0ead4e3b043585f167",
+      "git_blob_sha1": "2285e6f5528b35f215ef517d7f7ca966659ff13e"
+    },
+    {
+      "path": "v3/skill/references/sources.md",
+      "bytes": 39751,
+      "sha256": "dda410ec483440c714fdbbd4ee61bff9c9dfae32e4a74d813bbbfbe23a65ef9e",
+      "git_blob_sha1": "7b3cd7fe7145ae10803fa3c9908a36ef2c5d6065"
+    },
+    {
+      "path": "v3/skill/references/validation.md",
+      "bytes": 13975,
+      "sha256": "acb4fbe620af4e719179cdf62a0a912d8e13113859bb339b32d1abab26736746",
+      "git_blob_sha1": "349943cf186b8a520d9c1af3e0cb0e7ca88bab62"
+    },
+    {
+      "path": "v3/skill/scripts/adaptive_arbiter.py",
+      "bytes": 23146,
+      "sha256": "6e5ef54b2cf7545c0b5a9d6d3e501d0a7a67f41e0e4a99b51fc9c978a6a2481c",
+      "git_blob_sha1": "85dd1411afea637770deddb8f323a163090fc081"
+    },
+    {
+      "path": "v3/skill/scripts/edge_mechanics.py",
+      "bytes": 12681,
+      "sha256": "2f649523515a8d9e7a53fcd9124df769ddcf9a8440579a92c9484785a863f81a",
+      "git_blob_sha1": "d4ebb75ce8f5a9694abca0a5e775d2d383986789"
+    },
+    {
+      "path": "v3/skill/scripts/test_adaptive_arbiter.py",
+      "bytes": 15449,
+      "sha256": "c41e1f523845a34bb76de0a236d315f2613436cfeeecac0167710317d178bf2f",
+      "git_blob_sha1": "638a2616076033602d4891ae96844582f080d97c"
+    },
+    {
+      "path": "v3/skill/scripts/test_edge_mechanics.py",
+      "bytes": 10523,
+      "sha256": "fb7cf0da957d33af92d1fbd950d7b1470f266c99971e576b3baeb9530953dfda",
+      "git_blob_sha1": "7819fc68db7ec7dba2a7536aa9a8f2690c346119"
+    },
+    {
+      "path": "v3/validation.md",
+      "bytes": 6880,
+      "sha256": "70f2b98cd10a7481a873ad96cd6c69e9e17958252ea85f3ab46c6e4db61acff6",
+      "git_blob_sha1": "a9b03bfef182af129f134418e7dc71e6ccb1b4f2"
     }
   ]
 }
