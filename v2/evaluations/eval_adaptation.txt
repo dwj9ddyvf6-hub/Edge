@@ -1,0 +1,59 @@
+The 22% improvement is unsupported as an executable routing gain. It is a useful research hypothesis, but the supplied facts do not establish positive expected net profit, improvement over the incumbent, or current profitability at three times the size. I would build minute-level assessment and learning with an explicit abstention outcome. A compulsory daily trade would add an untested constraint and could consume the entire improvement. No deployment or trade is performed here.
+
+All desk observations below are fictional facts supplied in the question. Mechanisms are hypotheses; equations and procedures are proposed specifications. No sample sizes, confidence intervals, actual costs, or experiment results are available.
+
+The economic hypothesis is that better routing balances liquidity compensation against adverse selection and signal decay. Passive orders potentially earn the spread by supplying immediacy and bearing inventory risk; aggressive orders pay for immediacy when waiting is expensive. Our possible advantage is choosing that tradeoff more accurately than a simple rule. Competition, queue priority, latency, impact and scarce balance sheet limit capacity. The strongest rival explanation for the reported gain is optimistic simulated execution combined with information leakage. Routing can preserve an existing signal's value without creating new predictive alpha.
+
+Four distinct defects prevent the present conclusion.
+
+First, there is no historical action overlap. In calm states the aggressive route has logging probability zero; in volatile states the passive route has probability zero. Comparing their observed rewards confounds route with state. Importance weighting cannot divide by zero, and a doubly robust estimator cannot repair unsupported actions. A reward model may extrapolate into those cells, but its conclusions then depend on untested structural assumptions.
+
+Second, an unsubmitted order filled in a simulator at the quoted touch is an assumed counterfactual. Passive execution depends on queue priority, subsequent order flow, cancellations and partial fills. Aggressive execution depends on available depth, latency and size. Both require exit costs and inventory consequences. The direction and magnitude of simulation bias are unknown; the rule is particularly inadequate for the new size. The 22% also needs its dollar denominator, capital convention, opportunity population and gross/net definition disclosed.
+
+Third, past-only filtering does not make the regime model causal when transition parameters were estimated using future observations. Refit transitions, state definitions, preprocessing and tuning using only information available before each historical decision. This removes leakage; it does not restore missing route support. Previously inspected 2020–2026 results remain development evidence even after a cleaner replay.
+
+Fourth, the +$4 claim lacks an acceptable evidence contract. A confidence sequence can support repeated inspection of its declared target under its assumptions; it does not automatically cover choosing the best of twelve streams or restarting nominal 95% inference after every drawdown. Properly designed conditional restarts with prospective error spending can be valid, so the reset trigger alone is not the decisive defect. The missing accounting is. Even a valid lower bound on average conditional reward since 2020 would not establish positive current reward, benefit at the new size, or improvement over another router. Those are different estimands. Confidence sequences require explicit distributional assumptions despite allowing repeated looks. [See skill/references/adaptive-sources.md, L01 and L04.]
+
+Worse filled markouts with unchanged unconditional forecast scores prioritize an execution and selection investigation. They do not prove the predictor is healthy on traded observations, nor prove size caused deterioration. The filled subset, opportunity mix, inventory, latency or competitors may have changed. Tripling size and calendar time are confounded. Stable aggregate scores can conceal deterioration precisely where routing decisions matter.
+
+I propose this concrete improvement algorithm.
+
+1. Freeze the existing router and opportunity-generation rule as the benchmark. Define the principal reward as net portfolio contribution per eligible opportunity over a fixed evaluation horizon, at matched starting inventory and capital. Include partial fills, nonfills, fees, spread, impact, holding and exit costs; retain rejected opportunities. A nonfill is not automatically a zero payoff if it incurs costs or changes subsequent inventory. Specify minimum worthwhile improvement h, loss limits, horizon and approved size envelope before evaluation. Their numerical values are currently unknown.
+
+2. Separate three clocks. Every minute, ingest genuinely new information and matured labels; if nothing informative arrives, do not fabricate an update. Make order decisions only on eligible events under the existing entry authority and deadlines. Change model families, learning rates, windows and reset rules only through versioned challenger evaluation. Learning every minute does not require trading every minute or promoting a new policy every minute.
+
+3. Maintain distinct information, belief, own-account, policy and learning states. Log as-of source receipt times, model versions, filtered state probabilities, forecast, feasible routes, quantities, chosen action, actual assignment probability, pending orders, fills, costs and label maturity. Preserve simulated-versus-observed provenance. Outcomes attach to the policy that generated them. Never score only quickly resolved trades or treat pending losses as zero.
+
+4. Fit a small execution model before adding features. For route a and size q, estimate fill probability and payoff conditional on filling, including partial-fill branches. For a simplified single-fill case,
+
+   V(a,q|x) = P(F|x,a,q) E[q s(M_h − P_fill) − C | F,x,a,q] − C_attempt,
+
+   where s is trade direction and C includes applicable holding and exit costs. For real comparisons, expand the remaining inventory and nonfill continuation branches. Do not subtract adverse selection twice when it already appears in conditional markouts. Fit conditional forecast calibration separately; global forecast score is insufficient.
+
+5. Use a prespecified bounded online update. For example, update a regularized fill/payoff model on each newly mature batch using projected gradient steps with frozen learning rate, feature set and parameter bounds; update latent-state probabilities using parameters fitted strictly earlier. Choose those settings inside development folds. Keep the uncertainty model explicit and mark unsupported route-state-size cells as unidentified. The first challenger can simply retain the forecast and improve execution estimation. An unconstrained reinforcement learner is unnecessary.
+
+6. Score a finite feasible menu: incumbent continuation, passive, aggressive, wait, no new entry, and appropriate reduction of existing risk. Compare complete outcomes under the same model and horizon. A conservative gate is
+
+   G(a) = inf over P in the declared ambiguity set of E_P[U(W_a) − U(W_incumbent)].
+
+   Require G(a) > h and separate evidence, deadline and risk gates. This paired difference differs from subtracting two separately minimized utilities. An ambiguity minimum is not a statistical confidence bound. Charge switching costs once. If the incumbent is infeasible, invoke a separate recovery rule; the alpha gate must not block necessary risk management.
+
+7. Learn route differences only where the data support them. A future bounded randomized experiment would log actual probabilities b_t(a|x) before assignment. On supported actions, an honest doubly robust evaluation can use
+
+   ψ_t(π) = Σ_a π(a|x_t)m_t(x_t,a) + π(A_t|x_t)/b_t(A_t|x_t) × [R_t − m_t(x_t,A_t)].
+
+   Fit m_t from earlier data and compare target and incumbent estimates. Audit overlap and extreme weights; clipping changes bias. Such methods combine outcome prediction with assignment information, subject to their assumptions. [See skill/references/adaptive-sources.md, L01 and L04.] One-step evaluation does not identify a whole strategy when actions change future inventory or prices; use an episode-level experiment or an identified transition model for that target.
+
+8. Keep execution deterministic. Reconcile positions and all plausible pending fills, reserve shared risk atomically, revalidate freshness and policy version before submission, and preserve reservations through ambiguous timeouts or pending cancels. Use a validated simple fallback when optional computation misses its deadline. Additional computation should earn its latency cost; LLM availability must not govern protective action.
+
+Replace the selected-window monitor with declared evidence contracts: estimand, horizon, eligible population, policy version, full controller information history, tail/dependence assumptions, maturity rules, error budget, reset rule and permitted consequence. If twelve monitors are genuinely needed, one illustrative allocation is α_(j,r)=0.05/[12r(r+1)] for monitor j and prospective epoch r. This controls the aggregate error only if every individual procedure is valid; it cannot repair the existing record retrospectively. Do not infer bounded P&L from a stop order or historical maximum. Use a method appropriate to actual tails and overlapping outcomes. Maintain separate historical-value and recent-deterioration assessments; a drift alert identifies a change, not its cause.
+
+The next decisive experiments are sequential and falsifiable.
+
+First, reproduce the incumbent and rerun the proposed router chronologically, refitting every learned component inside each training period. Compare the original leaking replay with the repaired one, and stress queue, latency, depth and costs. Reject the 22% evidentiary claim if it depends on future-fitted regimes or unattainable fills. A surviving gain remains simulator evidence. With no underlying dataset supplied, this experiment is specified but unrun.
+
+Second, at the original size and a fixed forecast, prospectively randomize feasible passive/aggressive routes within predefined state, urgency and liquidity strata. Include every assigned opportunity. Randomize whole orders or separated episodes when child orders interact. Prespecify h, precision, maximum horizon and abort rules; derive sample needs from observed dependence and variance, not an invented trade count. Shadow operation validates timing and logging but cannot supply actual queue fills. Any real execution experiment would need separate authorization.
+
+Third, hold routing fixed and test a bounded size ladder using randomized blocks with carryover controls. Compare net value, fill selection and markouts at common horizons. A worsening size-response curve supports the capacity explanation; equally poor original-size outcomes favor external drift or another shared change. No finding is presently known.
+
+Finally, compare the entire frozen minute-update policy against the incumbent and a simple periodic refit on fresh forward data, including exploration, switching, false alarms, delays and abstentions. Promote only when candidate-specific evidence exceeds h and portfolio/operational gates pass; retire when adequate evidence rules out useful benefit. Inconclusive evidence remains inconclusive. Commit to daily opportunity assessment with a recorded trade-or-abstain decision. The highest-value next action is the chronology repair and preregistration of the fixed-size routing experiment that can actually reveal the missing counterfactual.

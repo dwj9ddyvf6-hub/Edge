@@ -1,0 +1,14 @@
+interface:
+  display_name: Trading Edge Lab
+  short_description: Create, diagnose, and test a tradable edge
+  default_prompt: Use $engineer-trading-edge to create or improve this strategy by
+    identifying its economic edge, modeling net payoffs, and designing decisive tests.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

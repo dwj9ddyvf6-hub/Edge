@@ -1,0 +1,300 @@
+{
+  "scope": "Complete Trading Edge Lab authored archive in dwj9ddyvf6-hub/Edge; repository-relative paths; manifest excludes itself",
+  "source_commit": "Silicon@0fd0c817146876b0a0abcfdced76f073ac39ca59",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 30,
+      "sha256": "195cdf58978fdd47b0bf433d9140fd11bb2b68d3d242a2f946cfabad6e1b5a61",
+      "git_blob_sha1": "ec9420a5e790543ad3a375e020ef38c3dfea024e"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 2495,
+      "sha256": "e9ff1c185f98342c534605ced01e8e5c5f9f9b2727e555b6cd0d76cd683e3bdf",
+      "git_blob_sha1": "f6aafea6efeb033ef29e00bc8fa76c3b5f094bd2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7896,
+      "sha256": "471c5921939528ea4048b89da51217ec872e4fc031b8244298dea2726e2d51c5",
+      "git_blob_sha1": "44a6638b81b77a1f353922be7a41cbda2073d3bc"
+    },
+    {
+      "path": "Trading_Edge_Unified_Master_Prompt.txt",
+      "bytes": 35235,
+      "sha256": "78f2ec1c6266d3b4b6a1b292148615e8b647ad001b446ceb73d2d90f399e3b32",
+      "git_blob_sha1": "2e34f282c6bc014c6d030486460d52e7299702e1"
+    },
+    {
+      "path": "scripts/README.md",
+      "bytes": 1061,
+      "sha256": "2130dc3697b9fbac1aeec3d2779ec83c13f36d0f5f44c3cf46ce657608691157",
+      "git_blob_sha1": "1021582324ea65bba6bc2bdf8424e812e9f0237e"
+    },
+    {
+      "path": "scripts/build_unified_prompt.py",
+      "bytes": 10031,
+      "sha256": "17a67dd91d6060310a0871646319dbfd319443ec1987d8d074b21aa0dee761b6",
+      "git_blob_sha1": "8f6eb8d5d448b52a04c7438b4a0be9e84cc1c655"
+    },
+    {
+      "path": "scripts/render_adaptive_addendum.py",
+      "bytes": 9255,
+      "sha256": "0eb44344b70ad5e5f098c5e2f1c7c04f08670241a7f4b4e518b147239ed4f555",
+      "git_blob_sha1": "83081fcbfebff50c56cec0a4ef1291fb9893c9d8"
+    },
+    {
+      "path": "scripts/render_research_study.py",
+      "bytes": 9249,
+      "sha256": "3cda8bada2fe08205ca94372234958b62b6dc4a7f83dcb76cc3c91a04cf2f635",
+      "git_blob_sha1": "53f3b876a9e95eef3e0a573d1ba8259f01c01491"
+    },
+    {
+      "path": "v1/Trading_Edge_Master_Prompt.txt",
+      "bytes": 19250,
+      "sha256": "a3750906d3e40defcc01b016488b08f1b53b575bf0544881e769ce99e34ea56f",
+      "git_blob_sha1": "d86eb28e8c8825d45947e132f44ae43372ec0faf"
+    },
+    {
+      "path": "v1/Trading_Edge_Research_Study.pdf",
+      "bytes": 264242,
+      "sha256": "fba2268a5abcbf6517957a0eb3f0fabb843e5dfe53ea85402ace2d628574e0a0",
+      "git_blob_sha1": "2b0fd51d59d3214d4de4eae042c12d11679139d8"
+    },
+    {
+      "path": "v1/evaluations/eval_bets.txt",
+      "bytes": 12940,
+      "sha256": "209a997ced87b717fc1f5e9d9e5f911fd4b9ee29de8275f3d1dc62e6e6c21aee",
+      "git_blob_sha1": "8f685da3fb7e7a4765fefb64974a614cb4a5759c"
+    },
+    {
+      "path": "v1/evaluations/eval_strategy.txt",
+      "bytes": 27142,
+      "sha256": "6b7da1ddf8a90616474957736e12b243d857ce42b0af663913d9170cb737f1e8",
+      "git_blob_sha1": "59d4c30871198957e1ab80e355294a565b0aa8eb"
+    },
+    {
+      "path": "v1/research/betting.md",
+      "bytes": 20662,
+      "sha256": "69f65d6c9bc10cea6c0f2364515528e7253d03e8d72b0fd1a03fb37cea7ff15e",
+      "git_blob_sha1": "91ea1bb7d45ae0cafec3b2bd82a739a538a2699e"
+    },
+    {
+      "path": "v1/research/information.md",
+      "bytes": 21335,
+      "sha256": "a5d394c3e0728ab3ca1471f23ec56eedd2a4335a192d3e440fb663a929d38864",
+      "git_blob_sha1": "c4effcc008957e2eb81d4810498eb3d957472bb9"
+    },
+    {
+      "path": "v1/research/report_opening.md",
+      "bytes": 9538,
+      "sha256": "e25ee57b7a0ac2ffbe3a1e323ca19fe33482a2fdee4993b01e081b232632b336",
+      "git_blob_sha1": "ebbd6d28a3eaa779554a58aa9a957d3d753a9729"
+    },
+    {
+      "path": "v1/research/risk.md",
+      "bytes": 19400,
+      "sha256": "0c74da9a91b5021a729076baac3413a19a796b80aa3f1e618a47c490b766a31e",
+      "git_blob_sha1": "615eae50ee3282bbd7ec19595e3ba8e3a4b22aa7"
+    },
+    {
+      "path": "v1/research/validation.md",
+      "bytes": 22840,
+      "sha256": "7c3856305de567e7d8d23654fde097e7b0860ff6dcdbfa05600fa6578470bc94",
+      "git_blob_sha1": "6a3ee1831b3ac52991bb39c2a9978ce7264f3220"
+    },
+    {
+      "path": "v1/skill/SKILL.md",
+      "bytes": 17008,
+      "sha256": "1fe4577f197621f246c017394ea683b3b2b1f855fc82695c602e1cc311332329",
+      "git_blob_sha1": "654ee8a9daa7569abdf53a4763699117ce8aa52f"
+    },
+    {
+      "path": "v1/skill/agents/openai.yaml",
+      "bytes": 432,
+      "sha256": "e1317aada63c6b376ebd509714c28aa08a4a168e97f93acf7fa4f7f6321b8008",
+      "git_blob_sha1": "7f4ad785fde498894c5f2065d9df279e01c90c0f"
+    },
+    {
+      "path": "v1/skill/assets/icon.svg",
+      "bytes": 420,
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
+      "git_blob_sha1": "2468028d1ed0fc8009b1fc45e7bb027adaf0d079"
+    },
+    {
+      "path": "v1/skill/references/foundations.md",
+      "bytes": 16344,
+      "sha256": "de9aa4a2d35f5e202fe9191fa943e7ddc34e75a14940291ddcb213399c6138ee",
+      "git_blob_sha1": "9157c7cacab5d093df683ccb97e5ce7d83683cb8"
+    },
+    {
+      "path": "v1/skill/references/mechanisms.md",
+      "bytes": 18468,
+      "sha256": "ebfeba403ee3bace067a3f58775364abd14294695c827a0ead4e3b043585f167",
+      "git_blob_sha1": "2285e6f5528b35f215ef517d7f7ca966659ff13e"
+    },
+    {
+      "path": "v1/skill/references/sources.md",
+      "bytes": 39751,
+      "sha256": "dda410ec483440c714fdbbd4ee61bff9c9dfae32e4a74d813bbbfbe23a65ef9e",
+      "git_blob_sha1": "7b3cd7fe7145ae10803fa3c9908a36ef2c5d6065"
+    },
+    {
+      "path": "v1/skill/references/validation.md",
+      "bytes": 13975,
+      "sha256": "acb4fbe620af4e719179cdf62a0a912d8e13113859bb339b32d1abab26736746",
+      "git_blob_sha1": "349943cf186b8a520d9c1af3e0cb0e7ca88bab62"
+    },
+    {
+      "path": "v1/validation.md",
+      "bytes": 2934,
+      "sha256": "782749093ca67e9d37ada0ac707a23d8e9558143499f9e8c5ba13589c53e88a1",
+      "git_blob_sha1": "6152ec3957b42579597a05564effc6812b2ef6ef"
+    },
+    {
+      "path": "v2/Trading_Edge_Adaptive_Addendum.pdf",
+      "bytes": 225556,
+      "sha256": "86433e7f6f313538c67a9ba717bda376d0133e471159259a3a5defd6419e2c0e",
+      "git_blob_sha1": "f6113589b39f78fd84baf128b35a551b38f8f033"
+    },
+    {
+      "path": "v2/Trading_Edge_Adaptive_Master_Prompt.txt",
+      "bytes": 15899,
+      "sha256": "0a6749eabfed2debe170ac21af11c87a0e96b21f20d594b6925e88ec92892ce5",
+      "git_blob_sha1": "094479fb9adf0394b9a90258e0977d33489b7479"
+    },
+    {
+      "path": "v2/audit-findings.md",
+      "bytes": 8125,
+      "sha256": "01a0f07bec8309f50a47a6a611c00ba53d644d23b549c286229da56e8d186772",
+      "git_blob_sha1": "f3ccd9ee03f1558d10e5e509e42297f99fb51978"
+    },
+    {
+      "path": "v2/evaluations/eval_adaptation.txt",
+      "bytes": 11731,
+      "sha256": "46993a9408f09795677ec295eaf4f3899071137aadf72f4bfc54671c82e9f670",
+      "git_blob_sha1": "7e98a8ce1bc15ed1336c3c4d204770971a500dc5"
+    },
+    {
+      "path": "v2/evaluations/eval_runtime.txt",
+      "bytes": 9193,
+      "sha256": "b83644426117fc325cbc5e654e5df835ce985522cbb8fb8ebae9953fc0b2578b",
+      "git_blob_sha1": "d5b697a7a3e2de73fdcad038a790d08a49458a1f"
+    },
+    {
+      "path": "v2/research/control.md",
+      "bytes": 23068,
+      "sha256": "a77f682331772a7a17c1b300a9b992d402c77c9d7f3d612af88c67a7cd3056c8",
+      "git_blob_sha1": "e3a471e9cd80f10b991fa5844305934b8e845b55"
+    },
+    {
+      "path": "v2/research/economic_audit.md",
+      "bytes": 20315,
+      "sha256": "ca8e12407d8d6fab5af4db1f3a21766a0a20cf98a1683c54c0698e82316b5ebf",
+      "git_blob_sha1": "a5e3c59a284f19f9eb47f5ea9b5375b95898fbfe"
+    },
+    {
+      "path": "v2/research/final_audit.txt",
+      "bytes": 4516,
+      "sha256": "13a5127a80117cf4a244c87a6c7c5c23ddc2918f81b1f56cdef99b51004a2210",
+      "git_blob_sha1": "591c955a260e21d053a56ee3e492bd8e40892a3b"
+    },
+    {
+      "path": "v2/research/learning.md",
+      "bytes": 21052,
+      "sha256": "3e29563ec6029c262c76c4f4fd0539ff9f84d42849946822da922365af8146ee",
+      "git_blob_sha1": "e0de4357a6dccbe538cd10cc20de5bdcc9b98e6b"
+    },
+    {
+      "path": "v2/research/systems.md",
+      "bytes": 23583,
+      "sha256": "91cbad067bc06fae43f7f254c270ce2be9bd363b5ee0a764fb454397d46f444b",
+      "git_blob_sha1": "3b6a0f305e75dbdfef6d7214b3b340c4125027f9"
+    },
+    {
+      "path": "v2/skill/SKILL.md",
+      "bytes": 20354,
+      "sha256": "a40b3214c18d974aeb960470e64c8d7dc838706f813b40ab23b6147657a91b2f",
+      "git_blob_sha1": "fb7ee5f2aed43c543a898ed9a01e12acda98cc54"
+    },
+    {
+      "path": "v2/skill/agents/openai.yaml",
+      "bytes": 433,
+      "sha256": "2b7281346da7aef60abf2b59a7267dedf279c7c4ad7d5a948e2a8bc7f0027be8",
+      "git_blob_sha1": "b6712e9eb41c3ea74f8f32e787cf6e022fda381c"
+    },
+    {
+      "path": "v2/skill/assets/icon.svg",
+      "bytes": 420,
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
+      "git_blob_sha1": "2468028d1ed0fc8009b1fc45e7bb027adaf0d079"
+    },
+    {
+      "path": "v2/skill/references/adaptive-control.md",
+      "bytes": 21699,
+      "sha256": "ad44a6536d5a26411b76c3c3d32d15e4e4425501eaa7abf3df782141e687cacf",
+      "git_blob_sha1": "214896743d671ce58623036d6b395eac2261e6a0"
+    },
+    {
+      "path": "v2/skill/references/adaptive-learning.md",
+      "bytes": 13530,
+      "sha256": "0215266f705a6b77d1d9244b55daee3cf4c60a4fdb5fd987e119332001bb9bc6",
+      "git_blob_sha1": "88dc6b15c889c88b36fba1eb04a0687719e641e8"
+    },
+    {
+      "path": "v2/skill/references/adaptive-sources.md",
+      "bytes": 20213,
+      "sha256": "5753a1d6c871f31f4e0c918d26fe0c7445cf6f8bc32c28f79f0b8543f4ef6d6b",
+      "git_blob_sha1": "66054a474c8ec86cabc7dbc18905cd5f833a2260"
+    },
+    {
+      "path": "v2/skill/references/desk-runtime.md",
+      "bytes": 12447,
+      "sha256": "dd4eedcdb601852f37bcbb92161975f4a4417200e769266fe1a56bc3bd618913",
+      "git_blob_sha1": "004481fc99a3cc76c509cb74bdbde19d79c9f213"
+    },
+    {
+      "path": "v2/skill/references/foundations.md",
+      "bytes": 16344,
+      "sha256": "de9aa4a2d35f5e202fe9191fa943e7ddc34e75a14940291ddcb213399c6138ee",
+      "git_blob_sha1": "9157c7cacab5d093df683ccb97e5ce7d83683cb8"
+    },
+    {
+      "path": "v2/skill/references/mechanisms.md",
+      "bytes": 18468,
+      "sha256": "ebfeba403ee3bace067a3f58775364abd14294695c827a0ead4e3b043585f167",
+      "git_blob_sha1": "2285e6f5528b35f215ef517d7f7ca966659ff13e"
+    },
+    {
+      "path": "v2/skill/references/sources.md",
+      "bytes": 39751,
+      "sha256": "dda410ec483440c714fdbbd4ee61bff9c9dfae32e4a74d813bbbfbe23a65ef9e",
+      "git_blob_sha1": "7b3cd7fe7145ae10803fa3c9908a36ef2c5d6065"
+    },
+    {
+      "path": "v2/skill/references/validation.md",
+      "bytes": 13975,
+      "sha256": "acb4fbe620af4e719179cdf62a0a912d8e13113859bb339b32d1abab26736746",
+      "git_blob_sha1": "349943cf186b8a520d9c1af3e0cb0e7ca88bab62"
+    },
+    {
+      "path": "v2/skill/scripts/adaptive_arbiter.py",
+      "bytes": 23146,
+      "sha256": "6e5ef54b2cf7545c0b5a9d6d3e501d0a7a67f41e0e4a99b51fc9c978a6a2481c",
+      "git_blob_sha1": "85dd1411afea637770deddb8f323a163090fc081"
+    },
+    {
+      "path": "v2/skill/scripts/test_adaptive_arbiter.py",
+      "bytes": 15449,
+      "sha256": "c41e1f523845a34bb76de0a236d315f2613436cfeeecac0167710317d178bf2f",
+      "git_blob_sha1": "638a2616076033602d4891ae96844582f080d97c"
+    },
+    {
+      "path": "v2/validation.md",
+      "bytes": 3461,
+      "sha256": "3ccad4602126849458b00de07e68f7cb70ac57d8545298802f45a44cef27e209",
+      "git_blob_sha1": "23fdfc6c847c78e4453a5fa2ab3e1360bab875b9"
+    }
+  ]
+}
