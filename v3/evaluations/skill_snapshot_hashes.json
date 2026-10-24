@@ -1,0 +1,19 @@
+{
+  "SKILL.md": "7303d8b456813bcfac4c5457b30d60be190a4c4dd23f03598e54433b63104c58",
+  "agents/openai.yaml": "2b7281346da7aef60abf2b59a7267dedf279c7c4ad7d5a948e2a8bc7f0027be8",
+  "assets/icon.svg": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
+  "references/adaptive-control.md": "ad44a6536d5a26411b76c3c3d32d15e4e4425501eaa7abf3df782141e687cacf",
+  "references/adaptive-learning.md": "0215266f705a6b77d1d9244b55daee3cf4c60a4fdb5fd987e119332001bb9bc6",
+  "references/adaptive-sources.md": "5753a1d6c871f31f4e0c918d26fe0c7445cf6f8bc32c28f79f0b8543f4ef6d6b",
+  "references/desk-runtime.md": "dd4eedcdb601852f37bcbb92161975f4a4417200e769266fe1a56bc3bd618913",
+  "references/edge-protocol.md": "cb5169223448e19d3d5696276d7ab6a0d5f735dcee1143f70ba560f2f16b3596",
+  "references/foundations.md": "de9aa4a2d35f5e202fe9191fa943e7ddc34e75a14940291ddcb213399c6138ee",
+  "references/frontier-sources.md": "a10c73acfd0bb4d1360d5ba392249498f3fe49ef5e58bfe61b9fcf6d9c3c30ea",
+  "references/mechanisms.md": "ebfeba403ee3bace067a3f58775364abd14294695c827a0ead4e3b043585f167",
+  "references/sources.md": "dda410ec483440c714fdbbd4ee61bff9c9dfae32e4a74d813bbbfbe23a65ef9e",
+  "references/validation.md": "acb4fbe620af4e719179cdf62a0a912d8e13113859bb339b32d1abab26736746",
+  "scripts/adaptive_arbiter.py": "6e5ef54b2cf7545c0b5a9d6d3e501d0a7a67f41e0e4a99b51fc9c978a6a2481c",
+  "scripts/edge_mechanics.py": "1c8b5bcee68b7c8826642b18397e80597547cccf4e129f72d7ec194f7c62f32d",
+  "scripts/test_adaptive_arbiter.py": "c41e1f523845a34bb76de0a236d315f2613436cfeeecac0167710317d178bf2f",
+  "scripts/test_edge_mechanics.py": "fa500304958a1a84256137238310623ff80cbd1fae7a0b2faf1c6166acc316a7"
+}

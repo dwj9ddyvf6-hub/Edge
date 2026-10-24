@@ -1,0 +1,37 @@
+{
+  "source": "/root/.codex/skills/remote-skills/skill-6adbf874c518819199faa0d9b89784f2/scripts/edge_mechanics.py",
+  "sha256": "1c8b5bcee68b7c8826642b18397e80597547cccf4e129f72d7ec194f7c62f32d",
+  "seed": 1871,
+  "cases": 1200,
+  "decimal_precision": 80,
+  "error_metric": "abs(actual-expected)/max(1,abs(expected))",
+  "threshold": 1e-10,
+  "maximum_random_case_error": 5.650840876178716e-14,
+  "random_case_violations": [],
+  "correlated_boundary_cases": [
+    {
+      "wealth_and_liability_amount": 1000000.0,
+      "actual": 0.6931471805389408,
+      "expected": 0.6931471805599453,
+      "absolute_error": 2.1004531447488262e-11
+    },
+    {
+      "wealth_and_liability_amount": 100000000.0,
+      "actual": 0.6931471796076182,
+      "expected": 0.6931471805599453,
+      "absolute_error": 9.523271060629668e-10
+    },
+    {
+      "wealth_and_liability_amount": 1000000000000.0,
+      "actual": 0.6931631537799878,
+      "expected": 0.6931471805599453,
+      "absolute_error": 1.5973220042542202e-05
+    },
+    {
+      "wealth_and_liability_amount": 1e+16,
+      "actual": 1.0986122886681096,
+      "expected": 0.6931471805599453,
+      "absolute_error": 0.4054651081081643
+    }
+  ]
+}

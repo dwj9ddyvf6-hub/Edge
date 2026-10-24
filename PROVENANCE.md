@@ -18,3 +18,12 @@ The v1 skill snapshot derives from saved commit `92c33bbf39c1a6c48aa6442ba18c700
 `manifest.json` records repository-relative paths, byte sizes, SHA-256 hashes and Git blob SHA-1 hashes for every packaged file except the manifest itself. Publication verification separately checks the manifest's Git blob hash and the destination branch head.
 
 Sources are linked and annotated in the source registers. The repository contains authored synthesis and code, not a redistribution of the complete third-party paper collection.
+
+
+## Version 3 — 24 October 2026
+
+The third pass adds explicit information-value and risk-reservation procedures, constructive economic transformations, contract-state checks, 26 additional research projects, a finite-model mechanics companion and a recorded exploratory behavior comparison. The root unified prompt is version 3.0; the prior complete prompt is preserved at `v2/Trading_Edge_Unified_Master_Prompt_v2.1.txt`.
+
+The installed skill was saved by push at commit `d322ce6c963171f07924a55a9ff29634ccc8fb88`. The core used in the behavior comparison is identical to the saved core. A numerical precision repair changed the mechanics code and its tests after the evaluation snapshot; `v3/validation.md` records the boundary. The exact pre-repair test context is intentionally retained under `v3/evaluations/skill_under_test/`; use `v3/skill/` for the current implementation.
+
+All earlier study and historical skill files are retained. Root documentation, the current unified prompt, build guide and prompt builder are updated. The source memos give exact versions and access limits. Transient transfer helpers and render caches remain excluded.

@@ -1,0 +1,14 @@
+interface:
+  display_name: Trading Edge Lab
+  short_description: Create, test, and adapt strategies with economic edge
+  default_prompt: Use $engineer-trading-edge to audit this strategy, identify its
+    economic edge, and design a lean adaptive controller with decisive tests.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
