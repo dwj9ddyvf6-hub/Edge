@@ -1,5 +1,5 @@
 TRADING EDGE LAB — UNIFIED MASTER PROMPT
-Version 2.1 | Original edge framework + adaptive-control addendum | 24 October 2026 UTC
+Version 3.0 | Economic edge + adaptive control + explicit information, risk and invention procedures | 24 October 2026 America/New_York
 
 USAGE
 Paste everything between BEGIN PROMPT and END PROMPT into the LLM, then append your strategy, desk, sleeve, research objective or available evidence. This is one complete prompt: no separate addendum, installed skill or companion report is required. Use it as a user instruction or in a permitted agent instruction layer; it does not override higher-priority instructions.
@@ -106,7 +106,110 @@ Generate inventive hypotheses with these questions:
 
 Label new combinations as research hypotheses. Novel synthesis is not proof of literature novelty or profitability.
 
-## 7. Represent what the desk knows
+## 7. What this procedure must demonstrate
+
+Keep four levels separate: **instructions are present; behavior is observed; an economic advantage is identified; the advantage is captured in a deployable policy**. Apply these instructions by producing their required decisions and calculations. A correct instruction does not prove adherence. A correct hypothetical answer does not establish a tradable edge. A prompt conditions an LLM through supplied context; saving it does not retrain the model's parameters.
+
+For a proposed strategy, produce a compact decision record:
+
+- **Transfer:** who wants information, immediacy, insurance, funding, inventory or a different payoff; what observable constraint or belief difference creates the demand.
+- **Comparison:** whose feasible decision or executable quote is the baseline, at what time, size, horizon and cost.
+- **Mechanism:** information, paid risk/service, access/constraint, or an unresolved empirical pattern; identify interactions rather than adding overlapping labels as separate profit terms.
+- **Calculation:** an estimand or actual scenario calculation that connects the advantage to a net payoff or portfolio utility change.
+- **Experiment:** data availability, a feasible comparator, a rival explanation, a falsifier and the next action that can change the decision.
+
+Do not require certainty before researching a candidate. When measurements are missing, deliver a concrete hypothesis and experiment, keeping its evidence status explicit. Creative generation and adversarial rejection are separate steps; neither should extinguish the other.
+
+## 8. Information advantage conditional on the market
+
+Define Z as public information and the contemporaneous executable market state, S as the proposed extra signal, Y as the contract outcome, and A as the feasible actions. Compare a price-aware baseline using Z with the same model family augmented by S. Match capacity, costs, fitting budget and chronology. Test incremental decision value, not merely raw correlation with Y. A quote is an informative feature and trading constraint; it is not automatically the physical probability of Y.
+
+Write the Bayesian update conditionally:
+
+\[
+\frac{P(Y=1\mid Z,S)}{P(Y=0\mid Z,S)}=
+\frac{P(Y=1\mid Z)}{P(Y=0\mid Z)}
+\frac{P(S\mid Y=1,Z)}{P(S\mid Y=0,Z)}.
+\]
+
+Do not insert a raw unconditional likelihood ratio after price has already incorporated that evidence. Estimate or explicitly assume the conditional terms. Record which observations share an upstream source, and retain uncertain lineage rather than declaring independence. Conditional independence of Y and S given Z rules out extra information about Y in that specified model; it does not rule out value for predicting fills, costs or a different horizon.
+
+For a finite experiment with joint probabilities J(s,y), state probabilities p(y)=sum_s J(s,y), and fixed net action utilities u(a,y), compute:
+
+\[
+V_0=\max_a\sum_y p(y)u(a,y),\qquad
+V_S=\sum_s\max_a\sum_y J(s,y)u(a,y).
+\]
+
+The inner sums are unnormalized; zero-probability signals contribute zero. Free optional information with the identical action menu cannot reduce the exact optimum. Acquisition cost, latency, altered prices, mandatory disclosure, or changed feasible actions break that simplified comparison and must enter the actual decision model. Forecast score improvement alone is insufficient.
+
+Test the information unit that the economic mechanism requires. Two individually useless observations can be jointly useful: if independent fair bits X1 and X2 determine Y=X1 XOR X2, neither bit alone forecasts Y, while the pair does. Conversely, ten summaries of one disclosure do not supply ten experiments. Preserve structured evidence and complementary raw features through agent handoffs; averaging final answers can destroy information that only a joint model can use. Do not infer synergy from a searched profitable interaction without prospective confirmation.
+
+Use economic decision regions to evaluate calibration: buy, sell, hold, route, size, and quote-age regions defined without their future outcomes. Maintain broad proper-score and calibration checks too; selectively choosing regions after seeing results creates another research search. Evaluate forecast error, net policy regret relative to feasible comparators, and actual executable returns as distinct quantities.
+
+## 9. Price the warehouse for this portfolio
+
+Replace 'I can tolerate volatility' with a reservation-price problem. Specify the liability L, existing state-dependent endowment W, allowed hedges, funding path, objective U, and the numeraire/timing of premium pi. With a fixed hedge set and terminal cash units, the minimum acceptable seller premium satisfies:
+
+\[
+E[U(W+\pi-L)]\ge E[U(W)].
+\]
+
+For exponential utility U(w)=-exp(-gamma*w), gamma>0, and finite supplied scenarios, the equality gives:
+
+\[
+\pi_{\mathrm{sell}}=
+\frac{\log E[e^{-\gamma(W-L)}]-\log E[e^{-\gamma W}]}{\gamma}.
+\]
+
+This depends on the joint distribution of W and L, not only the liability's variance. Gamma and probabilities are inputs, not facts to invent. Constant absolute risk aversion is a useful transparent illustration, not a universal desk objective. Reoptimizing hedges requires solving both the incumbent and candidate with the same hedge rights; otherwise the comparison confounds the liability with extra opportunities.
+
+For small liability size q, the marginal price under differentiable expected utility is E[U'(W)L]/E[U'(W)] when the premium is a constant terminal cash addition. Losses when marginal capital is valuable require more compensation. This is a portfolio-specific marginal valuation, not automatically the market's unique pricing kernel.
+
+Compute terminal utility and path feasibility separately. A utility-acceptable liability can fail because of interim margin, trapped collateral, a borrow recall or forced liquidation. Price at executable size: model what happens to premium, hedge liquidity, capital occupation and payer demand as the position grows. Better stress capacity can be an advantage, but no amount of confidence supplies missing cash.
+
+Identify the opposing party's reservation value where evidence permits. A trade can benefit both parties because their endowments, obligations, information or feasible actions differ. Do not assume every payer is uninformed. Test substitution: a different intermediary, auction design or hedge instrument can remove the premium even while the original demand grows.
+
+## 10. Construct an opportunity instead of decorating a signal
+
+For CREATE or a broad improvement request, generate a small diverse candidate set before ranking. Include an information candidate, a risk/service candidate and a constraint or contract candidate when the available mandate permits. Include one unconventional alternative to the user's initial explanation. These are competing research hypotheses, not simultaneous live deployments.
+
+Use these transformation operators:
+
+| Change one element | Constructive question | Required discriminator |
+| --- | --- | --- |
+| Information partition | Does joint evidence resolve a state that individual summaries conceal? | Incremental value beyond price-aware baseline; redundant-source and permutation controls |
+| Counterparty constraint | Who must act at a known time, and who can now substitute for us? | Flow conditional on the constraint, versus contemporaneous news and competing capital |
+| Portfolio endowment | Is a burden expensive for the payer and cheaper for this portfolio? | Joint-state reservation value plus funding path, compared with simply reducing exposure |
+| Contract representation | Do exact settlement relationships reveal a cheaper attainable payoff? | Independently audited feasible-state table, executable legs and completion path |
+| Action or timing | Can waiting, routing or changing size preserve more of an existing advantage? | Same-signal matched policy comparison including missed fills and decay |
+| Scale or service | Is a small opportunity unattractive to larger competitors but valuable here? | Net surplus versus deployed size and fixed operating cost; no linear scale extrapolation |
+
+For every surviving candidate write observable input -> expected market consequence -> executable action -> complete payoff -> falsifier. Name the data acquisition step, first calculation and cheapest decisive experiment. State why this desk could capture the opportunity and the reason competitors might not. 'Complex', 'alternative data', 'AI' and 'contrarian' are descriptions, not explanations of persistence.
+
+Rank candidates separately by potential economic value and value of the next experiment. A bold low-evidence idea can merit inexpensive research; it does not thereby merit a position. Avoid a universal numerical novelty score. Novel combinations are proposed synthesis unless a literature search supports a stronger novelty claim.
+
+## 11. Compile contract relationships conservatively
+
+Represent exact payout rules before reasoning about headline correlations. Preserve the measurement source, time zone, cutoff, strict/inclusive threshold, revision policy, void state, settlement currency and payment timing. An LLM may propose a relationship; admission to the feasible-state model requires independently checked contractual evidence.
+
+Enumerate or constrain all admissible settlement states. An incorrect restriction can manufacture a guarantee by removing a losing state. A conservative superset of states can miss a real opportunity but avoids that particular false guarantee, provided costs and execution are also conservative. Keep unknown relationships unknown.
+
+For supplied state payoffs X and signed holdings h, inspect every modeled terminal payoff Xh and the actual bid/ask/depth-dependent acquisition cost. Distinguish strictly positive profit in every modeled state from standard arbitrage: nonpositive initial net cost, nonnegative terminal net payoff almost surely and a positive benefit with positive probability, with financeable obligations. A convex-hull test for strong sure profit under unrestricted single-price trading is not a universal no-arbitrage certificate. A zero-priced binary payoff can lie on the hull boundary while offering nonnegative payoff and positive benefit in a possible state.
+
+Searching only a subset of adverse states gives an optimistic bound on a maximin guarantee. Require a valid worst-case oracle or certified lower bound for the proposed portfolio across the complete admissible model; a feasible iterate, timeout or missing state is not proof.
+
+Treat a payoff certificate as conditional on its state and contract model. Verify feasible shorting, fees, funding, counterparty performance and leg completion separately. Passing a supplied-state numerical check neither validates semantics nor establishes a live executable trade.
+
+## 12. Make the LLM's contribution observable
+
+Require the model to produce the decision record and calculation, not merely repeat the two categories. Use deterministic calculation for finite examples and a trace from each claimed edge to data or an explicit assumption. Separate a schema-complete answer from a factually or economically correct answer.
+
+Evaluate on fresh tasks with a frozen rubric and no access to intended answers. Include arithmetic, wrong-state risk, redundant information, missing joint information, false contract relationships, identification failures, and constructive invention. Compare matched tasks with and without the new instructions when feasible. Retain all outputs and failures; report counts, model/context setup and evaluator limits. Small qualitative comparisons are diagnostic, not causal proof of general improvement or trading performance.
+
+Use metamorphic checks where appropriate: changing dollars to cents should preserve the economic decision after every unit is converted; permuting state order should preserve value; relabeling the same source should not multiply evidence; moving a liability into the portfolio's bad state should change its reservation value; adding an admissible losing state should invalidate a supposed guarantee. Conditions and objectives must remain consistent in each transformation.
+
+## 13. Represent what the desk knows
 
 Maintain separate states:
 - Information: as-of facts, lineage, revisions, publication/receipt/feature-ready times, missingness and clock uncertainty.
@@ -122,13 +225,13 @@ Use filtered latent-state probabilities from information available at the decisi
 
 Account for action-dependent transitions and observations: our impact, inventory and fills can change future opportunities and what we learn. A filtering equation does not supply known likelihoods. Stability across environments is a useful falsification test; causal identification still requires structural assumptions.
 
-## 8. Define the feasible action menu
+## 14. Define the feasible action menu
 
 Include the incumbent continuation, no new entry, waiting, approved size/route changes, reduction, hedging and useful information gathering. Holding is not flat; waiting must account for lost quotes, competition and continued inventory risk. Risk recovery has its own approved authority and preconditions. No daily trade quota may silently lower the evidence or risk threshold.
 
 Keep the menu small and preapproved. Evaluate whole-portfolio consequences including pending orders and shared collateral. Feasible sleeve actions considered independently can be infeasible together. Preserve state-dependent cash, margin, liquidation, settlement and path constraints, not only terminal P&L.
 
-## 9. Score complete net outcomes against the incumbent
+## 15. Score complete net outcomes against the incumbent
 
 Use infimum for a general distribution set and minimum when attained. Let W^a be the desk's wealth path under candidate a, W^0 under the feasible incumbent, U the declared utility, I current information and Pset a documented common set of plausible distributions. Use the same initial wealth, terminal date, opportunity population and continuation rights. Charge fees, spreads, impact, financing, holding/exit costs, partial/nonfills and relevant failures exactly once. A fill-conditioned payoff already incorporating adverse selection must not incur it a second time.
 
@@ -142,7 +245,7 @@ An ambiguity minimum is not a frequentist confidence bound. A Bayesian interval,
 
 Use a joint optimizer or atomic reservations for scarce capital. Local shadow prices can describe the marginal value of relaxing a constraint in a specified regular optimization model; they are not additional broker fees. Do not charge displaced-opportunity cost twice through both a continuation value and an added capital penalty. Compare adding a sleeve with peers fixed and with peers reoptimized separately; nonlinear portfolio contributions need not add up.
 
-## 10. Allocate computation by decision value
+## 16. Allocate computation by decision value
 
 First compute the cheapest admissible baseline. Ask which remaining uncertainty could change a consequential feasible action. High entropy alone is not a reason for deeper research. A probability interval entirely below executable break-even may already imply abstention.
 
@@ -152,7 +255,7 @@ Refine only when expected decision improvement warrants cost and conservative co
 
 Never skip mandatory data, contract or risk checks. Keep LLM research and policy proposals outside hard execution deadlines. A timeout returns a currently valid approved fallback, not an expired target.
 
-## 11. Separate execution, belief updates and policy changes
+## 17. Separate execution, belief updates and policy changes
 
 Execution: respond to eligible events, reconcile and choose approved actions.
 Belief: update forecasts/costs/weights using a frozen tested learning rule.
@@ -164,7 +267,7 @@ Where future inventory and costs matter, use a short planning horizon and execut
 
 Use transaction-cost/no-change regions or tested hysteresis to prevent churn, while allowing hard-risk contingencies to override ordinary dwell timers. For differentiable concave F, the simple objective F(x+delta)-k*abs(delta) has no-change optimum when abs(F'(x))<=k without other constraints. This illustration is not a universal execution rule.
 
-## 12. Design adversarial validation
+## 18. Design adversarial validation
 
 Freeze hypothesis, objective, universe, data version, execution policy, parameters, search budget, benchmark, and evaluation dates before the decisive test. Log unsuccessful variants and human/LLM searches. A holdout used for decisions becomes development data.
 
@@ -182,7 +285,7 @@ Advance through evidence stages: HYPOTHESIS -> RETROSPECTIVE SUPPORT -> OUT-OF-S
 
 Compare the frozen policy, a simple periodic-refit policy and the proposed adaptive policy on the same as-of opportunities. Charge false alarms, switching, missed fills, computation and maintenance. Evaluate the adaptation rules themselves, not just the final fitted model.
 
-## 13. Learn only what the data identify
+## 19. Learn only what the data identify
 
 Separate common-outcome forecast evaluation, supported one-step routing evaluation, historical simulation and stateful trajectory control. Shadow orders do not establish real fills or impact. Deterministic routing cannot identify unchosen routes through importance weighting when their selection probability was zero.
 
@@ -195,7 +298,7 @@ Log every eligible decision, alternatives, abstention, propensity where applicab
 
 Do not replace actual assignment probabilities with empirical action frequencies when routing was deterministic. Weight clipping introduces bias; effective sample size is a diagnostic, not a validity certificate. Unresolved outcomes are neither zero nor absent. Preserve the planned reward horizon, distinguish it from trade closing time, compare mature cohorts and track pending exposure separately.
 
-## 14. Make sequential evidence explicit
+## 20. Make sequential evidence explicit
 
 Give each monitor an estimand, null, units, hurdle, full information history, conditional dependence/tail assumptions, maturity rules, error budget, restart policy and allowed consequence. Distinguish a historical cumulative average from current edge. A signal crossing once does not establish future profitability.
 
@@ -205,13 +308,13 @@ Validity must hold for the information the actual stopping controller sees. Coar
 
 Allocate prospective error across candidates, detectors and resets. For example alpha_(j,r)=alpha_total*w_j/[r(r+1)], r>=1 and sum w_j<=1, controls the union of individually valid false rejections. It cannot repair invalid tests or erase prior searches. Use a suitable target-specific confidence sequence when that is the intended question.
 
-## 15. Diagnose before retraining
+## 21. Diagnose before retraining
 
 Separate data failure, opportunity-mix shift, conditional forecasting decline, execution deterioration, changed risk compensation, informative censoring and the desk's own impact. Stable forecast scores with worse filled markouts call first for execution/selection analysis. A long positive historical average can coexist with a recent structural change. Stable model parameters are not proof of good deployed outcomes.
 
 Test memory length and review speed as part of the policy. Faster forgetting increases noise. Low regret against losing arms is not positive profit. Conservative-bandit expected-reward guarantees are not realized drawdown or collateral guarantees. Use predeclared continue/reduce/pause/investigate/retire responses and candidate-specific promotion evidence.
 
-## 16. Execute through a recoverable contract
+## 22. Execute through a recoverable contract
 
 Use an event journal, deterministic state reducer, shared reservation authority and lifecycle manager. Preserve revisions and original decision snapshots. Bind cache entries to source/code/model versions. A watermark does not prove full information arrival, and deterministic event order does not prove physical lead-lag.
 
@@ -225,19 +328,21 @@ Acceptance tests must cover late/revised data, stale caches, a crash after broke
 
 Use LLMs to research, extract structured evidence, propose experiments, and explain attribution. Verify extracted facts and timestamps. Gate policy changes through reproducible replay and evaluation; a persuasive narrative must not silently change live policy. Keep hard execution deadlines independent of LLM latency.
 
-## 17. Run the master algorithm
+## 23. Run the master algorithm
+
+On a research request: preserve the incumbent and mandate; identify the information increment or paid burden; generate a small diverse set of economic transformations; calculate conditional information value, portfolio reservation value or state-payoff restrictions as appropriate; model executable capture and funding; choose the next decisive experiment; admit only validated and approved candidates to the execution policy.
 
 Configure economic contracts, baseline, action menu, update rules, data contracts, budgets, limits, deadlines, evidence gates and contingencies.
 On event: ingest and deduplicate; reconcile; route hard faults to contingency and return from alpha path; update filtered beliefs; build feasible menu; score full net outcomes; refine only for useful computation; select a supported action clearing the declared gate; atomically revalidate/reserve/log; execute only if authorized through the lifecycle; reconcile and journal.
 If no candidate passes, retain the feasible incumbent and record rejection reasons; if the incumbent is infeasible, use the separate recovery policy. If atomic revalidation detects a changed snapshot, policy, limit or reservation version, recompute within the deadline or use a currently valid approved fallback; never commit the stale decision.
 On outcome maturity: attach outcomes to original versions; evaluate forecasts and complete policies; update valid monitors; diagnose the layer that changed; follow the approved response; propose a small challenger; test it chronologically against feasible frozen alternatives; promote only through the next authorized evidence stage.
 
-## 18. Deliver one decision and implementation contract
+## 24. Deliver one decision and implementation contract
 
 Return the following, proportionate to the task. Produce one integrated answer and preserve explicit unknowns.
 
 1. Verdict: supported, promising but unproven, unsupported or rejected; evidence stage, uncertainty and completed versus unrun work.
-2. Edge contract: payer/service or belief wedge, our measurable advantage, persistence, bad state, strongest rival and falsifier.
+2. Edge contract and decision record: payer/service or belief wedge, our measurable advantage, persistence, bad state, strongest rival and falsifier; explicit transfer, comparator, calculation and experiment.
 3. Binding bottleneck and improvement priority: forecast, selection, timing, execution, sizing, portfolio interaction, data or operations; expected incremental benefit, evidence, effort and fragility. Include the simplest adequate version.
 4. Exact policy specification: as-of inputs, state representation, entry/exit/no-new-entry logic, feasible actions, update rules, timing authority, execution and sizing constraints, deadlines and contingencies. Distinguish measured values from placeholders.
 5. Quantitative economics: executable break-even, full cost/risk decomposition, paired portfolio effect, sensitivity and capacity. Label illustrations and unsupported estimates.
@@ -249,7 +354,7 @@ Measure claimed intelligence through forecast and decision quality, awareness th
 
 End with the highest-value next action. Do not turn “unproven” into a dead end: identify what establishes or refutes the claim, collect accessible evidence and execute authorized research.
 
-## 19. Check the reasoning before finalizing
+## 25. Check the reasoning before finalizing
 
 Use these hypothetical examples as reasoning checks, not market estimates:
 
