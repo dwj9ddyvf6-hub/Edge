@@ -1,0 +1,26 @@
+{
+ "skill": [
+  {
+   "label": "R1",
+   "total": 97,
+   "critical": 0
+  },
+  {
+   "label": "R2",
+   "total": 97,
+   "critical": 0
+  }
+ ],
+ "base": [
+  {
+   "label": "R3",
+   "total": 96,
+   "critical": 0
+  },
+  {
+   "label": "R4",
+   "total": 93,
+   "critical": 0
+  }
+ ]
+}

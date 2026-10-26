@@ -1,0 +1,286 @@
+{
+"R1": {
+"E01": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Signed +0.1% at t 0.3: standard error ≈ 0.33%, 95% interval −0.55% to +0.75% per ten days; detectable effect ≈ +0.9% at 80% power.",
+"Use: scale exposure by about 5.0/9.0 ≈ 0.56 in top-decile periods to hold risk constant; set stops in volatility units; buy option movement only where implied volatility is below the gauge's forecast (rule 9).",
+"Next test: walk-forward, non-overlapping: next-ten-day realized volatility on the gauge plus a HAR baseline (1-, 7-, 30-day).",
+"Use: scale exposure by about 5.0/9.0 ≈ 0.56 in top-decile periods to hold risk constant; set stops in volatility units; buy option movement only where implied volatility is below the gauge's forecast (rule 9).",
+"Sizing: no increment over HAR means drop it and save the fee."]},
+"E02": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Decision: do not add it; keep the volatility veto frozen.",
+"Rank correlation 0.74 with 60-day volatility puts about 55% (0.74²) of the score's rank variance in the volatility the veto already uses (rule 4, C04).",
+"Money is the decision metric (rule 6): the veto's gain went from +0.31% to +0.30% a month, −0.01 points (−3%).",
+"Then rerun the walk-forward veto under a rule registered before the fit: adopt only if money gain rises at least 10% (≥ +0.03% a month), paired t ≥ 2 across folds, net of costs.",
+"Would change it: that rule passing, or the residual earning money where the veto is blind (low-volatility distressed names) or on another decision, such as position size."]},
+"E03": {"items": [3, 2, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"Limit: 0.28 × 2.4% + 0.72 × 0 = +0.672% a signal (112 fills × 2.4 = 268.8 points over 400 signals).",
+"The 72% that never fill are the winners (+4.0%).",
+"Would change it: a limit policy beating market entry per opportunity, paired t ≥ 2 over at least 200 forward signals net of costs; or proof that capital binds and return per capital-day is higher.",
+"Ledger: the per-fill gain is selection by the fill, not information (rule 16, C16)."]},
+"E04": {"items": [3, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Expected best of 4.2 million skill-less trials at the observed spread: 0.45 × 5.14 = Sharpe 2.31.",
+"DSR reaches 0.95 only if the combinations count as fewer than about 33,000 independent trials.",
+"About 10 bps of cost per day of full turnover removes the edge; each bp a day costs 0.25 Sharpe.",
+"Skew −1 and kurtosis 6 widen the Sharpe's error by √1.197 = 1.094: t ≈ 5.8.",
+"Kill rule: drop if re-priced net Sharpe ≤ 0, or forward net Sharpe ≤ 0 after 126 sessions (about 5% likely if the claim were true)."]},
+"E05": {"items": [2, 2, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"One parameter-free rule owes no deflation for its own search.",
+"Decision: raise to 2%, stepping through 1% while costs at size are measured, with a kill rule fixed now.",
+"Before raising (next test): (1) costs and impact at 2% from the depth at past decision times, since +0.31% is net at 0.5%; (2) leave-two-out: does t survive dropping the two best trades; (3) the book's other long-index exposure on decision days (co-loss).",
+"Kill rule: back to 0.5% if the 24 decisions after the raise average ≤ 0 net (3% likely if the true mean is +0.31%)."]},
+"E06": {"items": [2, 2, 2, 2, 2], "penalty": 0, "critical": false, "quotes": [
+"Who pays, and why: index trackers' investors: the mandate pushes 9% of each entrant's free float through one known close at any price; deviating costs tracking error, so they accept a worse print, spread thin across their assets.",
+"We supply immediacy and inventory (warehousing); $20M fits capacity large funds ignore.",
+"Size and cost [D, A]: demand = 0.09 × free-float value: at an assumed $300M float [A], $27M, nine days of the $3M volume in one auction.",
+"Cheapest decisive test: event study of every past Kestrel change, point-in-time membership: abnormal return from the first open after announcement to the effective close and over the next ten sessions, net of 25 bps and size-scaled impact, clustered by rebalance date, split by era, plus pre-announcement drift (front-running).",
+"Kill rule: drop if mean net capture per name ≤ 0, or positive only before the last eight rebalances; live, retire if the first eight live rebalances average ≤ 0 net."]},
+"E07": {"items": [2, 2, 2, 1, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"Who pays, and why: farm cooperatives pay above expected payout to shed drought risk; a thin new venue is too small for reinsurers (access).",
+"Drought is plausibly unrelated to global equities [H], so it costs this book less than it costs the cooperatives, whose income falls with it.",
+"Loss per contract ≤ 1 − bid; droughts persist, so cap payouts over any three months at 2% of the book, $100k [A].",
+"What makes it lose: a multi-month drought; a drying climate the history understates; informed buyers who see soil moisture and forecasts; contract semantics (station outage, revisions, threshold inclusivity); venue failure or margin calls; no exit at wide quotes.",
+"Cheapest decisive test: before any trade, price each listed contract against the station history: loading (bid − fees)/p̂ with its interval by month, a trend check (last ten years against the first twenty), and payouts after heavy cooperative buying.",
+"Kill rule: never sell where bid − fees is below the upper 95% bound of p; live, stop and re-estimate if 24-month payouts exceed the model's 95% upper count, or settlement or margin rules fail audit."]},
+"E08": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"A +15% cap on 40-session momentum trades hits exactly those winners (rule 10, C10).",
+"Win rate rising from 41% to 55% is what capping winners and banking small gains does; it says nothing about expectancy.",
+"Next test: paired replay on the same signals and capital: plain hold, stop only, target only, both; per opportunity, net of the extra exits' costs, on an era not used for design.",
+"A 30% smaller drawdown can come from less time in the market; the plain hold at 70% size cuts drawdown 30% too.",
+"Decision: do not adopt."]},
+"E09": {"items": [2, 2, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"Two calm years say nothing about the tail: +1 at 99% and −150 at 1% has mean −0.51.",
+"Nominal loss 2× premium, but no bound: a gap or 10% week makes the 5%-OTM put worth at least 5% of notional, 25× an assumed 0.2% premium [A]; the stop fills near 25×.",
+"Move to the put spread now, sized so its maximum loss plus the book's equity loss in the same fall fits the stress budget; close the sleeve if the spread does not earn its keep.",
+"Would change it: stop fills near 3× in crash weeks at low whipsaw cost (reconsider the stop); spread premium ≤ expected loss (close the sleeve); joint stress loss over the limit (cut size)."]},
+"E10": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Effective independent bets = 12/(1 + 11 × 0.62) = 1.53.",
+"Adding a 1.3 sleeve at equal risk: book Sharpe 1.27 at correlation 0.62, 1.25 at 0.8, no gain from about 0.85.",
+"The book (rule 19, C19): measure time-weighted exposure by name and factor across sleeves; find clones and identical fills paying the spread twice; merge the seven overlapping sleeves or cap exposure to the three names and tech beta; allocate by marginal contribution to book risk and stress loss, not standalone Sharpe.",
+"Next test: on the same history, regress the candidate's daily P&L on the book's P&L and a tech factor: correlation, book-hedged Sharpe out of sample, P&L on the book's 20 worst days, and the book's stress loss with and without it.",
+"Decision: reject the thirteenth as proposed; fix the book first."]},
+"E11": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Next test: re-score with (1) volatility-matched controls (same volatility decile, size tier, month); (2) one count per company, errors clustered by company and month; (3) the 14 names removed; (4) 2021 apart from 2022–2024; (5) point-in-time post counts, deleted posts included; (6) borrow cost and availability at each event.",
+"70% of events are from 2021: one era (rule 12).",
+"Lagging the market proves little for names three times as volatile; compare with equally volatile names (research protocol §3, C02).",
+"Would change it: a lag surviving all six, say −2% a month or worse against matched names, |t| ≥ 3 in 2021–2022 and the same sign with |t| ≥ 2 in 2023–2024, outside the 14, net of borrow: then a small shadow short, or, cheaper, a veto for long books (no borrow; rule 2).",
+"Decision: no short sleeve."]},
+"E12": {"items": [2, 2, 2, 0], "penalty": 0, "critical": false, "quotes": [
+"Ledger: speed: the parser acts 450 ms into a ~3 s adjustment (15% of the window); payer: slower traders and stale resting quotes; persistence: an arms race, two rivals investing; execution measured on real fills.",
+"Next test: capture curve from the 60 releases' tick data: replay at 150, 300, 450, 600, 900 ms; markouts at 1, 3, 10 s; per release, time to first price change and share of the move left at our first fill.",
+"Kill rule: pause and review if the first price change precedes our order on most of six consecutive releases, the share of the move left at our fill halves, or the rolling 12-release mean net capture is ≤ 0.",
+""]}
+},
+"R2": {
+"E01": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Signed SE 0.1/0.3 = 0.33%: direction is ruled out above +0.75% per ten days at 95% (D); +0.1% would not pay a round trip (A).",
+"Use it, if at all, for sizing, stop width and option pricing, buying options only when implied volatility is below its forecast (field rule 1, C09).",
+"Volatility clusters, so the gauge may add nothing over each coin's own realized volatility; 41% of the desk's volatility claims failed that lens (C01).",
+"Use it, if at all, for sizing, stop width and option pricing, buying options only when implied volatility is below its forecast (field rule 1, C09).",
+"If it adds nothing over HAR, don't buy it."]},
+"E02": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Do not add the score.",
+"ρ² ≈ 0.55, so roughly half its rank variation is volatility the veto already uses (D).",
+"AUC is accuracy, not value (C06); information already in the model adds nothing (C04).",
+"The residual raising the money gain by at least 10% net (+0.03% a month, the C04 bar), paired t ≥ 2, in two or more tiers and both eras, on point-in-time filings.",
+"Residualize the score on trailing volatility within volatility quintile and size tier."]},
+"E03": {"items": [3, 2, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"Limit: 0.28 × 2.4% + 0.72 × 0% = +0.672%.",
+"The no-fills were the best signals (+4.0%, F), so the limit skips the runaways.",
+"Pair by signal, bootstrap by week; then a forward paired shadow arm with real fills.",
+"The limit is better per fill and worse per opportunity (C16)."]},
+"E04": {"items": [3, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"The expected best z of 4.2 million null trials is 5.14; with the cross-trial SD of 0.45, the expected best annualised Sharpe of skill-less combinations is 2.31, which the winner beats by 0.29.",
+"It passes only below about 33,000 independent trials.",
+"A round trip of k bps a day removes 0.0252·k/σ from the annual Sharpe (σ annual volatility, not given): at k = 10 and σ = 10%, 2.6 becomes 0.08 (A).",
+"Skew −1 and kurtosis 6 widen the Sharpe's error 9.4%: t ≈ 5.8.",
+"Kill rule. Six-month forward net Sharpe below 0, which a true 2.6 produces under 5% of the time (SE ≈ 1.55, D)."]},
+"E05": {"items": [2, 2, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"The cleanest evidence here: registered before data, no free parameters, one trial, nothing to deflate.",
+"Approve 2%, sized on risk, once a joint stress check passes, with a decay rule registered now.",
+"(2) Slippage at 2% against 0.5% over the next eight decisions.",
+"P&L needs ~42 decisions to detect full decay at 80% power (D), so check in stages: back to 0.5% if the post-raise mean is at or below 0 after 16 decisions (6% false alarm if the edge holds); retire if so after 24 (3%) (D)."]},
+"E06": {"items": [2, 2, 2, 2, 2], "penalty": 0, "critical": false, "quotes": [
+"Shedder and payer: index trackers, who must buy 9% of free float at the effective close (F) and accept the price because their mandate is tracking, not cost (H).",
+"Access: a known clock in names too thin for large arbitrageurs, $3M a day (F, H).",
+"10% × $3M × 9 days ≈ $2.7M a name; four a quarter ≈ $11M gross (A).",
+"Event study on Kestrel's past rebalances (public lists, daily prices, auction volumes): additions from the open after announcement to the effective close, deletions from the effective close to five days on; excess returns net of 25 bps plus impact at 10% participation, by era, with the announcement-day share.",
+"Drop if the recent half of history's mean net excess is ≤ 0 at doubled costs; in forward shadow, retire after 16 events with mean net ≤ 0."]},
+"E07": {"items": [2, 2, 2, 1, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"Shedder and payer: farm cooperatives (F); drought cuts their income and collateral together, so cover is worth more to them than its expected payout (H).",
+"Premium: unknown; our reservation price is low because drought is nearly independent of global equities: with CARA, π = (1/γ)·log E[e^{γL}] (D).",
+"Post offers above burn value plus margin; size so a season of every contract paying costs at most 2% of the book, $100k (A); refresh quotes daily from station data.",
+"Rulebook (payout form, threshold inclusivity, revisions, fallback, margin, fees), quote and trade history, daily data.",
+"Read the rulebook, then record every quote for two to three months without trading; compare bid-implied probabilities with each contract's upper bound plus costs.",
+"No shadow book unless a third of contracts clear; in limited live, retire if payouts over 24 contract-months exceed premium by more than the modelled 95% season loss, or our sold contracts pay at ≥ 1.5× the modelled rate."]},
+"E08": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"If the mean trade is +1% or more, the +15% target sits at or below the average big winner.",
+"Win rate is not expectancy: a target turns a few big wins into many small ones.",
+"An arm beating the plain hold in net mean per trade, paired t ≥ 2, at matched exposure, inside and outside 2019–2021.",
+"Less time in the market lowers drawdown; a smaller position does so without cutting the tail (H).",
+"Do not adopt; test it as a paired shadow arm against the plain 40-session hold (field rule 10)."]},
+"E09": {"items": [2, 2, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"Two calm years say little: at a 1% or 2% weekly loss chance, 104 clean weeks happen 35% or 12% of the time (D).",
+"The wing caps the loss at 5% of notional less net premium, with no gap or path risk (D); its far out-of-the-money put is rich under steep skew (H).",
+"Premium: steady two years (F); this book's reservation value is high, as its bad state is the equity book's.",
+"Spread net premium below the book's reservation premium for the −5% to −10% band: close the sleeve."]},
+"E10": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Book Sharpe 1.0 × √(12/(1 + 11 × 0.62)) = 1.24, from 12/7.82 = 1.5 independent bets; twelve independent sleeves would give 3.46.",
+"A new sleeve helps only if its Sharpe exceeds its correlation with the book times 1.24.",
+"Fix the book first: merge clones into one exposure budget, cap names and factors at book level, then judge the 13th by marginal value.",
+"An exposure census: time-weighted gross and net by name, sector, technology beta and semiconductor beta, with identical-fill detection.",
+"Do not add it now."]},
+"E11": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Take the first event per company per month, count each company once, drop the 14, and split 2021 from 2022–2024.",
+"Era (C12): 2,380 events fall in 2021, so the result may describe one year.",
+"Re-score from the next open against volatility-matched names (same volatility quintile, tier and session).",
+"A volatility-matched, company-level lag of at least 3% a month with |t| ≥ 3 outside the 14, the same sign with |t| ≥ 2 in 2022–2024, and a positive result after borrow.",
+"Do not start a short sleeve."]},
+"E12": {"items": [2, 2, 2, 0], "penalty": 0, "critical": false, "quotes": [
+"Speed: we read at 450 ms; the price adjusts over ~3 s (F), a lead of ~2.5 s, shrinking.",
+"Keep trading at current size as a decaying speed rent: fix cheap latency, fund no arms race until a capture curve prices it, fix the kill rule now.",
+"Retire if the last 12 releases average ≤ 1 tick net, or our fills land after 80% of the adjustment on three releases in a row.",
+""]}
+},
+"R3": {
+"E01": {"items": [2, 2, 2, 0, 1], "penalty": 0, "critical": false, "quotes": [
+"Top-decile readings bring 9.0% average absolute ten-day moves against 5.0%, but the signed return is +0.1% (t 0.3), indistinguishable from zero.",
+"In top-decile states, scale exposure by about 5.0/9.0 ≈ 0.56 to keep risk per trade constant, and widen stops to match.",
+"Regress future ten-day absolute returns on the gauge plus trailing realised volatility, with overlap-robust errors.",
+"",
+"If it adds nothing beyond realised volatility, drop it."]},
+"E02": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Don't add it.",
+"At a rank correlation of 0.74, volatility already explains roughly 0.74² ≈ 55% of the score's variation, and volatile small caps are what the veto already removes.",
+"The veto's job is money, and its gain went from +0.31% to +0.30% a month: no change.",
+"newly vetoed names underperforming released ones by enough to lift the veto's gain by at least about 0.05% a month (walk-forward t above 2);",
+"Walk forward on the disagreement set: compare forward returns of newly vetoed and newly released names, at cut-offs of 10%, 15% and 20%."]},
+"E03": {"items": [3, 2, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"Limit: 0.28 × 2.4% + 0.72 × 0 = 0.67%, or 112 fills × 2.4 = 269 points.",
+"A bid below the market fills when the price falls, and misses the names that run.",
+"A limit variant beating the market entry by at least 0.2 points per signal on paired data, with t above 2 out of sample.",
+"Its higher return per fill comes from which trades fill, not from an edge."]},
+"E04": {"items": [3, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Noise maximum: The expected best of 4.2 million independent null draws is about 5.1 standard deviations, which at 0.45 dispersion is a Sharpe of about 2.3.",
+"Correlated trials would lower the bar; the effective count isn't shown.",
+"Costs: With full daily turnover, break-even is a daily round trip of SR × σ/252: at an assumed 10% volatility, 10 bps on the claimed Sharpe and 2 bps on the shrunk one.",
+"Tails: Skew −1 and kurtosis 6 are crash risk the Sharpe hides.",
+"A held-out net Sharpe of at least 2 over one year, or 1.4 over two (t ≥ 2), with real fills and stable neighbours, would earn a small pilot."]},
+"E05": {"items": [2, 2, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"It was registered before the data, has no free parameters, was tested once with no variants, and trades on real fills net of measured costs.",
+"Raise the allocation to 2%, with a kill rule and a cost check at the new size.",
+"Execute the first trades at 2% and compare slippage with measured costs.",
+"If the next 24 decisions average zero or less, cut to 0.5% and review."]},
+"E06": {"items": [2, 2, 2, 2, 2], "penalty": 0, "critical": false, "quotes": [
+"They must match the index at the effective-date close, so they trade at that price regardless.",
+"We are paid for holding inventory ten days and supplying liquidity when they must trade.",
+"Cap each name at about $3M (10% of volume for ten days) or a quarter of tracker demand, whichever is less, and keep gross at most about $8M.",
+"Check pre-announcement drift and compare early with recent rebalances.",
+"Once live, stop if net return per event over eight rebalances falls below 10 bps, or impact takes over half the gross move."]},
+"E07": {"items": [2, 2, 2, 1, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"Drought wrecks their revenue, so like any insurance buyer they pay above expected loss to cut variance, and few capital providers sell weather risk on a new, thin exchange.",
+"Regional drought should be nearly uncorrelated with our long global equities (check across 360 months).",
+"Every contract on a station-month pays at once and dry months cluster, so cap the season's worst-case payout at about 2% of the $5M book ($100k).",
+"Station relocation or measurement error.",
+"Price each threshold from history with bootstrap intervals, and compare with quotes and trades so far.",
+"Once live, stop and reprice if payouts outrun the model (at a 10% rate, six or more in 24 contract-months has about a 3% chance)."]},
+"E08": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"A +15% target caps exactly the trades that pay for everything.",
+"Win rate rises mechanically when small gains are banked and big ones capped, while the payoff ratio falls.",
+"Run four variants walk-forward over the full history beyond 2019-2021: original, stop only, target only, and both.",
+"The original at 70% size also cuts it by 30%, at the same Sharpe ratio.",
+"Reject the +15% target."]},
+"E09": {"items": [2, 2, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"Selling crash insurance on top of long equities loses most when the book is already losing, and two years of steady premium say nothing about the tail.",
+"A one-week put can jump from 1× to 20× premium without trading at 3×, and buy-backs happen at peak volatility and spreads.",
+"Still exposed: losses between −5% and −10%, where equities fall too.",
+"Close the sleeve if the spread's net credit falls below its expected loss, or if it deepens the book's worst weeks beyond budget."]},
+"E10": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"The effective number of bets is 12/7.82 ≈ 1.5.",
+"A sleeve helps only if SR_new > ρ(new, book) × SR_book.",
+"In parallel, decompose the 12 sleeves by factor and merge the seven that overlap.",
+"Measure alpha and t, correlation on down days, and the marginal effect on the book's Sharpe ratio and CVaR.",
+"Don't add it now."]},
+"E11": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Concentration: 62% of events (about 2,108) come from 14 firms, so the effective sample is nearer 14 price paths than 3,400 events.",
+"Time: 70% of events fall in 2021, so one episode dominates.",
+"Measure the 9% against peers matched on volatility, size, momentum and sector, not the market.",
+"Use 2025-2026, which the study never touched, as a clean holdout.",
+"Don't launch the short sleeve."]},
+"E12": {"items": [2, 2, 2, 0], "penalty": 0, "critical": false, "quotes": [
+"The edge is real today: 60 live releases, 6 ticks net, t 4.1.",
+"From now on, log for each release the share of the move completed before our order lands, and the time of the first aggressive trade.",
+"Stop if the rolling mean turns negative.",
+""]}
+},
+"R4": {
+"E01": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"The gauge forecasts the size of moves, not their direction: magnitude 9.0% vs 5.0% (t 7.2), direction +0.1% (t 0.3).",
+"Scale momentum exposure down when the gauge is high (vol targeting).",
+"Next test: out of sample, regress next-ten-day realised volatility on the gauge plus trailing 10- and 30-day realised volatility.",
+"If the coins have listed options, the gauge could also be tested against implied volatility, but that's a separate volatility trade.",
+"If it adds nothing beyond trailing volatility, stop paying the vendor."]},
+"E02": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Don't add it.",
+"A rank correlation of 0.74 means the rankings share ~55% of their rank variance.",
+"The money gain, which is what the veto exists for, slipped from +0.31% to +0.30% a month.",
+"Would change my decision: a held-out walk-forward in which the combined veto beats the current one by a margin set in advance (e.g. ≥0.05%/month, paired t > 2) after data costs, or a material cut in stress-regime tail losses at an unchanged average.",
+"The score orthogonalised to trailing volatility, with the residual's worst decile re-tested on filing dates, not period-end dates."]},
+"E03": {"items": [3, 2, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"Limit: 112 fills × 2.4% = 268.8 points; 288 misses × 0 → +0.67% per signal.",
+"The bid fills when the price falls, which happens mostly in signals that are failing.",
+"Next test: re-run all 400 signals on one basis (from the signal date, over the same ten-day window, with misses held as cash), with a paired bootstrap.",
+"Setting \"+2.4% per fill\" against \"+1.1% per trade\" compares a subset with the whole."]},
+"E04": {"items": [3, 0, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"The winner beats it by ~0.7 standard errors, a deflated-Sharpe probability of Φ(0.64) ≈ 0.74, short of 0.95.",
+"",
+"Replacing the book daily (≈200% traded) breaks even at ≈5 bps per side before impact, and midpoint fills hide this.",
+"Tails: with skew −1 and fat tails, one crash day can erase months.",
+"Then run the frozen rule on data the search never saw, and paper-trade it."]},
+"E05": {"items": [2, 2, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"This is about as clean as evidence gets: a rule fixed before the data, no parameters, one backtest (t 2.9), and an independent live replication with real fills (t 2.6).",
+"Approve the rise to 2%.",
+"Next test: stress the 46 live trades: median, share positive, mean without the best three, by year, hiking versus easing.",
+"If the next 24 decisions average below zero net (≈3% likely if the edge is real), go back to 0.5%."]},
+"E06": {"items": [2, 2, 2, 0, 2], "penalty": 0, "critical": false, "quotes": [
+"They must own 9% of each new member's float at one closing price.",
+"After each announcement, buy additions (and short deletions where borrow exists) over the ten days with passive orders.",
+"Sizing and costs: about one day's ADV per name (~$3M at ≤10% participation over ten days); a few changes a quarter fits $20M.",
+"",
+"Live: stop if net P&L per event is ≤0 after eight quarters, or if auction volume falls below half the predicted tracker demand."]},
+"E07": {"items": [2, 2, 2, 1, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"Drought wrecks their income, so like any insurance buyer they pay more than the expected loss to shed it, and the wide quotes say risk capital is scarce.",
+"Regional weather risk should be roughly uncorrelated with the book's long global equities, so the premium diversifies rather than adds equity beta.",
+"Cap total payout sold per season at, say, 5% of the book ($250K), because dry months cluster.",
+"Audit the station record and settlement rules.",
+"Cheapest decisive test: a burn analysis on the public 30 years (payout frequency by month and threshold, raw and detrended, with confidence bounds), set against the prices and depth at which buyers actually trade.",
+"Stop if realised payouts statistically exceed the priced probability (binomial p < 0.05), if fills cluster ahead of droughts, or if settlement or credit fails."]},
+"E08": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Illustration (the winners' average isn't given): if the top 8% averaged +40%, a +15% cap would cut their 120 units to 45.",
+"A profit target raises win rate mechanically (more small wins) and says nothing about expectancy.",
+"Would change my decision: a variant beating the exposure-matched baseline out of sample by ≥0.2 Sharpe while keeping ≥85% of the right-tail profit.",
+"Drawdown falls whenever exposure falls; simply trading smaller would do the same.",
+"Don't adopt it as proposed."]},
+"E09": {"items": [2, 2, 2, 1], "penalty": 0, "critical": false, "quotes": [
+"Two quiet years (~104 weeks) say little about a once-in-several-years loss.",
+"The maximum weekly loss becomes 5% of notional minus the net credit, guaranteed by contract, not by an order.",
+"Selling 5% OTM weekly puts is selling crash insurance on top of a long-equity book, so the sleeve loses exactly when everything else does.",
+"If the wing makes the spread's expected net ≤0 after costs, close the sleeve rather than hedge it."]},
+"E10": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Here 1 + 11 × 0.62 = 7.82, giving 12/7.82 ≈ 1.5 effective bets and SR ≈ 1.0 × √1.53 ≈ 1.24, not the √12 ≈ 3.5 that \"independent\" implies.",
+"A new sleeve improves the book only if its Sharpe exceeds its correlation with the book times the book's Sharpe.",
+"Cap net exposure to each name and to the tech factor book-wide.",
+"Next test: the semiconductor sleeve's daily P&L correlation with the book, over the full period and on the book's worst 5% of days; its holdings overlap with the three stocks; its marginal contribution to Sharpe and to the last drawdown.",
+"Don't add it now."]},
+"E11": {"items": [2, 2, 2, 1, 1], "penalty": 0, "critical": false, "quotes": [
+"Then run a monthly calendar-time short portfolio against matched controls, with firm- and month-clustered errors.",
+"With 70% of events in 2021, one speculative episode and its unwind may be the whole result.",
+"The test needs controls matched on volatility, size, momentum and industry.",
+"Would change my decision: in that cleaned sample, underperformance against matched controls of ≥3% a month with t ≥ 3, in both up and down markets and net of actual borrow fees.",
+"Fees of 10–30% a year (≈0.8–2.5% a month) and squeeze losses come straight out of the edge."]},
+"E12": {"items": [2, 2, 2, 0], "penalty": 0, "critical": false, "quotes": [
+"The edge is speed on public, scheduled data: the desk reads at 450 ms and the price takes ~3 s to adjust.",
+"Track the price-adjustment half-life release by release.",
+"Retire the strategy when the rolling 12-release mean falls below ~1 tick net, or when ≥90% of the move completes before our fills.",
+""]}
+}
+}

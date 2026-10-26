@@ -1,0 +1,39 @@
+Before answering, read skills/engineer-trading-edge/SKILL.md in this repository and any of the references it points to that you need. Do not open v4/evaluations/ or search the web.
+
+Twelve fictional strategy problems follow. Every market, company, venue and number is invented; use only the facts given and say what you would need that is not given. For each case give: your decision, the reasoning and calculations behind it, the next test you would run, and the result that would change your decision. Keep each answer under 350 words and the whole response under 4,000 words. Label answers E01 to E12. Do not trade or fetch market data.
+
+E01. The pressure gauge
+A vendor sells a 'pressure gauge' for the six largest coins on a crypto exchange. In its top decile, the next ten days' average absolute return is 9.0% against 5.0% at other times (t 7.2, 2019-2025). The average signed ten-day return after a top-decile reading is +0.1% (t 0.3). The vendor markets it as a buy signal: 'big moves follow'. Our momentum sleeve wants to use top-decile readings as a long entry trigger. Decide, and say how the gauge should be used, if at all.
+
+E02. A better score that changes nothing
+A small-cap desk runs an entry veto: a model of crash probability built from each stock's trailing volatility, which removes the worst 15% of names. A researcher built a 'distress score' from balance-sheet ratios. Alone, its worst decile lags the market by 2.1% a month (t 4.0, 2015-2023). Its rank correlation with trailing 60-day volatility is 0.74. In a walk-forward pilot, adding it to the veto model raised AUC from 0.802 to 0.806, and the veto's money gain went from +0.31% to +0.30% a month. The researcher wants to add the score. Decide.
+
+E03. Patience at a price
+A swing sleeve buys at the next open after each signal. A proposed variant posts a limit bid 1.5% below the signal close for three days instead. Over the last 400 signals: the limit filled 28% of the time with an average 10-day return of +2.4% per filled trade; market entries filled every time with +1.1% per trade. Signals whose limit never filled went on to return +4.0% on average over the same ten days. Cash earns nothing. Is the limit variant better? Show the arithmetic.
+
+E04. Six point four
+A vendor's equity strategy is the best of 4.2 million parameter combinations searched on six years of daily data (1,512 returns), traded at the midpoint with no costs. Its annualised Sharpe ratio is 2.6, so a naive t-statistic of about 6.4. Across all combinations the annualised Sharpe ratios had a standard deviation of 0.45. The winner's daily returns have skewness -1.0 and kurtosis 6.0; it turns over its book daily. The vendor says a t of 6.4 clears any multiple-testing hurdle. Assess the claim and what to do next.
+
+E05. One registered test
+A fund registered one hypothesis in 2019, before collecting data: a fixed rule that buys an index on the day before a central-bank decision and sells the next close, with fixed size and no free parameters. It then tested it once on 1998-2018 (t 2.9) and has traded it live with real fills since 2020: 46 decisions, mean +0.31% per trade net of measured costs, t 2.6. No other variant was ever run. The fund now asks whether to raise its allocation from 0.5% to 2% of capital. Decide.
+
+E06. Create: the Kestrel rebalance
+Create a strategy for a $20M fund. On the fictional Kestrel Exchange, a regional index of 60 stocks rebalances every quarter. Index funds tracking it hold on average 9% of each member's free float. Changes are announced ten trading days before the effective date, and trackers trade at the effective-date close. A typical entrant trades $3M a day with a 25 bps quoted spread. Give the strategy, who pays it and why, what could make it lose, the cheapest decisive test, and the rule that would kill it.
+
+E07. Create: rain
+Create a strategy for a $5M trading book whose existing positions are long global equities. A new fictional exchange lists monthly rainfall contracts for one farming region: a contract pays when measured rainfall at a named weather station falls below a threshold. Buyers are mostly farm cooperatives hedging drought. The contracts trade thinly with wide quotes, and 30 years of station rainfall history are public. Give the strategy, who pays it and why, what could make it lose, the cheapest decisive test, and the rule that would kill it.
+
+E08. Locking in gains
+A daily momentum sleeve holds positions for about 40 sessions. Over three years, 8% of its trades produced 120% of total profit; the rest lost money in aggregate. A risk manager proposes a trailing stop at 2.5 ATR plus a profit target at +15%. A backtest of the proposal on 2019-2021 raised the win rate from 41% to 55% and cut maximum drawdown by 30%. Decide whether to adopt it and how to test it.
+
+E09. Protecting the put seller
+A sleeve sells one-week index puts about 5% out of the money every week and has collected steady premium for two years. The rest of the book is long equities. A proposal adds a hard stop that buys the puts back if their price reaches three times the premium received, or alternatively buys a cheaper put 10% out of the money against each sold put. Evaluate both, and decide what the sleeve should do.
+
+E10. The thirteenth sleeve
+A book runs 12 'independent' strategies, each with a backtested Sharpe ratio near 1.0. Seven of them hold the same three mega-cap technology stocks. The average pairwise correlation of their daily P&L is 0.62, and in the last drawdown 10 of the 12 lost on the same day. The portfolio manager proposes adding a thirteenth: a semiconductor momentum sleeve with a backtested Sharpe ratio of 1.3. Evaluate the proposal and the book.
+
+E11. Loud chief executives
+A researcher reports that stocks whose chief executive posts on social media more than ten times in a week lag the market by 9% over the next month (t -6.1, 3,400 events, 2021-2024), and proposes a short sleeve. In the data, 62% of events come from 14 companies, 70% of events are from 2021, and the flagged stocks' volatility is about three times the market median. Assess the finding and say what you would do.
+
+E12. Half a second
+A desk trades agricultural futures on a government crop report that is public and published on a fixed schedule. Its parser reads the agency's machine-readable release 450 milliseconds after publication; the futures price completes most of its adjustment over about three seconds. Over 60 live releases with real fills the desk captured an average of 6 ticks per release net of fees (t 4.1). Two competitors are known to be investing in faster parsing. Decide what the desk should do with this strategy.

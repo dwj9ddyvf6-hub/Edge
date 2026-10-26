@@ -49,8 +49,12 @@ Example request:
 ## Evidence
 
 - 88 unit tests pass; the root prompt rebuilds byte for byte ([validation record](v4/validation.md)).
-- Behavior test: not run yet (0 of 2 answers per arm). v3's comparison scored 24/24 in both arms and showed no effect
-  of the skill.
+- Behavior test, 2026-10-26, with 2 answers per arm on 12 cases:
+  - with the skill, 97 and 97 of 98; without it, 96 and 93;
+  - no critical errors in either arm.
+  - The gap is smaller than the spread between the two answers without the skill, so it shows no difference. Both
+    arms scored near the ceiling ([run](v4/evaluations/run-2026-10-26/), [record](v4/validation.md)).
+  - v3's comparison was also at the ceiling in both arms (24/24).
 - No strategy in this repository is shown to be profitable. The field rules record one desk's research and paper
   trading.
 
