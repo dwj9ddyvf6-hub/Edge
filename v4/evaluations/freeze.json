@@ -1,0 +1,12 @@
+{
+ "frozen": "2026-10-26, before any solver or grader run",
+ "files": {
+  "cases.json": "4dc1a7f2f231e0e3b1594c412eb36754643b245e225b8d4a8cef0ef44416919d",
+  "rubric.json": "3f6db1a0e1f77ff5edc3cf91aa1a6a9b592965293bc65135f2077b2187d7f732",
+  "runner.py": "c84d025f1732b55f36942ca13da67928f7f29a64be876f8fbba22c6aae0bacf0",
+  "RUNNER.md": "4467194e63e114a8ddb722ea3166e7d788277ee70c0349dfd218e126f70e5c79"
+ },
+ "skill_commit": "eb0f4b8b42becedff1a77d9de2c97c693b8d3950",
+ "skill_tree": "e324586d00830724657016f11b3ebdfdd296faf9",
+ "skill_md_sha256": "d37534a92a7d7bf20cb9f612b8c2fc0db011dfa4efd47f6d074136bc323ce6c0"
+}
