@@ -1,7 +1,7 @@
 {
-  "scope": "Complete Trading Edge Lab v1-v3 authored archive; repository-relative paths; manifest excludes itself",
-  "previous_edge_commit": "e395e26c8aca0060630dd37953897670804f83bc",
-  "installed_skill_commit": "d322ce6c963171f07924a55a9ff29634ccc8fb88",
+  "scope": "Complete Trading Edge Lab v1-v4 authored archive; repository-relative paths; manifest excludes itself",
+  "previous_edge_commit": "ddeab7cc0973a383a7a9ef9718a7e17fde30a94e",
+  "installed_skill_commit": "eb0f4b8b42becedff1a77d9de2c97c693b8d3950",
   "files": [
     {
       "path": ".gitignore",
@@ -10,34 +10,52 @@
       "git_blob_sha1": "ec9420a5e790543ad3a375e020ef38c3dfea024e"
     },
     {
+      "path": "AGENTS.md",
+      "bytes": 678,
+      "sha256": "a834e155b4d102c4e4cfa0c8d754456140e18e458eab5740ad493d6fa5b47d8d",
+      "git_blob_sha1": "71fd31a638fc7073cfa67433126319e5ecb517fb"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 11,
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "git_blob_sha1": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    {
       "path": "PROVENANCE.md",
-      "bytes": 3649,
-      "sha256": "36491310b5d56bb5453266a27203c85bd44c84154f55a149f7956e0b9c6d2b80",
-      "git_blob_sha1": "33c83233ebb644324b979f1c4633e8fd14683668"
+      "bytes": 5295,
+      "sha256": "02690ce04936f6070f644db6b2ee723fbf3d496894791538ca208e9b0fac64af",
+      "git_blob_sha1": "bdd78bcfb6e5e4f65204b1fe233c8389eea02b02"
     },
     {
       "path": "README.md",
-      "bytes": 9867,
-      "sha256": "6abeb80056c738691fb03282bda19d51a8d6248278a9af1270f242d4a9beab6a",
-      "git_blob_sha1": "37397a2d7668c61358cb33e302702fdbbabb748b"
+      "bytes": 4847,
+      "sha256": "1503093479ddb66e7fdd8425dc41e6b4c3d3edb505d2f816649aa02d01b50297",
+      "git_blob_sha1": "0434e20ec8f4857b51c6faf5cb30edf1fa3668b6"
     },
     {
       "path": "Trading_Edge_Unified_Master_Prompt.txt",
-      "bytes": 48010,
-      "sha256": "db7ddf5770e3723cacc7b6989e152a5143b68ae439560d5e42a3d0e7028612b1",
-      "git_blob_sha1": "a28784a01d84fd25207a8e550aa43a6d3da66573"
+      "bytes": 55497,
+      "sha256": "910832f3cc722c8a0a0de897bbe7a4c5d84d9e936ad58827041b6fad058a84da",
+      "git_blob_sha1": "b963be990bce9ce626f6eb9736498e9380cff97f"
     },
     {
       "path": "scripts/README.md",
-      "bytes": 1424,
-      "sha256": "c1b21702d5ca24c8ae62df0f506b59ebe8ded09bc8225901a0941fcd459c5232",
-      "git_blob_sha1": "9c93bd582e5b95c3e4d01d04ea0b6f5efc8ce863"
+      "bytes": 1382,
+      "sha256": "1ce56e876715f5f1041b52dadf5b5bfcb2418e7f7036b7e85f3fed94a8ecd3d6",
+      "git_blob_sha1": "6bd38142739d48d3cb34977ac52d2dd81ab6fefa"
+    },
+    {
+      "path": "scripts/build_manifest.py",
+      "bytes": 2271,
+      "sha256": "f8c3d0c3e0dbcda52615f136d96ca6679e68a0af63d74aae7fa5b655b3b733b7",
+      "git_blob_sha1": "3ebaff3dcad0371ad481b71b481bb9da97221a25"
     },
     {
       "path": "scripts/build_unified_prompt.py",
-      "bytes": 2941,
-      "sha256": "253d48f8bcf5499e7fe16b68cee5d42a7c3b8b5374dc734713a43b6b632dbd84",
-      "git_blob_sha1": "28fbace4997d27d6cf648de7cc2cd320008c283a"
+      "bytes": 6643,
+      "sha256": "2aeb2e481167bb80e0994b447f854121bc3f8b7f65f19f264dec19558474cafb",
+      "git_blob_sha1": "f0a9922db6cc381d112297e6b9488e7f6d0e561c"
     },
     {
       "path": "scripts/build_unified_prompt_v2.py",
@@ -56,6 +74,192 @@
       "bytes": 9249,
       "sha256": "3cda8bada2fe08205ca94372234958b62b6dc4a7f83dcb76cc3c91a04cf2f635",
       "git_blob_sha1": "53f3b876a9e95eef3e0a573d1ba8259f01c01491"
+    },
+    {
+      "path": "skills/engineer-trading-edge/SKILL.md",
+      "bytes": 22019,
+      "sha256": "d37534a92a7d7bf20cb9f612b8c2fc0db011dfa4efd47f6d074136bc323ce6c0",
+      "git_blob_sha1": "f211cd2f7e51847959e2b27c998c5f3bb4f9ea73"
+    },
+    {
+      "path": "skills/engineer-trading-edge/agents/openai.yaml",
+      "bytes": 532,
+      "sha256": "71f7d7b1d5f2d59316f635a1aded95b71ec975feecc5c04d917d37d2e085183b",
+      "git_blob_sha1": "24aa73b90e4a1cb28994d50eb38e370bc73d330a"
+    },
+    {
+      "path": "skills/engineer-trading-edge/assets/edge-ledger.md",
+      "bytes": 1826,
+      "sha256": "5f9f0abe789cf128cf9bca4a293cab58669166ef60492db087aa939559d7b27f",
+      "git_blob_sha1": "f0c9a7313c6cd47b5fe79f73d49519301a3ee751"
+    },
+    {
+      "path": "skills/engineer-trading-edge/assets/icon.svg",
+      "bytes": 420,
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
+      "git_blob_sha1": "2468028d1ed0fc8009b1fc45e7bb027adaf0d079"
+    },
+    {
+      "path": "skills/engineer-trading-edge/assets/preregistration.md",
+      "bytes": 1707,
+      "sha256": "dfbbd8b3208f9a22a4ac821114d4c6c17ee601b0366dc151710ee42303c96034",
+      "git_blob_sha1": "3030fdd0d372085a23bb954d2d230cc9c4716eb4"
+    },
+    {
+      "path": "skills/engineer-trading-edge/assets/shadow-experiment.md",
+      "bytes": 1158,
+      "sha256": "a337a51c25ca99e6f52cf624fa9f25f778d6906cf366e14027d814f5015aca30",
+      "git_blob_sha1": "b4ac8cda6683922ae2054f23f1d66ba26970c06b"
+    },
+    {
+      "path": "skills/engineer-trading-edge/assets/strategy-card.md",
+      "bytes": 1144,
+      "sha256": "b7f5cda2e23ac3c88a88593171b0a5d9e3741d458d8dc994d0cf87ba356de132",
+      "git_blob_sha1": "9280b3037227b4061e1e4a05a91a9f9eff42153a"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/adaptive-control.md",
+      "bytes": 21699,
+      "sha256": "ad44a6536d5a26411b76c3c3d32d15e4e4425501eaa7abf3df782141e687cacf",
+      "git_blob_sha1": "214896743d671ce58623036d6b395eac2261e6a0"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/adaptive-learning.md",
+      "bytes": 13530,
+      "sha256": "0215266f705a6b77d1d9244b55daee3cf4c60a4fdb5fd987e119332001bb9bc6",
+      "git_blob_sha1": "88dc6b15c889c88b36fba1eb04a0687719e641e8"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/adaptive-sources.md",
+      "bytes": 20213,
+      "sha256": "5753a1d6c871f31f4e0c918d26fe0c7445cf6f8bc32c28f79f0b8543f4ef6d6b",
+      "git_blob_sha1": "66054a474c8ec86cabc7dbc18905cd5f833a2260"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/desk-runtime.md",
+      "bytes": 12447,
+      "sha256": "dd4eedcdb601852f37bcbb92161975f4a4417200e769266fe1a56bc3bd618913",
+      "git_blob_sha1": "004481fc99a3cc76c509cb74bdbde19d79c9f213"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/edge-ledger.md",
+      "bytes": 9976,
+      "sha256": "6103c18b062a5d583d01fc06f3a67e8c1f946ac8e14d1a4fc737bc35f88398f8",
+      "git_blob_sha1": "351276ffc9e69718bce59afa2c68504734c4425f"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/edge-protocol.md",
+      "bytes": 15389,
+      "sha256": "cb5169223448e19d3d5696276d7ab6a0d5f735dcee1143f70ba560f2f16b3596",
+      "git_blob_sha1": "c7a4a42042e5ce116acbc8c7953961593d95db4f"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/execution-edge.md",
+      "bytes": 5645,
+      "sha256": "b69f447b748f063a13c6360e0d3b069408036cf6fac796f49733b0510a9574bd",
+      "git_blob_sha1": "fc5e1ee53791a3e92fd0ac5c373fd78284e5b9d7"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/field-casebook.md",
+      "bytes": 25193,
+      "sha256": "b7db708af3e2897156b3241ced0d643a29ddb99ce0095acdf1a9a0f383f6a54c",
+      "git_blob_sha1": "66fe8809de579913d07de20f84576e9f58cb817a"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/foundations.md",
+      "bytes": 16344,
+      "sha256": "de9aa4a2d35f5e202fe9191fa943e7ddc34e75a14940291ddcb213399c6138ee",
+      "git_blob_sha1": "9157c7cacab5d093df683ccb97e5ce7d83683cb8"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/frontier-sources.md",
+      "bytes": 9565,
+      "sha256": "a10c73acfd0bb4d1360d5ba392249498f3fe49ef5e58bfe61b9fcf6d9c3c30ea",
+      "git_blob_sha1": "f13bf47ad9c7b7c9ab6c153087e1dc051bd632a8"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/literature-map.md",
+      "bytes": 16411,
+      "sha256": "747a85fedca714795034c81b9422325041e95e9bb9d43af07c57f445756dc82c",
+      "git_blob_sha1": "dea5da09455a191b8fa1c18fa17decf28edab00b"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/mechanisms.md",
+      "bytes": 18468,
+      "sha256": "ebfeba403ee3bace067a3f58775364abd14294695c827a0ead4e3b043585f167",
+      "git_blob_sha1": "2285e6f5528b35f215ef517d7f7ca966659ff13e"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/research-protocol.md",
+      "bytes": 8412,
+      "sha256": "89a6a4e56cb0797c069416024d0bff722d0623c71ce5be0fbe4e9743cec775fa",
+      "git_blob_sha1": "991a0f4c602f71c356f4b47f3e81f0fbf00d3ebc"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/sources.md",
+      "bytes": 39751,
+      "sha256": "dda410ec483440c714fdbbd4ee61bff9c9dfae32e4a74d813bbbfbe23a65ef9e",
+      "git_blob_sha1": "7b3cd7fe7145ae10803fa3c9908a36ef2c5d6065"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/truth-gates.md",
+      "bytes": 3861,
+      "sha256": "d8be753be8096401ea1bfef6890ae15885ce52457939e43bee8051412b67cc37",
+      "git_blob_sha1": "f30785fb00a130d22fc65489010be9fa2ccb2901"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/validation.md",
+      "bytes": 13975,
+      "sha256": "acb4fbe620af4e719179cdf62a0a912d8e13113859bb339b32d1abab26736746",
+      "git_blob_sha1": "349943cf186b8a520d9c1af3e0cb0e7ca88bab62"
+    },
+    {
+      "path": "skills/engineer-trading-edge/scripts/adaptive_arbiter.py",
+      "bytes": 23146,
+      "sha256": "6e5ef54b2cf7545c0b5a9d6d3e501d0a7a67f41e0e4a99b51fc9c978a6a2481c",
+      "git_blob_sha1": "85dd1411afea637770deddb8f323a163090fc081"
+    },
+    {
+      "path": "skills/engineer-trading-edge/scripts/edge_mechanics.py",
+      "bytes": 12681,
+      "sha256": "2f649523515a8d9e7a53fcd9124df769ddcf9a8440579a92c9484785a863f81a",
+      "git_blob_sha1": "d4ebb75ce8f5a9694abca0a5e775d2d383986789"
+    },
+    {
+      "path": "skills/engineer-trading-edge/scripts/ledger_lint.py",
+      "bytes": 7854,
+      "sha256": "c339638c3b4681f9ed49610de9437c33d1c76af240797f1eaa734b407b3b7e08",
+      "git_blob_sha1": "35e294d412180e55d84a12e657bdb9b30314e75d"
+    },
+    {
+      "path": "skills/engineer-trading-edge/scripts/research_stats.py",
+      "bytes": 17628,
+      "sha256": "02df85b2be4414ce1655d428200fcb4b853e5adbd54070570a5e553e45f04b67",
+      "git_blob_sha1": "6433a16e66a02181415332024ac1b2e89cd1f9e7"
+    },
+    {
+      "path": "skills/engineer-trading-edge/scripts/test_adaptive_arbiter.py",
+      "bytes": 15449,
+      "sha256": "c41e1f523845a34bb76de0a236d315f2613436cfeeecac0167710317d178bf2f",
+      "git_blob_sha1": "638a2616076033602d4891ae96844582f080d97c"
+    },
+    {
+      "path": "skills/engineer-trading-edge/scripts/test_edge_mechanics.py",
+      "bytes": 10523,
+      "sha256": "fb7cf0da957d33af92d1fbd950d7b1470f266c99971e576b3baeb9530953dfda",
+      "git_blob_sha1": "7819fc68db7ec7dba2a7536aa9a8f2690c346119"
+    },
+    {
+      "path": "skills/engineer-trading-edge/scripts/test_ledger_lint.py",
+      "bytes": 4959,
+      "sha256": "660960f7f7fb23f44ef618795dd9e7f38209e63fcf49eacdaf9562e63bde4e5b",
+      "git_blob_sha1": "51b77feb05004b522fe03f08a76d994da6455b1e"
+    },
+    {
+      "path": "skills/engineer-trading-edge/scripts/test_research_stats.py",
+      "bytes": 13573,
+      "sha256": "e28251f74d86d99946762948cf62ca085aba3755d53623debecb7b2cb8c98512",
+      "git_blob_sha1": "4b0508d396138fd0e63380750aeccbba04dae0da"
     },
     {
       "path": "v1/Trading_Edge_Master_Prompt.txt",
@@ -314,6 +518,12 @@
       "bytes": 14320,
       "sha256": "95019b0f2da84862c8d49aa1db3afef094b6907f46484709eb8f4b6d2f594adc",
       "git_blob_sha1": "8f42a120ec54689dee55724733659b047c88ed5a"
+    },
+    {
+      "path": "v3/Trading_Edge_Unified_Master_Prompt_v3.0.txt",
+      "bytes": 48010,
+      "sha256": "db7ddf5770e3723cacc7b6989e152a5143b68ae439560d5e42a3d0e7028612b1",
+      "git_blob_sha1": "a28784a01d84fd25207a8e550aa43a6d3da66573"
     },
     {
       "path": "v3/evaluations/blind_answers.json",
@@ -656,6 +866,54 @@
       "bytes": 6880,
       "sha256": "70f2b98cd10a7481a873ad96cd6c69e9e17958252ea85f3ab46c6e4db61acff6",
       "git_blob_sha1": "a9b03bfef182af129f134418e7dc71e6ccb1b4f2"
+    },
+    {
+      "path": "v4/evaluations/RUNNER.md",
+      "bytes": 2690,
+      "sha256": "4467194e63e114a8ddb722ea3166e7d788277ee70c0349dfd218e126f70e5c79",
+      "git_blob_sha1": "b7d64aa7e3159dfe77220de9b9ec6915f05c8fbb"
+    },
+    {
+      "path": "v4/evaluations/cases.json",
+      "bytes": 7055,
+      "sha256": "4dc1a7f2f231e0e3b1594c412eb36754643b245e225b8d4a8cef0ef44416919d",
+      "git_blob_sha1": "904c6e752b3ce92e3db5894021c72673a53c7a6d"
+    },
+    {
+      "path": "v4/evaluations/freeze.json",
+      "bytes": 619,
+      "sha256": "6a54b430656496aac17f796788d2147af1a2bfb2a962911b6eac964dcf2f6129",
+      "git_blob_sha1": "e9f62850faf5b65b434afb74319179663ac735e0"
+    },
+    {
+      "path": "v4/evaluations/rubric.json",
+      "bytes": 12382,
+      "sha256": "3f6db1a0e1f77ff5edc3cf91aa1a6a9b592965293bc65135f2077b2187d7f732",
+      "git_blob_sha1": "8b0a8e14931955717de0630096abcb6b4e586860"
+    },
+    {
+      "path": "v4/evaluations/runner.py",
+      "bytes": 7024,
+      "sha256": "c84d025f1732b55f36942ca13da67928f7f29a64be876f8fbba22c6aae0bacf0",
+      "git_blob_sha1": "e34421bb41ca359631d854a1c2087d62ed135fcd"
+    },
+    {
+      "path": "v4/research/research_stats_crosscheck.json",
+      "bytes": 1776,
+      "sha256": "645b2cbb460c0fce5637203a493091917448382480d7a0f3f3265f4657803282",
+      "git_blob_sha1": "416682851065f1549bc130fb193af2216f7c473b"
+    },
+    {
+      "path": "v4/research/verify_research_stats.py",
+      "bytes": 6464,
+      "sha256": "02ef47a13153119c0727daebb9579d67e2404e4159bbeea69c850c2d679b5437",
+      "git_blob_sha1": "e9cae2df0ec115b5ae58343cf7370484d70a33d7"
+    },
+    {
+      "path": "v4/validation.md",
+      "bytes": 4520,
+      "sha256": "8100763e47a287c3f80766314043dc42a3be3f695b7cbc779ad2277b00dfe1a3",
+      "git_blob_sha1": "995822a704558bee65c26a913abda6baeb2715a2"
     }
   ]
 }
