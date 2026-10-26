@@ -57,14 +57,33 @@ Frozen at commit `c9308f6` before any run: 12 fictional cases ([evaluations/case
 a 98-point rubric ([evaluations/rubric.json](evaluations/rubric.json)), a runner and
 [freeze.json](evaluations/freeze.json), which pins the cases, rubric, runner and the skill tree under test.
 
-| Arm | Answers | Score |
-|---|---|---|
-| Without the skill | 0 of 2 | not run |
-| With the skill | 0 of 2 | not run |
+Run on 2026-10-26 ([evaluations/run-2026-10-26/](evaluations/run-2026-10-26/)).
+- Solvers: four fresh agents on the same model and settings, two per arm, each given only its prompt.
+- Blinding: the runner shuffled the answers into R1-R4 with seed 2026.
+- Grading: a fresh agent that saw only the grader prompt and the four blinded files.
 
-**Status: UNVERIFIED.** No arm has run; [RUNNER.md](evaluations/RUNNER.md) gives the steps, and the scores will
-replace this table with n = 2 answers per arm. v3's comparison scored 24 of 24 in both arms, which showed nothing about
-the skill's effect; the v4 cases are built to avoid that ceiling.
+| Arm | Answers | Scores (of 98) | Critical errors |
+|---|---|---|---|
+| Without the skill | 2 | 96, 93 | 0 |
+| With the skill | 2 | 97, 97 | 0 |
+
+Per case, the four answers differ on three cases, each through one answer without the skill: E01 (7 of 8), E04
+(7 of 9) and E06 (8 of 10). All four scored 6 of 7 on E12.
+
+**Reading, by the runner's rule.**
+- The arms differ by 2.5 points on average. That is less than the 3-point spread between the two answers without the
+  skill, so it counts as no difference.
+- Both arms scored near the ceiling, so these cases did not separate them.
+- The skill's two answers were the more consistent ones.
+- Two answers per arm on twelve cases is a diagnostic, not a measurement of general improvement or of trading
+  performance.
+- The cases are now published, so they are regression material, not a holdout.
+
+**Limitation.** The skill arm's answers name the skill and cite its casebook, so a grader could tell the arms apart
+despite the blinding. The rubric scores specific moves, not vocabulary.
+
+**Status: GREEN for the run.** The frozen steps ran, and every artifact is committed, failures included. The result
+is no measurable effect at this ceiling.
 
 ## Scope
 

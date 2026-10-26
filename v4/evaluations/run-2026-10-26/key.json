@@ -1,0 +1,21 @@
+{
+ "seed": 2026,
+ "labels": {
+  "R1": {
+   "file": "skill_1.md",
+   "arm": "skill"
+  },
+  "R2": {
+   "file": "skill_2.md",
+   "arm": "skill"
+  },
+  "R3": {
+   "file": "base_2.md",
+   "arm": "base"
+  },
+  "R4": {
+   "file": "base_1.md",
+   "arm": "base"
+  }
+ }
+}
