@@ -1,0 +1,15 @@
+interface:
+  display_name: Trading Edge Lab
+  short_description: Create and improve strategies with a measured source of edge
+  default_prompt: Use $engineer-trading-edge to fill the Edge Ledger for this strategy (speed, accuracy, access or
+    warehoused variance; payer; execution net), apply the field rules, and end with a decision, the decisive test
+    and the kill rule.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
