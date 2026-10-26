@@ -1,19 +1,25 @@
 # Build sources
 
-The saved PDFs and unified prompt are ready to use. These scripts preserve their authoring logic with paths adapted to this repository. Outputs go under `build/`, leaving the archived deliverables unchanged.
+The saved PDFs and the root prompt are ready to use. These scripts keep their authoring logic with repository-relative
+paths; outputs go to `build/`, which git ignores.
 
 Run from the repository root:
 
 ```bash
 python scripts/build_unified_prompt.py
+python scripts/build_manifest.py --check
 python scripts/render_research_study.py
 python scripts/render_adaptive_addendum.py
 ```
 
-The prompt builder uses the Python standard library. The PDF renderers also require `matplotlib` and `reportlab`; they use the DejaVu fonts bundled with Matplotlib. PDF output may differ in metadata or layout across library versions. The archived PDFs were visually reviewed when authored; the relocated renderer sources have been syntax-checked, not rerendered for this copy.
-
-The v3 combined prompt rebuilt from these sources was compared byte-for-byte with `Trading_Edge_Unified_Master_Prompt.txt` before publication.
-
-The offline decision arbiter and its tests live separately under [`v3/skill/scripts/`](../v3/skill/scripts/). They do not depend on the PDF packages.
-
-The previous prompt assembly is preserved in `build_unified_prompt_v2.py`; it rebuilds `build/Trading_Edge_Unified_Master_Prompt_v2.1.txt`. The current builder combines that preserved prompt with the v3 protocol. The original PDF renderers still build the archived v1/v2 studies; v3 research is provided as Markdown with its sources and evaluation artifacts.
+- `build_unified_prompt.py` rebuilds the v3.0 prompt, checks it byte for byte against
+  `v3/Trading_Edge_Unified_Master_Prompt_v3.0.txt`, and writes the v4.0 prompt: v3.0 plus the Edge Ledger, the workflow
+  and the field rules from `skills/engineer-trading-edge/SKILL.md`, without file links. Compare
+  `build/Trading_Edge_Unified_Master_Prompt.txt` with the root prompt before committing.
+- `build_unified_prompt_v2.py` rebuilds the v2.1 prompt.
+- `build_manifest.py` regenerates `manifest.json` from the tracked files; `--check` verifies it instead.
+- The PDF renderers also need `matplotlib` and `reportlab` and use the DejaVu fonts bundled with Matplotlib. PDF output
+  may differ in metadata or layout across library versions. The archived PDFs were visually reviewed when authored;
+  the relocated renderer sources were syntax-checked, not re-rendered.
+- The skill's calculators and their tests live in `skills/engineer-trading-edge/scripts/` and need only the standard
+  library.
