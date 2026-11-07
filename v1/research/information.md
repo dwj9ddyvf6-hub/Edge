@@ -137,7 +137,7 @@ Paul C. Tetlock (2011), **All the News That's Fit to Reprint: Do Investors React
 
 ### I12. Speed rents depend on market design
 
-Eric Budish, Peter Cramton, and John Shim (2015), **The High-Frequency Trading Arms Race: Frequent Batch Auctions as a Market Design Response**, Quarterly Journal of Economics 130(4), 1547–1621.
+Eric Budish, Peter Cramton, and J. Shim (2015), **The High-Frequency Trading Arms Race: Frequent Batch Auctions as a Market Design Response**, Quarterly Journal of Economics 130(4), 1547–1621.
 
 - Author page: https://ericbudish.org/publication/the-high-frequency-trading-arms-race-frequent-batch-auctions-as-a-market-design-response/
 - DOI: https://doi.org/10.1093/qje/qjv027
