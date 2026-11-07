@@ -53,6 +53,4 @@ as it stood then.
 
 ## Publication privacy update — 7 November 2026
 
-Personal document attribution was removed from the v1 PDF and its renderer. Bibliographic first names were abbreviated to initials across the source registers, including historical snapshots. The sample-chapter link now uses its verified direct CDN destination. The v1 PDF was regenerated from these sources; the research substance is unchanged.
-
-The hashes in `v3/evaluations/skill_snapshot_hashes.json` still record the original evaluated snapshot. Its `references/sources.md` now differs only in citation names and links; no evaluation was rerun or retrospectively regraded. `manifest.json` records the current packaged files.
+Personal document attribution was removed from the v1 PDF and its renderer. The PDF text and research content are unchanged. `manifest.json` records the current packaged files.

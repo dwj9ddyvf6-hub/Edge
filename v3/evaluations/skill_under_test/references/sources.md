@@ -86,7 +86,7 @@ Paul C. Tetlock. *Review of Financial Studies* 24(5), 1481–1512. [Author insti
 
 ### I12 — Budish, Cramton, and Shim (2015), The High-Frequency Trading Arms Race: Frequent Batch Auctions as a Market Design Response
 
-Eric Budish; Peter Cramton; J. Shim. *Quarterly Journal of Economics* 130(4), 1547–1621. [Author research page](https://ericbudish.org/publication/the-high-frequency-trading-arms-race-frequent-batch-auctions-as-a-market-design-response/).
+Eric Budish; Peter Cramton; John Shim. *Quarterly Journal of Economics* 130(4), 1547–1621. [Author research page](https://ericbudish.org/publication/the-high-frequency-trading-arms-race-frequent-batch-auctions-as-a-market-design-response/).
 
 **Access:** author research page and primary results inspected. **Supports:** continuous serial processing can create speed rents even with symmetrically public information; batch auctions change the competitive margin. **Limit:** market-design findings do not establish that a generic bot can capture those rents. Compare opportunity lifetime with measured observation, decision, submission, acknowledgement, and fill delays.
 
@@ -94,7 +94,7 @@ Eric Budish; Peter Cramton; J. Shim. *Quarterly Journal of Economics* 130(4), 15
 
 ### R1 — Cochrane, Asset Pricing, author-hosted sample chapters (copyright 2001)
 
-J. H. Cochrane. [Sample chapters](https://static1.squarespace.com/static/5e6033a4ea02d801f37e15bb/t/5eea8ffd84d85911855f3ff5/1592430590634/samplechapters.pdf). A revised edition appeared in 2005; this retrieved file was **not verified as that edition**.
+John H. Cochrane. [Author page](https://www.johnhcochrane.com/asset-pricing); [Sample chapters](https://www.johnhcochrane.com/s/samplechapters-dy5d.pdf). A revised edition appeared in 2005; this retrieved file was **not verified as that edition**.
 
 **Access:** sample-chapter text, copyright page, and pricing equations inspected. **Supports:** expected excess return relates to covariance with the stochastic discount factor, not raw variance alone. **Limit:** the identity becomes an empirical risk explanation only with a specified pricing kernel and market assumptions. Name the economically bad state and whether the strategy loses when capital is most valuable.
 

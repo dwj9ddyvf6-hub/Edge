@@ -23,9 +23,9 @@
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 5978,
-      "sha256": "c867b9460863f40a205556e60b7490e6d391e31f072b128bdf5bdf7e134ecc58",
-      "git_blob_sha1": "50c76bdf01fa71bee44846a4b5171a327d905b8d"
+      "bytes": 5525,
+      "sha256": "fb4ff47eef8600527a891cd44130fe9d147165992d22c40b54e7b7ce3053b0d6",
+      "git_blob_sha1": "80656cc0027da5b4c6ac052c0360879df72b25fe"
     },
     {
       "path": "README.md",
@@ -197,9 +197,9 @@
     },
     {
       "path": "skills/engineer-trading-edge/references/sources.md",
-      "bytes": 39755,
-      "sha256": "921cf9ee465f9518e4b21c0f10ef141af28e5d485ed61fb0440b5438db2f2b01",
-      "git_blob_sha1": "6d3b3685256858571b0e74d5e03d2ea2f1e91ffd"
+      "bytes": 39751,
+      "sha256": "dda410ec483440c714fdbbd4ee61bff9c9dfae32e4a74d813bbbfbe23a65ef9e",
+      "git_blob_sha1": "7b3cd7fe7145ae10803fa3c9908a36ef2c5d6065"
     },
     {
       "path": "skills/engineer-trading-edge/references/truth-gates.md",
@@ -269,9 +269,9 @@
     },
     {
       "path": "v1/Trading_Edge_Research_Study.pdf",
-      "bytes": 264089,
-      "sha256": "d920219048e1f219656e0ad38f34677828e8c3ce80d447aed8c301b7081b3d04",
-      "git_blob_sha1": "bfdc91ff7be5302f1d06c962ffe6db4d24382ac4"
+      "bytes": 264243,
+      "sha256": "b2dc70f7d4346b76726e388e2ec01c481e1d59031a34ea9c1e3715c266cb4f27",
+      "git_blob_sha1": "16aa698b6e239e917b3d1d8ced54b9d69c9f8da7"
     },
     {
       "path": "v1/evaluations/eval_bets.txt",
@@ -293,9 +293,9 @@
     },
     {
       "path": "v1/research/information.md",
-      "bytes": 21333,
-      "sha256": "956b621ce73a053b0a3818c69883cf264e8fbf3735862c28946df3ff765d1567",
-      "git_blob_sha1": "6ae38cede4b7cba614c94e9093cf12b4b56afb76"
+      "bytes": 21335,
+      "sha256": "a5d394c3e0728ab3ca1471f23ec56eedd2a4335a192d3e440fb663a929d38864",
+      "git_blob_sha1": "c4effcc008957e2eb81d4810498eb3d957472bb9"
     },
     {
       "path": "v1/research/report_opening.md",
@@ -305,9 +305,9 @@
     },
     {
       "path": "v1/research/risk.md",
-      "bytes": 19408,
-      "sha256": "5e1781edd1fe726a46afd8090265aa67b798bebeaf751419889bbf0319af22f6",
-      "git_blob_sha1": "afd1f948201ff9d93a96a7267b358302fc04ad68"
+      "bytes": 19400,
+      "sha256": "0c74da9a91b5021a729076baac3413a19a796b80aa3f1e618a47c490b766a31e",
+      "git_blob_sha1": "615eae50ee3282bbd7ec19595e3ba8e3a4b22aa7"
     },
     {
       "path": "v1/research/validation.md",
@@ -347,9 +347,9 @@
     },
     {
       "path": "v1/skill/references/sources.md",
-      "bytes": 39755,
-      "sha256": "921cf9ee465f9518e4b21c0f10ef141af28e5d485ed61fb0440b5438db2f2b01",
-      "git_blob_sha1": "6d3b3685256858571b0e74d5e03d2ea2f1e91ffd"
+      "bytes": 39751,
+      "sha256": "dda410ec483440c714fdbbd4ee61bff9c9dfae32e4a74d813bbbfbe23a65ef9e",
+      "git_blob_sha1": "7b3cd7fe7145ae10803fa3c9908a36ef2c5d6065"
     },
     {
       "path": "v1/skill/references/validation.md",
@@ -485,9 +485,9 @@
     },
     {
       "path": "v2/skill/references/sources.md",
-      "bytes": 39755,
-      "sha256": "921cf9ee465f9518e4b21c0f10ef141af28e5d485ed61fb0440b5438db2f2b01",
-      "git_blob_sha1": "6d3b3685256858571b0e74d5e03d2ea2f1e91ffd"
+      "bytes": 39751,
+      "sha256": "dda410ec483440c714fdbbd4ee61bff9c9dfae32e4a74d813bbbfbe23a65ef9e",
+      "git_blob_sha1": "7b3cd7fe7145ae10803fa3c9908a36ef2c5d6065"
     },
     {
       "path": "v2/skill/references/validation.md",
@@ -671,9 +671,9 @@
     },
     {
       "path": "v3/evaluations/skill_under_test/references/sources.md",
-      "bytes": 39755,
-      "sha256": "921cf9ee465f9518e4b21c0f10ef141af28e5d485ed61fb0440b5438db2f2b01",
-      "git_blob_sha1": "6d3b3685256858571b0e74d5e03d2ea2f1e91ffd"
+      "bytes": 39751,
+      "sha256": "dda410ec483440c714fdbbd4ee61bff9c9dfae32e4a74d813bbbfbe23a65ef9e",
+      "git_blob_sha1": "7b3cd7fe7145ae10803fa3c9908a36ef2c5d6065"
     },
     {
       "path": "v3/evaluations/skill_under_test/references/validation.md",
@@ -827,9 +827,9 @@
     },
     {
       "path": "v3/skill/references/sources.md",
-      "bytes": 39755,
-      "sha256": "921cf9ee465f9518e4b21c0f10ef141af28e5d485ed61fb0440b5438db2f2b01",
-      "git_blob_sha1": "6d3b3685256858571b0e74d5e03d2ea2f1e91ffd"
+      "bytes": 39751,
+      "sha256": "dda410ec483440c714fdbbd4ee61bff9c9dfae32e4a74d813bbbfbe23a65ef9e",
+      "git_blob_sha1": "7b3cd7fe7145ae10803fa3c9908a36ef2c5d6065"
     },
     {
       "path": "v3/skill/references/validation.md",

@@ -8,9 +8,11 @@ The post's second category is economically productive: someone can pay you to su
 
 ## Verified source register
 
-### R1 — J. H. Cochrane, *Asset Pricing*, revised edition (2005), chapter 1
+### R1 — John H. Cochrane, *Asset Pricing*, revised edition (2005), chapter 1
 
-Author-hosted sample chapters: https://static1.squarespace.com/static/5e6033a4ea02d801f37e15bb/t/5eea8ffd84d85911855f3ff5/1592430590634/samplechapters.pdf
+Author page: https://www.johnhcochrane.com/asset-pricing
+
+Author-hosted sample chapters: https://www.johnhcochrane.com/s/samplechapters-dy5d.pdf
 
 Verified passage: printed pp. 15–18, especially equation (1.12); browser `turn41view4` / `turn52view4`.
 
