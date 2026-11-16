@@ -73,3 +73,14 @@ It complements the edge-find methods reference added earlier the same day, which
 ## Discovery protocol amendment, 15 November 2026 (evening)
 
 `edge-discovery-protocol.md` gains a labelled amendment (a notice under its introduction and a new section 11) after the desk's pre-registered mechanism-weighted lens over 24.4 million condition-combination cells failed (AUC 0.490 against 0.529 for the in-sample t alone, below its shuffle null), traced to long-story bias in narrative ratings and no per-cell information within a side. The source is the research program's lens study and its playbook practices on it (`research/gestalt/accel/lens` in the program's research store). The amendment reconciles the result with the practice ranking: the mechanism question stays the strongest hypothesis generator and becomes a family-level tie-breaker ranked within side and instrument, never a per-cell weight. Only the lines that would contradict it were edited (checklist item 2, the ranking guidance, step 2's validation and use, the EPS note on m, one failure-mode row, the practice catalogue's practice 3 and three added lens practices); everything else is unchanged. SKILL.md's CREATE paragraph was reworded to match, so the root prompt was regenerated with `scripts/build_unified_prompt.py` and matches the build byte for byte; the skill's unit tests pass. `manifest.json` is regenerated in the commit that follows.
+
+## Revision — 16 November 2026: live firing audit and the real-size amendment
+
+- Added `skills/engineer-trading-edge/references/live-firing-audit.md`: practices 55-92 of the source desk's
+  edge-discovery playbook (promotion passes and two desk audits, 15-16 November 2026), rewritten as portable MUST/NEVER
+  gates with triggers, pass/fail checks, a run-in-order audit and an audit row template.
+- `edge-discovery-protocol.md`: section 8 now covers practices 1-92 (research-side 59, 64, 65, 66 and 68 added as
+  lines; the rest point to the new reference); steps 0.10 and 10.3 point to the audit; new section 12 records the
+  operator's amendment replacing minimum-lot shadows with real size at a floor under book-level risk caps.
+- `SKILL.md`: one CREATE sentence, one section 7 bullet and one Files row wire the new reference; the root prompt was
+  rebuilt with `scripts/build_unified_prompt.py` and the manifest regenerated.

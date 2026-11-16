@@ -48,7 +48,7 @@ Identify CREATE, IMPROVE or AUDIT. Extract venue, payoff contract, instruments, 
 
 ### CREATE: start from the payer, not the pattern
 
-When the task is to find new edge across many candidates, run the discovery protocol: name who is forced to trade and when, use that mechanism to generate hypotheses and to break ties between families (never as a per-cell score, and ranked within side and instrument), residualise, rank by potential against placebos and older history instead of a pass/fail hurdle, race co-timed explanations, demand a dose-response, and arm near-misses only as minimum-size paper shadows.
+When the task is to find new edge across many candidates, run the discovery protocol: name who is forced to trade and when, use that mechanism to generate hypotheses and to break ties between families (never as a per-cell score, and ranked within side and instrument), residualise, rank by potential against placebos and older history instead of a pass/fail hurdle, race co-timed explanations, demand a dose-response, and arm near-misses as minimum-size paper shadows, or at a floor of real size where the operator's policy forbids a shadow stage (protocol section 12).
 
 1. Name who must or wants to transact, shed risk, or cannot act: a hedger, an index tracker, a constrained fund, a lottery buyer, a slow updater.
 2. Name what we supply them (speed, accuracy, access or warehousing) and fill the ledger.

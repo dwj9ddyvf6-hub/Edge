@@ -49,7 +49,10 @@ measurements, quoted so a reader can check the method, not as forecasts.
 8. **Race every co-timed explanation and demand a dose-response** before naming the mechanism (section 2, step 8).
 9. **Run the fake-edge trap checklist** (section 5) on every candidate you want to arm.
 10. **Red-team, gate, then arm near-misses as minimum-lot paper shadows** with a kill switch and a dated first fire.
-    Do not kill a near-miss for missing a cutoff; do not size anything from a backtest.
+    Do not kill a near-miss for missing a cutoff; do not size anything from a backtest. Where the operator's policy
+    is real size with no shadow stage, arm under section 12 instead. Either way, run
+    [live-firing-audit.md](live-firing-audit.md) before calling anything armed: an armed rule that never fires is
+    worth zero.
 11. **Write the find record** (section 9) in the same pass, including what you did differently from your default. A
     find with no record is an open defect.
 12. **Dig the vein:** transplant the mechanism to second-order holders, stack one or two conditions, then repeat.
@@ -293,7 +296,9 @@ veins, not rows: rows that share event dates are cluster-mates.
    computable; not a clone; one new twin per economic family or sector; red team not kill.
 3. **Arm:** a minimum-lot paper shadow behind a per-round kill switch, with its first fire date printed and a falsifier
    (for example, demote if the mean net over the first 20 fires is not positive). Generate the live rules only after
-   the red team, outside the live tree until committed.
+   the red team, outside the live tree until committed. Under a real-size policy, arm at a floor of the computed size
+   with book-level caps instead (section 12). Before calling a rule armed, it MUST pass the parity, data, timing and
+   control gates in [live-firing-audit.md](live-firing-audit.md).
 4. **Record** the find (section 9) and append the practices that worked and the honesty notes to the round's log.
    The round is not done until every find record is complete.
 
@@ -564,11 +569,14 @@ reinvestment instead.
 
 ---
 
-## 8. The practice catalogue (all 54 numbered practices)
+## 8. The practice catalogue (numbered practices 1 to 92)
 
-The program numbered its practices as rounds ran; parallel rounds reused 29-30 and 37-43, so 63 entries carry 54
-numbers (the reused ones are marked a, b and c; 41c-43c come from the amendment in section 11). One line each, grouped by use. Evidence for each sits in the source
-program's round records.
+The program numbered its practices as rounds ran; parallel rounds reused 29-30 and 37-43, so practices 1-54 fill 63
+entries (the reused ones are marked a, b and c; 41c-43c come from the amendment in section 11). Practices 55-92 came
+from the promotion passes and the desk audits of 15-16 November 2026: the research-side ones are added below, and the
+deployment, parity and live-firing ones (55-58, 60-63, 67, 69-92) are written as executable gates in
+[live-firing-audit.md](live-firing-audit.md); 72-76 also form the amendment in section 12. One line each, grouped by
+use. Evidence for each sits in the source program's round records.
 
 **Mechanism and search design**
 1. Ask who is forced to trade, when, regardless of price; forced-flow families persist and discretionary ones reverse.
@@ -591,6 +599,8 @@ program's round records.
 46. At the single-name level, recover announcement dates, not just effective dates.
 47. Filter tradable index events; drop mergers, take-privates, bankruptcies and delistings.
 48. Official index lists beat point-in-time cap-rank proxies; measure proxy recall first.
+66. MUST test a prospect on its own soil and against what is installed: a cell that passes on a proxy but overlaps
+    a live strategy (entry Jaccard >= 0.4) is a clone, not a new edge.
 
 **Scoring and statistics**
 2. Score potential (EPS, shrinkage, persistence, placebo lift, FDR, pi0) instead of pass/fail.
@@ -612,6 +622,10 @@ program's round records.
 42c. Neutralise mechanism priors within side x instrument; raters prefer long stories.
 43c. "Mechanism helps for forced flows" failed at the cell level (family rho 0.012); use the family rubric only as a
      weak family-level tie-breaker. Rank prospecting maps on complete populations only.
+64. NEVER report the best row of a wide in-sample grid; it is overfit by construction (in-sample z 3-5 fell to
+    0.45-1.99 out of sample). Report K and the out-of-sample pass rate of IS-selected picks.
+65. MUST use the split that fits each asset class's history (a crypto run on an equity split selected on no
+    in-sample data and looked like OOS z 3-4.5). Void and re-run, and disclose both runs in the pre-registration.
 
 **Honesty and artefacts**
 11. Count errored trials per chunk before selecting.
@@ -630,6 +644,8 @@ program's round records.
 52. Race a holiday effect against the weekday.
 53. Race overlapping mid-month labels on each window separately.
 54. Never enter at a price the signal has not printed; split leaked signal-bar P&L from the remainder.
+68. A panel built from today's constituents is a survivorship snapshot even when its levels match; label it and keep
+    it at the smallest size until a point-in-time membership re-test.
 
 **Arming and operations**
 6. Twin, don't kill: near-misses go live as minimum-lot paper shadows with kill switches.
@@ -639,6 +655,11 @@ program's round records.
 30a. When hosting someone else's rule, read its own decision stamps, not its headline state; fix bounds in a private
      copy, never the rules.
 45. Never let an uncommitted engine sit in the live tree while other workers reload.
+59. Use the red team as an overlay, not the selector: apply its verdict only when it is more conservative than the
+    pre-registration, override it only where its stated reason is factually wrong about the file, and record the
+    override before any live result. Report expected dollars beside the Sharpe.
+55-58, 60-63, 67, 69-92. Parity, feeds, timing windows, controls, silent-strategy diagnosis and real-size arming:
+    run them as the gates in [live-firing-audit.md](live-firing-audit.md).
 
 **Spending on paid LLM judgements**
 26. Before buying judgements, compute from the scoring formula what each answer can change; ask only where it can move
@@ -749,6 +770,32 @@ things.
    rescue a cell that fails them, and a poor story does not sink one that passes.
 6. Rank any prospecting map on complete populations only: cells kept because they passed an OOS rule have persistence
    1.0 by construction and will crowd the top of any map.
+
+## 12. Amendment: real size with a floor instead of a shadow stage
+
+Added 16 November 2026 by explicit operator order. It replaces step 10.3 and checklist item 10 (minimum-lot shadows)
+for any desk whose operator adopts it. Record in every find record which arming policy applied.
+
+**Why the operator overrode the shadow stage.** A minimum-lot shadow produces fills too small to matter and is easy to
+leave in place forever; field rule 20 ([C20](field-casebook.md#c20-an-edge-that-never-executes-is-zero)) says an edge
+that never executes at meaningful size is worth zero. In one conversion pass, 78 of the 84 armed
+candidates were shadows at about one share per leg: too small to produce evidence a desk could act on.
+
+**Rules under this amendment.**
+1. Every installed edge MUST trade at its computed size, never below a floor (one desk used 12.5% of N_full).
+   A step-down below the floor means recalibrate the rule; there is no paused or shadow state.
+2. Size for risk: `N_full = min(vol target / sigma_trade, a book-share cap, an ADV cap)`; fractional Kelly is a cap
+   only, and a non-positive Kelly estimate never zeroes a strategy ([C11](field-casebook.md#c11-kelly-sizing-on-an-edge-found-in-the-same-history)).
+3. Control risk at the book, not by shrinking each edge: per-family caps on deployed 1-sigma risk, a book gross cap,
+   one proportional ex-ante scale so the p95 concurrent day fits, a per-pass factor and a hard clip at entry.
+4. Merge clones (exposure Jaccard >= 0.4 within a family) into one unit at combined size ([C19](field-casebook.md#c19-crowding-many-sleeves-one-bet)).
+5. A red-team demotion is a sizing haircut (for example half the floor); kill-exact-row means not installed.
+6. Print maximum and p95 concurrent gross with the book, and a kill switch per strategy.
+7. Honesty: a size computed from backtest sigma is still a backtest number. The first 20 fires per unit are the
+   evidence; print the falsifier beside the size.
+
+All gates in step 10.2 still apply; the amendment changes how a gated candidate is armed, not whether it is gated.
+Run [live-firing-audit.md](live-firing-audit.md) section 7 to arm under it.
 
 ## Source and maintenance
 
