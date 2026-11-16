@@ -43,6 +43,7 @@ Example request:
   [live firing audit](skills/engineer-trading-edge/references/live-firing-audit.md), strategy
   [archetypes](skills/engineer-trading-edge/references/edge-ledger.md) and a
   [literature map](skills/engineer-trading-edge/references/literature-map.md) of 55 checked references.
+- **Field lessons, November 2026:** the [consensus lens](skills/engineer-trading-edge/references/consensus-lens.md) for auditing any object against the consensus it has to beat, the [potential-edge census](skills/engineer-trading-edge/references/potential-edge-census.md) for grading a whole estate by potential edge, [typed lens panels](skills/engineer-trading-edge/references/typed-lens-panels.md) for using a model panel as a lens under governance, and [falsifier integrity](skills/engineer-trading-edge/references/falsifier-integrity.md) for auditing a grading machine before its window runs.
 - **`research_stats.py`:** Benjamini–Hochberg, Newey–West, probabilistic and deflated Sharpe ratio, minimum track
   record length, block bootstrap, minimum detectable effect and a random-walk null, standard library only.
 - **A behavior test built to avoid the ceiling:** 12 fresh cases with controls for over-applied lessons, frozen
