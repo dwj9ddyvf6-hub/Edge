@@ -167,6 +167,7 @@ A persona or a list of mathematical fields is not a decision record. End with th
 |---|---|
 | [references/edge-ledger.md](references/edge-ledger.md) | Filling the ledger; strategy archetypes |
 | [references/field-casebook.md](references/field-casebook.md) | Applying a field rule; the evidence behind it |
+| [references/edge-find-methods.md](references/edge-find-methods.md) | Hunting for edge in records already held: the nine find methods, the autopsy protocol, the vein map, the anti-patterns and the cold-start checklist |
 | [references/research-protocol.md](references/research-protocol.md) | Designing or judging a test |
 | [references/execution-edge.md](references/execution-edge.md) | Costs, latency, fills, capacity |
 | [references/truth-gates.md](references/truth-gates.md) | Reporting the status of work |

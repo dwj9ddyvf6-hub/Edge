@@ -54,3 +54,10 @@ as it stood then.
 ## Publication privacy update — 7 November 2026
 
 Personal document attribution was removed from the v1 PDF and its renderer. The PDF text and research content are unchanged. `manifest.json` records the current packaged files.
+
+
+## Field methods addition, 15 November 2026
+
+The current skill gains one reference, `skills/engineer-trading-edge/references/edge-find-methods.md`: the edge-find methods canon distilled from the desk research program's alpha hunt of 14 and 15 November 2026. Its source is the program's edge-find method ledger (25 autopsy entries with geology rows, the methods ranking, the vein map and the negative ledger), held in the desk's research notes at `research_notes/alpha-hunt-chaos-20261115/EDGE-FIND-METHOD-LEDGER.md`. The objects the methods produced are registered in the same program's potential-edge register (198 objects: 2 exam-passed, 18 live candidates, 66 leads, 59 watch, 22 avoidance, 31 resolved-against). Only aggregate statistics appear; no raw vendor data, machine paths, accounts or personal identifiers.
+
+Placement follows this archive's own discipline. The material lives in the current skill at its stable path; v1, v2 and v3 are unchanged. SKILL.md gains one row in its section 9 files table and no other change, so sections 1 to 3 are untouched and the root prompt rebuilds byte for byte as before, verified with `scripts/build_unified_prompt.py`, a byte comparison against the root prompt and the skill's 88 unit tests. `manifest.json` is regenerated in the commit that follows this one, with `previous_edge_commit` naming the head this addition builds on and `installed_skill_commit` naming the commit that changed the skill.
