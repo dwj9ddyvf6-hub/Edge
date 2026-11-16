@@ -77,13 +77,14 @@ It complements the edge-find methods reference added earlier the same day, which
 ## Revision — 16 November 2026: live firing audit and the real-size amendment
 
 - Added `skills/engineer-trading-edge/references/live-firing-audit.md`: practices 55-92 of the source desk's
-  edge-discovery playbook (promotion passes and two desk audits, 15-16 November 2026), rewritten as portable MUST/NEVER
-  gates with triggers, pass/fail checks, a run-in-order audit and an audit row template.
-- `edge-discovery-protocol.md`: section 8 now covers practices 1-92 (research-side 59, 64, 65, 66 and 68 added as
-  lines; the rest point to the new reference); steps 0.10 and 10.3 point to the audit; new section 12 records the
-  operator's amendment replacing minimum-lot shadows with real size at a floor under book-level risk caps.
-- `SKILL.md`: one CREATE sentence, one section 7 bullet and one Files row wire the new reference; the root prompt was
-  rebuilt with `scripts/build_unified_prompt.py` and the manifest regenerated.
+  edge-discovery playbook (promotion passes and two desk audits, 15-16 November 2026) as a run-in-order audit, Gates
+  A-E with pass lines and measured costs, and an audit row template. A same-day curation pass cut restatements of
+  `desk-runtime.md`, `execution-edge.md`, C11, C13, C19 and protocol practices 45 and 54 in favour of cross-references.
+- `edge-discovery-protocol.md`: section 8 covers practices 1-92 (59, 64-66 and 68 as lines; the rest point to the
+  audit); checklist item 10 and step 10.3 point to the audit; new section 12 records the operator's amendment replacing
+  minimum-lot shadows with real size at a floor under book-level risk caps, as an eight-step procedure.
+- `SKILL.md`: one CREATE clause, one section 7 bullet and one Files row; the root prompt was rebuilt with
+  `scripts/build_unified_prompt.py` and the manifest regenerated.
 
 ## Field lessons completion, 16 November 2026
 
