@@ -84,3 +84,23 @@ It complements the edge-find methods reference added earlier the same day, which
   operator's amendment replacing minimum-lot shadows with real size at a floor under book-level risk caps.
 - `SKILL.md`: one CREATE sentence, one section 7 bullet and one Files row wire the new reference; the root prompt was
   rebuilt with `scripts/build_unified_prompt.py` and the manifest regenerated.
+
+## Field lessons completion, 16 November 2026
+
+The current skill gains four references, completing the placement of the desk research program's November 2026
+edge-finding lessons in skill form. `skills/engineer-trading-edge/references/consensus-lens.md` packages the
+consensus-circumvention examination (the eight tests, the twelve-field Lens Card and the four verdicts) from the
+program's consensus lens examination plan and master trial register of 14 and 15 November 2026.
+`potential-edge-census.md` packages the potential-edge measure and the E/M/D/A/S rubric from the program's
+potential-edge census of 15 November 2026 and its register of 198 objects. `typed-lens-panels.md` packages the
+governed creative use of a typed model layer (seven-lens panels, connection hunting, adversarial nulls,
+extraction and counterfactual reads, with the graduation rule for seats) from the census's panel record and the
+program's lens study. `falsifier-integrity.md` packages the falsifier audit procedure and its seven defect
+classes from the fifth wave of the program's alpha hunt of 14 and 15 November 2026. Only the methods and their
+aggregate evidence appear; the underlying registers, lane records and research artifacts remain in the desk's
+research notes and are not part of this repository, which holds skills for finding and creating edge and nothing
+else. Placement follows this archive's own discipline: the material lives in the current skill at its stable
+path; v1, v2 and v3 are unchanged. SKILL.md gains four rows in its section 9 files table and no other change, so
+sections 1 to 3 are untouched and the root prompt rebuilds byte for byte as before. README's list gains one
+bullet. `manifest.json` is regenerated in the commit that follows, with `previous_edge_commit` naming the head
+this addition builds on and `installed_skill_commit` naming the last commit that changed the skill.
