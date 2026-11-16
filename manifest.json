@@ -1,7 +1,7 @@
 {
   "scope": "Complete Trading Edge Lab v1-v4 authored archive; repository-relative paths; manifest excludes itself",
-  "previous_edge_commit": "7fb517142fde3e9db78c555a231e7e439e323209",
-  "installed_skill_commit": "612bbec3e82cd96f48495a5cb9dfec96abcbfbc4",
+  "previous_edge_commit": "4051e87eac19fa3c4e04bd63ca5cd9b3cc737252",
+  "installed_skill_commit": "9c461159c95083690a52c2e7d9cdcaf75cf02772",
   "files": [
     {
       "path": ".gitignore",
@@ -23,9 +23,9 @@
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 13478,
-      "sha256": "c367b803acb403d98ce6a282fb1c83ba8401f3e87ff89deb4bddd58d561bd75d",
-      "git_blob_sha1": "7beb2ce48592e2e8019bb75fde389e6d7a87500b"
+      "bytes": 13598,
+      "sha256": "88dfb3ad3fd476f2fb2ed346919bd5dee183177acf7105396a8d6478d266459f",
+      "git_blob_sha1": "b0c0e6b73892e4eb3f77d7a8f696a9484a873363"
     },
     {
       "path": "README.md",
@@ -35,9 +35,9 @@
     },
     {
       "path": "Trading_Edge_Unified_Master_Prompt.txt",
-      "bytes": 56068,
-      "sha256": "a998652274ad27c5c834fb5cdafa16f30291e0e85a862cbd15991d82ac5d64e5",
-      "git_blob_sha1": "89f451ffb5733d5a63ab5865e652a1ea171ac553"
+      "bytes": 56037,
+      "sha256": "b2611ff0647d44f00912e5f18d91915f73ec35e797b46424f129fa3b3183f33e",
+      "git_blob_sha1": "3feb81674842fb3b90fad6fce6c9bb14006c9b32"
     },
     {
       "path": "scripts/README.md",
@@ -77,9 +77,9 @@
     },
     {
       "path": "skills/engineer-trading-edge/SKILL.md",
-      "bytes": 24926,
-      "sha256": "7d601c231a987ab69c384a428882c12fafb4ef5c2f44df726aac4c51e9bc70ef",
-      "git_blob_sha1": "98c00d16702a1b1162ca4df001ee0ad0b6326a8d"
+      "bytes": 24657,
+      "sha256": "aae3fb5b5eef99edcff83a5ca50b9ea06d04965f3c40b53ac392a5d199858d7a",
+      "git_blob_sha1": "859f976a506a728a33a4cc1ca5f15c50a40b6b31"
     },
     {
       "path": "skills/engineer-trading-edge/agents/openai.yaml",
@@ -149,9 +149,9 @@
     },
     {
       "path": "skills/engineer-trading-edge/references/edge-discovery-protocol.md",
-      "bytes": 65536,
-      "sha256": "6e09f56011e10a5351c28aefb59fec2416ec1e479fa8fa4e85ae16ad847aa474",
-      "git_blob_sha1": "d60ca74ad6c9a3ab35836d5ec241974cb38ef288"
+      "bytes": 65493,
+      "sha256": "3b4f15482a799d045d3c30fb04eecd48ed1de32b6a3f2d37411ed02b5c0e1023",
+      "git_blob_sha1": "671463cbb6c833ff362e86072254f1ec342390df"
     },
     {
       "path": "skills/engineer-trading-edge/references/edge-find-methods.md",
@@ -209,9 +209,9 @@
     },
     {
       "path": "skills/engineer-trading-edge/references/live-firing-audit.md",
-      "bytes": 19291,
-      "sha256": "4d6b8a78fb6c6343220ea3b9a2863b03d1b494bc462bd2f24f046c4758a8523a",
-      "git_blob_sha1": "498b8ddfee30743d22b41894444a6075d706aa46"
+      "bytes": 13861,
+      "sha256": "e0091f5656f58ee6d3424c0a3d4966501a28f1e2799a4670383e0f093b354428",
+      "git_blob_sha1": "652ec08f89b7b02d983bd2d44938129347096302"
     },
     {
       "path": "skills/engineer-trading-edge/references/mechanisms.md",
