@@ -1,7 +1,7 @@
 {
   "scope": "Complete Trading Edge Lab v1-v4 authored archive; repository-relative paths; manifest excludes itself",
-  "previous_edge_commit": "9c875d62eb8ea8e1754ba45b708b10bcb253cef2",
-  "installed_skill_commit": "786015dfe586c131d6e0432f992e918c1ee5a61c",
+  "previous_edge_commit": "b38cbd4762de93b59f8dcac895908c8bf2bf9690",
+  "installed_skill_commit": "f45707f6b1de44115e6567e36e6a35af324fbeae",
   "files": [
     {
       "path": ".gitignore",
@@ -23,9 +23,9 @@
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 9319,
-      "sha256": "a4b596258d703bfa98ab2c2337882381c32d11c4ba77802638a00e9fcb3f6809",
-      "git_blob_sha1": "40dfaff948d6b351d6f43be7c44e199120c7e791"
+      "bytes": 10653,
+      "sha256": "53e4a8303c6f84d0397a58fcece78e8d99eac5eb8c2a0dee4ecab03af049fd84",
+      "git_blob_sha1": "e55765d370fe023a293e9e4a7acac694f2119217"
     },
     {
       "path": "README.md",
@@ -35,9 +35,9 @@
     },
     {
       "path": "Trading_Edge_Unified_Master_Prompt.txt",
-      "bytes": 55876,
-      "sha256": "f8ae9b57403b7a09dbfa1fa3813343601e274366a320ce372d47e5802a637f60",
-      "git_blob_sha1": "4b322817e6e508a51a02459f713ef871925f3a71"
+      "bytes": 55972,
+      "sha256": "37c5fb45efcb22f004ab7be5fa89624e5c92a49bddd8eaad2e03b72ad67fa141",
+      "git_blob_sha1": "a6e3d188a3bef84e68507b88d0cebcbe952d4949"
     },
     {
       "path": "scripts/README.md",
@@ -77,9 +77,9 @@
     },
     {
       "path": "skills/engineer-trading-edge/SKILL.md",
-      "bytes": 23047,
-      "sha256": "d2980917f3f77e85ecd791522db3c15175664cc902352e977741193283337696",
-      "git_blob_sha1": "f0d02afae8c15021fa6246122e62cf54b864f856"
+      "bytes": 23143,
+      "sha256": "8abfa16446517f6f16bfc38abf6a6e33552ae1296a031ff1e2c9552fb3e9c7b8",
+      "git_blob_sha1": "9602bbce9395fb41efc449a3bb7e72d480ed4002"
     },
     {
       "path": "skills/engineer-trading-edge/agents/openai.yaml",
@@ -143,9 +143,9 @@
     },
     {
       "path": "skills/engineer-trading-edge/references/edge-discovery-protocol.md",
-      "bytes": 54694,
-      "sha256": "1cec0865de690271acdf6f614af73023ec5d0dd2e21c0e5435e3ceec64fdbb28",
-      "git_blob_sha1": "c885418c806f8e2743a43d8e35d9f19a9f6734c3"
+      "bytes": 61264,
+      "sha256": "0dc52b0f093f6073038a43d7fae658870a2dd4fba2774710bbc7de3b26b516ed",
+      "git_blob_sha1": "8356f44c117316bcdf17c52397321f3a282c121c"
     },
     {
       "path": "skills/engineer-trading-edge/references/edge-find-methods.md",
