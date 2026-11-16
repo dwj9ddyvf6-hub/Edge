@@ -1,7 +1,7 @@
 {
   "scope": "Complete Trading Edge Lab v1-v4 authored archive; repository-relative paths; manifest excludes itself",
-  "previous_edge_commit": "d860db05263fc406b46aa2f0441e2805f39ab81f",
-  "installed_skill_commit": "991bfada32969ea26232e5038c0fbc4aa5ed3269",
+  "previous_edge_commit": "7fb517142fde3e9db78c555a231e7e439e323209",
+  "installed_skill_commit": "612bbec3e82cd96f48495a5cb9dfec96abcbfbc4",
   "files": [
     {
       "path": ".gitignore",
@@ -23,15 +23,15 @@
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 11585,
-      "sha256": "b93f8c25d25e4bb8529af483bcfaf851b5ecdc4be39d56ef0f47c2cc0f1cda30",
-      "git_blob_sha1": "2cdf4672ea93a23cea8b1300555d65d5938f12e4"
+      "bytes": 13478,
+      "sha256": "c367b803acb403d98ce6a282fb1c83ba8401f3e87ff89deb4bddd58d561bd75d",
+      "git_blob_sha1": "7beb2ce48592e2e8019bb75fde389e6d7a87500b"
     },
     {
       "path": "README.md",
-      "bytes": 5433,
-      "sha256": "755255b0b592358475fc38ac6ca44c8917e3291f32f2dd6ebf1be6f01c194653",
-      "git_blob_sha1": "6c3910aa686733d7c3e380b3fbc538571b1b129c"
+      "bytes": 6030,
+      "sha256": "05505b9dca3306211c221b7c89e2ea8200b9675ce4cc89d21f09c9c90b802be0",
+      "git_blob_sha1": "9fc620ac70f34861489e200590858abead3d9dd7"
     },
     {
       "path": "Trading_Edge_Unified_Master_Prompt.txt",
@@ -77,9 +77,9 @@
     },
     {
       "path": "skills/engineer-trading-edge/SKILL.md",
-      "bytes": 23978,
-      "sha256": "f116230f15a301a55e87dbffee451a5ebe930e8f45c9c13b8cfa83a8c2c7c279",
-      "git_blob_sha1": "a00a4907a563ee57e6e30ca9460c8603e3b16c93"
+      "bytes": 24926,
+      "sha256": "7d601c231a987ab69c384a428882c12fafb4ef5c2f44df726aac4c51e9bc70ef",
+      "git_blob_sha1": "98c00d16702a1b1162ca4df001ee0ad0b6326a8d"
     },
     {
       "path": "skills/engineer-trading-edge/agents/openai.yaml",
@@ -136,6 +136,12 @@
       "git_blob_sha1": "66054a474c8ec86cabc7dbc18905cd5f833a2260"
     },
     {
+      "path": "skills/engineer-trading-edge/references/consensus-lens.md",
+      "bytes": 9026,
+      "sha256": "9090528dfbdfa394ab87b9d9fba5210aa98e4f7de3f10954b1f900f248a7873f",
+      "git_blob_sha1": "32538b6a42f1bdf4f4eb5b3a3a8726abab8185b8"
+    },
+    {
       "path": "skills/engineer-trading-edge/references/desk-runtime.md",
       "bytes": 12447,
       "sha256": "dd4eedcdb601852f37bcbb92161975f4a4417200e769266fe1a56bc3bd618913",
@@ -170,6 +176,12 @@
       "bytes": 5645,
       "sha256": "b69f447b748f063a13c6360e0d3b069408036cf6fac796f49733b0510a9574bd",
       "git_blob_sha1": "fc5e1ee53791a3e92fd0ac5c373fd78284e5b9d7"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/falsifier-integrity.md",
+      "bytes": 6685,
+      "sha256": "3d3622062834fd6ade31861874de9f50a5a23bc81b3617dc103afb213cb45c3a",
+      "git_blob_sha1": "50bfd92ae466af3f54ba311482f74fd36c9ad635"
     },
     {
       "path": "skills/engineer-trading-edge/references/field-casebook.md",
@@ -208,6 +220,12 @@
       "git_blob_sha1": "2285e6f5528b35f215ef517d7f7ca966659ff13e"
     },
     {
+      "path": "skills/engineer-trading-edge/references/potential-edge-census.md",
+      "bytes": 5656,
+      "sha256": "a9137f52c23fe49ad85b58a247bcc6539ea2d8796cadfeb9473e601afa5c665c",
+      "git_blob_sha1": "ddda6861e972ff33594156d6ced1eab09d36f65b"
+    },
+    {
       "path": "skills/engineer-trading-edge/references/research-protocol.md",
       "bytes": 8412,
       "sha256": "89a6a4e56cb0797c069416024d0bff722d0623c71ce5be0fbe4e9743cec775fa",
@@ -224,6 +242,12 @@
       "bytes": 3861,
       "sha256": "d8be753be8096401ea1bfef6890ae15885ce52457939e43bee8051412b67cc37",
       "git_blob_sha1": "f30785fb00a130d22fc65489010be9fa2ccb2901"
+    },
+    {
+      "path": "skills/engineer-trading-edge/references/typed-lens-panels.md",
+      "bytes": 6540,
+      "sha256": "8cf15b35a8e2710e454fee67bc1e49e4f0cafdf9f2b7ce6137dc47421d10f7e3",
+      "git_blob_sha1": "18ca4f8d5a9b9b5be702abbc2bf748a6df34b5e1"
     },
     {
       "path": "skills/engineer-trading-edge/references/validation.md",
