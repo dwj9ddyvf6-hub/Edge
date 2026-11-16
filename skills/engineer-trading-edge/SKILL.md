@@ -39,6 +39,8 @@ Identify CREATE, IMPROVE or AUDIT. Extract venue, payoff contract, instruments, 
 
 ### CREATE: start from the payer, not the pattern
 
+When the task is to find new edge across many candidates, run [the discovery protocol](references/edge-discovery-protocol.md): name who is forced to trade and when, score the mechanism blind before any statistics, residualise, rank by potential against placebos and older history instead of a pass/fail hurdle, race co-timed explanations, demand a dose-response, and arm near-misses only as minimum-size paper shadows.
+
 1. Name who must or wants to transact, shed risk, or cannot act: a hedger, an index tracker, a constrained fund, a lottery buyer, a slow updater.
 2. Name what we supply them (speed, accuracy, access or warehousing) and fill the ledger.
 3. Generate a small diverse set by changing counterparty, contract, information partition, timing, endowment, scale or implementation cost. Include a simple repair and one unconventional hypothesis. Write each as input → consequence → action → net payoff → falsifier.
@@ -168,6 +170,7 @@ A persona or a list of mathematical fields is not a decision record. End with th
 | [references/edge-ledger.md](references/edge-ledger.md) | Filling the ledger; strategy archetypes |
 | [references/field-casebook.md](references/field-casebook.md) | Applying a field rule; the evidence behind it |
 | [references/edge-find-methods.md](references/edge-find-methods.md) | Hunting for edge in records already held: the nine find methods, the autopsy protocol, the vein map, the anti-patterns and the cold-start checklist |
+| [references/edge-discovery-protocol.md](references/edge-discovery-protocol.md) | Hunting for new edge in market data: the cold-start checklist, the step-by-step protocol from "who is forced to trade", the measured practice ranking, the Edge Potential Score, LLM failure modes, the fake-edge trap checklist, worked finds and kills, the persist-or-reverse vein map and the find record |
 | [references/research-protocol.md](references/research-protocol.md) | Designing or judging a test |
 | [references/execution-edge.md](references/execution-edge.md) | Costs, latency, fills, capacity |
 | [references/truth-gates.md](references/truth-gates.md) | Reporting the status of work |

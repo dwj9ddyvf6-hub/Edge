@@ -2,6 +2,8 @@
 
 This reference is the operating playbook for hunting edge in records an estate already holds. It distils a two-day alpha hunt (14 and 15 November 2026) in which 25 finds were extracted from one desk's own records, every find autopsied in the same pass that reported it. The source record is the desk's edge-find method ledger: 25 autopsy entries, a geology table, a vein map, a methods ranking and a negative ledger. Only aggregate statistics appear here; no raw vendor data, accounts or personal identifiers.
 
+Its companion, [edge-discovery-protocol.md](edge-discovery-protocol.md), covers the other half of a hunt: mining the market itself for new forced-flow mechanisms, step by step from "who is forced to trade, and when", with the measured practice ranking, the Edge Potential Score and the fake-edge trap checklist. Use that file to find new mechanisms and this one to find what the estate already holds.
+
 Read this file when a hunt is being planned or run: when a research program must decide where to dig next, when a lane reports a null and someone must decide whether the null is a verdict or a route failure, when a find needs its forward check designed, or when a reported find needs its method audited. The governing pattern fits on one page. The nine methods follow as operational entries. The autopsy protocol, the vein map, the anti-patterns and the cold-start checklist close the file.
 
 ## The governing pattern

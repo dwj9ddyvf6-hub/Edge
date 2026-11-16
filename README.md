@@ -38,7 +38,8 @@ Example request:
 - **References** for the [research protocol](skills/engineer-trading-edge/references/research-protocol.md),
   [execution edge](skills/engineer-trading-edge/references/execution-edge.md),
   [truth gates](skills/engineer-trading-edge/references/truth-gates.md),
-  [edge-find methods](skills/engineer-trading-edge/references/edge-find-methods.md), strategy
+  [edge-find methods](skills/engineer-trading-edge/references/edge-find-methods.md), the
+  [edge discovery protocol](skills/engineer-trading-edge/references/edge-discovery-protocol.md), strategy
   [archetypes](skills/engineer-trading-edge/references/edge-ledger.md) and a
   [literature map](skills/engineer-trading-edge/references/literature-map.md) of 55 checked references.
 - **`research_stats.py`:** Benjamini–Hochberg, Newey–West, probabilistic and deflated Sharpe ratio, minimum track
