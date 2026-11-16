@@ -18,6 +18,16 @@ Honesty boundary: everything here is **potential edge**, ranked by evidence stre
 paper shadows. No strategy in this repository is shown to be profitable. The numbers are one desk's retrospective
 measurements, quoted so a reader can check the method, not as forecasts.
 
+> **Amendment, 15 November 2026 (evening): the mechanism question generates hypotheses; it does not score cells.**
+> A later pre-registered test overrides any reading of this file that uses a mechanism rating as a per-cell weight.
+> Rules: (1) "who is forced to trade, and when" is a **hypothesis generator** (it decides what to test) and a
+> **family-level tie-breaker** (it orders whole mechanism families of similar statistical strength); it is **not a
+> per-cell scoring weight**. (2) Rank any narrative prior (a rubric, a panel, a red-team score) **within side x
+> instrument** before it touches any ranking. (3) Watch for **long-story bias**: raters find stories for buying easier
+> to believe than stories for selling. Full evidence and the reconciliation with the practice ranking are in
+> [section 11](#11-amendment-the-mechanism-prior-is-a-generator-and-a-family-tie-breaker-not-a-cell-weight); the
+> steps below are edited only where they would have contradicted it.
+
 ---
 
 ## 0. Cold-start checklist (read this first, run it in order)
@@ -25,8 +35,9 @@ measurements, quoted so a reader can check the method, not as forecasts.
 1. **Start from a payer, not a pattern.** Write one line: *who must buy or sell, when, regardless of price, and how
    much.* If you cannot name a rule, clock, mandate, index, liability or settlement that forces the trade, you are
    about to mine noise (section 2, step 1).
-2. **Score the mechanism blind before you look at any result** with the 0-3 rubric in section 2, step 2. Never show
-   the rater out-of-sample numbers or the in-sample t.
+2. **Rate the mechanism blind before you look at any result** with the 0-3 rubric in section 2, step 2, at the
+   family level, ranked within side x instrument. Use it to choose what to test and to break ties between families,
+   never as a per-cell weight (amendment, section 11). Never show the rater out-of-sample numbers or the in-sample t.
 3. **Freeze the plan** before results: splits (in-sample to 2014, out-of-sample 2015 on, late 2024 on, pre-2024, and
    any pre-ETF history), entry convention (delay-1, no look-ahead), cost model, trial family, falsifier.
 4. **Build the event calendar from the primary source** (Treasury auction and settlement records, index providers'
@@ -84,7 +95,8 @@ exact test; Benjamini-Hochberg q over the 20 tests.
 ### 1.2 What to do with the ranking
 
 - **Do first, always:** ranks 1 to 7, 9 and 10. They are strongly enriched and significant (q below 0.01, or 0.012
-  for twinning).
+  for twinning). Rank 2 is a property of how a round was run (it started from mechanisms), not evidence that a
+  per-cell mechanism score predicts persistence; see the amendment in section 11.
 - **Use as engines, never as evidence:** ranks 11 to 14. Volume, enumeration and scoring are common in finds *and* in
   dead ends. They are necessary to cover ground and insufficient to find anything on their own. Report a placebo
   selection rate beside every volume funnel.
@@ -171,13 +183,16 @@ Answer with one integer.
 3. Validate the rubric once on your own history before trusting it: rank IS-only items by the rubric and correlate
    with their OOS outcome, clustered by mechanism. In this program the mechanism-strength question was the only design
    whose OOS correlation was cluster-robust (Spearman rho +0.113, 95 percent CI [0.041, 0.191], about four times the
-   |IS t| baseline of +0.028); counterparty, persistence, red-team and pairwise questions were not.
+   |IS t| baseline of +0.028); counterparty, persistence, red-team and pairwise questions were not. That test ranked
+   1,251 hand-designed mechanism hypotheses and was not checked within side; a later test over 24.4 million
+   combination cells found no per-cell information within side (section 11).
 4. Check the validated score on a scale-free outcome too (OOS t or sign, not only basis points). One later variant
    correlated with OOS basis points at rho 0.12 to 0.22 and with OOS t at about 0: it was selecting volatile
    combinations, not persistent ones. Fit any weight on one OOS half and test it on the other.
 
-**Use:** the rubric is a prior inside the score (15 percent weight, section 3), never a gate and never a ranking of
-in-sample strength.
+**Use:** the rubric generates and orders hypotheses and breaks ties between families. Inside the score it enters only
+as a family-level value ranked within side x instrument (section 3), never as a per-cell weight, never a gate and never
+a ranking of in-sample strength (amendment, section 11).
 
 ### Step 3. Build the calendar from primary sources
 
@@ -313,7 +328,9 @@ mechanism, on a 0-100 scale. It replaces the pass/fail hurdle.
 | X, expressibility | 5 | Option convexity or other expression; 0.5 until scored |
 | H, fragility haircut | multiplier | `1 - 0.2 * P(single-regime artefact)`; 0.9 at the default 0.5 |
 
-Because M carries the rubric at weight 15 x 0.5 x H, a rubric answer moves EPS by
+Per the amendment (section 11), m is the **family-level** rubric score, ranked within side x instrument and mapped
+back to [0, 3]; a cell with no family score keeps the neutral 1.5. Because M carries the rubric at weight
+15 x 0.5 x H, a rubric answer moves EPS by
 `EPS = eps_stat + 2.25 m - 3.375` (eps_stat = the score with m at its neutral 1.5), so the rubric can move a row by at
 most +-3.4 points. Two consequences: (1) a cell needs eps_stat >= 46.625 to reach EPS 50 even with m = 3; (2) paid
 mechanism judgements are worth buying only for rows within 3.4 points of a tier line (section 8, practices 26 and 37b).
@@ -359,6 +376,7 @@ These are the habits the record shows an unsteered LLM falls into. Every find ca
 | Grade the winner and stop | Transplants and stacks found most later rows | Mutate, transplant, invert, stack (step 11) |
 | Stop at "blocked" when a route fails | Blocked items stayed blocked until rerouted | A failed route is a route result; try the next route ([edge-find-methods.md](edge-find-methods.md), method 2) |
 | Trust a score from another model | A mechanism score that saw the in-sample t echoed it (AUC 0.953) | Blind rubric; validate against OOS t, not bp |
+| Believe the better story | Mechanism ratings averaged 0.62 on longs vs 0.49 on shorts; 80 percent of a mechanism-weighted top 1 percent were longs, while shorts persisted more often (60 vs 47 percent) | Rank every narrative prior within side x instrument; use it as a generator and family tie-breaker only |
 | Treat volume as rigor | 1,021,230 trials with placebos selected at 3.80 percent vs 3.61 percent for real features | Report the placebo selection rate; volume finds cells, not edge |
 | Count rows as discoveries | 590 tier-B rows were mostly cluster-mates sharing event dates | Count veins (round x mechanism), not rows |
 | Read raw returns | A quarter to two thirds of raw edge was beta | Residualise before selecting |
@@ -548,13 +566,14 @@ reinvestment instead.
 
 ## 8. The practice catalogue (all 54 numbered practices)
 
-The program numbered its practices as rounds ran; parallel rounds reused 29-30 and 37-40, so 60 entries carry 54
-numbers (the reused ones are marked a and b). One line each, grouped by use. Evidence for each sits in the source
+The program numbered its practices as rounds ran; parallel rounds reused 29-30 and 37-43, so 63 entries carry 54
+numbers (the reused ones are marked a, b and c; 41c-43c come from the amendment in section 11). One line each, grouped by use. Evidence for each sits in the source
 program's round records.
 
 **Mechanism and search design**
 1. Ask who is forced to trade, when, regardless of price; forced-flow families persist and discretionary ones reverse.
-3. Use a blind mechanism-strength rubric as a prior; never feed OOS to the judge; run pairwise both ways.
+3. Use a blind mechanism-strength rubric as a prior; never feed OOS to the judge; run pairwise both ways. Amended:
+   family level and within side x instrument only, never a per-cell weight (41c-43c).
 4. Stack conditions to depth 2-3; the single-variable layer is mined out.
 7. Generate at volume (hypotheses, mutations, inversions), then apply hard guards.
 9. Race co-timed calendars; then dose ladder, other-month placebo and event-time profile.
@@ -588,6 +607,11 @@ program's round records.
 43. A named dose can fail while the base effect holds; report the vein under the doses that pass.
 38b. A surrogate can be good on average and weak at the top; report recall at budget, not only rank correlation.
 39b. Test an upper-bound ranking trick before using it (quantile ranking was worse than the point estimate).
+41c. Pre-register a lens and its pass rule, then let it fail; a mechanism-weighted lens below its shuffle null is a
+     clean negative, kept only as a prospecting map.
+42c. Neutralise mechanism priors within side x instrument; raters prefer long stories.
+43c. "Mechanism helps for forced flows" failed at the cell level (family rho 0.012); use the family rubric only as a
+     weak family-level tie-breaker. Rank prospecting maps on complete populations only.
 
 **Honesty and artefacts**
 11. Count errored trials per chunk before selecting.
@@ -677,6 +701,54 @@ what was not done).
   result here is real-chain grade.
 - Shadows armed under this protocol have a few days of forward life at the time of writing. Their forward record, not
   this document, decides them.
+
+## 11. Amendment: the mechanism prior is a generator and a family tie-breaker, not a cell weight
+
+Added 15 November 2026, evening, after a pre-registered test. It overrides any reading of sections 0 to 10 that puts a
+mechanism rating on individual cells.
+
+**The test.** A lens weighting mechanism priors at 40 percent was pre-registered, with its pass rule written first, and
+run over 24.4 million condition-combination cells. On the sign of 2024-26 returns it scored AUC 0.490, worse than the
+in-sample abs(t) alone (0.529) and the pre-2024 EPS (0.520), and below its own stratified shuffle null (95th
+percentile 0.500). The pass rule was fixed in advance, so this is a clean negative, not something to tune.
+
+**Why it failed.**
+- **Long-story bias.** Mechanism ratings averaged 0.62 on long cells and 0.49 on short cells; 80 percent of the lens's
+  top 1 percent were longs. In 2024-26 longs persisted 47 percent of the time and shorts 60 percent. Most of the
+  failure is this side confound.
+- **No information within a side.** Within longs and within shorts the per-cell mechanism AUC was 0.499 and 0.508:
+  noise, not harm.
+- **No help even for forced flows.** Forced-flow cells had mechanism AUC 0.484. Across families the correlation between
+  the mechanism rating and persistence was 0.012 for forced-flow families, 0.145 for the rest, 0.077 overall and 0.056
+  after controlling for abs(t).
+
+**Reconciling this with the practice ranking (section 1.1).** Both results can be true, and they measure different
+things.
+- The ranking measures **process**: rounds that *started* by asking who is forced to trade and used a mechanism rubric
+  were far more often the rounds that produced find clusters (13.09x for the rubric, 28.45x for forced-flow framing).
+  The mechanism question chose *which hypotheses existed*: refunding, index reinvestment, index deletions. Those
+  families were then confirmed by doses, placebos and older history, not by the rating.
+- The lens measures **scoring**: given millions of generic feature combinations with no named counterparty, does a
+  narrative rating of each cell predict which persist? It does not.
+- The ranking was also built from LLM-panel tags on post-selection find clusters. Rounds that used the rubric also used
+  placebos, independent history and doses, so its 13x is entangled with those practices, and find records carry richer
+  framework text than dead-end lines. It never showed that the rubric added information per cell.
+- The earlier blind validation (rho +0.113 over 1,251 hand-designed mechanisms, section 2, step 2) ranked distinct
+  mechanisms, where the rating had real differences to see, and was not checked within side. It supports at most a
+  weak family-level ordering.
+
+**What changes in practice.**
+1. Ask "who is forced to trade, and when" first, as before: it is still the strongest generator of hypotheses on the
+   record. Its job is deciding what to test.
+2. Rate mechanisms at the **family** level (one anchor and mechanism across its instruments and offsets). Use the
+   rating to order families of similar statistical strength and to pick which family to dig next.
+3. Before any narrative prior touches a ranking, convert it to a rank **within side x instrument**. Report long and
+   short counts in every top list.
+4. In EPS, m is the family-level, side-neutralised rating, or the neutral 1.5. A per-cell rating is never used.
+5. Statistical persistence, placebos, independent history and dose-response decide a cell. A good story does not
+   rescue a cell that fails them, and a poor story does not sink one that passes.
+6. Rank any prospecting map on complete populations only: cells kept because they passed an OOS rule have persistence
+   1.0 by construction and will crowd the top of any map.
 
 ## Source and maintenance
 
