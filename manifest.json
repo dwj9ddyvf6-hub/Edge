@@ -1,7 +1,7 @@
 {
   "scope": "Complete Trading Edge Lab v1-v4 authored archive; repository-relative paths; manifest excludes itself",
-  "previous_edge_commit": "4051e87eac19fa3c4e04bd63ca5cd9b3cc737252",
-  "installed_skill_commit": "9c461159c95083690a52c2e7d9cdcaf75cf02772",
+  "previous_edge_commit": "d475997c40638fe7464d9a0ff8dafa6c7ce43aae",
+  "installed_skill_commit": "fa54951cbfebfc3f715d196af227f8f37edb48dd",
   "files": [
     {
       "path": ".gitignore",
@@ -23,9 +23,9 @@
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 13598,
-      "sha256": "88dfb3ad3fd476f2fb2ed346919bd5dee183177acf7105396a8d6478d266459f",
-      "git_blob_sha1": "b0c0e6b73892e4eb3f77d7a8f696a9484a873363"
+      "bytes": 14685,
+      "sha256": "9c9278e5a86d2dafdf9184433dbd293ccd503a19589b3da794087784fdc86fe3",
+      "git_blob_sha1": "146708c32255c3e3c541ab861936a36c7b8b7495"
     },
     {
       "path": "README.md",
@@ -275,9 +275,9 @@
     },
     {
       "path": "skills/engineer-trading-edge/scripts/research_stats.py",
-      "bytes": 17628,
-      "sha256": "02df85b2be4414ce1655d428200fcb4b853e5adbd54070570a5e553e45f04b67",
-      "git_blob_sha1": "6433a16e66a02181415332024ac1b2e89cd1f9e7"
+      "bytes": 19158,
+      "sha256": "6d7091f6289bdbef5069dc5faf06746ba5d3d06bdfcd98c90781694aff8b1081",
+      "git_blob_sha1": "b8736eb2bc4336a1e3a2ad75ed3c19378c66328a"
     },
     {
       "path": "skills/engineer-trading-edge/scripts/test_adaptive_arbiter.py",
@@ -290,6 +290,12 @@
       "bytes": 10523,
       "sha256": "fb7cf0da957d33af92d1fbd950d7b1470f266c99971e576b3baeb9530953dfda",
       "git_blob_sha1": "7819fc68db7ec7dba2a7536aa9a8f2690c346119"
+    },
+    {
+      "path": "skills/engineer-trading-edge/scripts/test_invalid_inputs.py",
+      "bytes": 1674,
+      "sha256": "5751c1b81fc13da00b8bb45820a467fd8681fdeb0e3018e53c76f46f310e08d1",
+      "git_blob_sha1": "3d58e2808d82300be8c7c0ca5190feb217769797"
     },
     {
       "path": "skills/engineer-trading-edge/scripts/test_ledger_lint.py",
