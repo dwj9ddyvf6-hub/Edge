@@ -105,3 +105,7 @@ path; v1, v2 and v3 are unchanged. SKILL.md gains four rows in its section 9 fil
 sections 1 to 3 are untouched and the root prompt rebuilds byte for byte as before. README's list gains one
 bullet. `manifest.json` is regenerated in the commit that follows, with `previous_edge_commit` naming the head
 this addition builds on and `installed_skill_commit` naming the last commit that changed the skill.
+
+## Numerical input-validation review — 17 November 2026
+
+A separate review branch hardens `research_stats.py` at two demonstrated boundaries. Nonfinite observations previously produced a Newey–West result with a NaN statistic but p=0; they now raise explicit errors, as do invalid null means, lag types and out-of-range intermediate arithmetic. `required_n` now rejects negative/nonfinite standard deviation and invalid probability/domain inputs instead of returning apparently valid sample sizes. Legitimate constant-series behavior is preserved. Six adversarial regression methods accompany the change; they exercise invalid input and finite-overflow cases in addition to the original tests. These are arithmetic-input corrections, not historical strategy retests, complete numerical hardening, or proof of profitable strategies. Historical v1–v3 snapshots and frozen evaluation outputs remain unchanged. The root prompt rebuild remains byte-identical. Publication uses a following manifest-only commit identifying the exact code revision; no main-branch deployment is implied.

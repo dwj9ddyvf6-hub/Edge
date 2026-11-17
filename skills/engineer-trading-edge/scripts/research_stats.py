@@ -109,21 +109,34 @@ def newey_west_t(x: Sequence[float], lags: int, mu0: float = 0.0) -> MeanTest:
     se = sqrt(S / n). For h-period returns sampled every period (overlapping windows) use lags >= h - 1; the desk
     used lag = h. The p-value is a normal approximation, optimistic in short samples with persistent regressors.
     """
+    if any(isinstance(v, bool) or not isinstance(v, (int, float)) or not math.isfinite(v) for v in x):
+        raise ValueError("observations must be finite real numbers, excluding bool")
+    if isinstance(mu0, bool) or not isinstance(mu0, (int, float)) or not math.isfinite(mu0):
+        raise ValueError("mu0 must be finite")
     n = len(x)
     if n < 2:
         raise ValueError("need at least two observations")
-    if lags < 0 or int(lags) != lags:
+    if isinstance(lags, bool) or not isinstance(lags, (int, float)) or not math.isfinite(lags) or lags < 0 or int(lags) != lags:
         raise ValueError("lags must be a non-negative integer")
     lags = min(int(lags), n - 1)
-    mean = fsum(x) / n
-    d = [v - mean for v in x]
-    s = fsum(v * v for v in d) / n
+    try:
+        mean = fsum(x) / n
+        d = [v - mean for v in x]
+        s = fsum(v * v for v in d) / n
+    except (OverflowError, ValueError) as exc:
+        raise ValueError("observations exceed finite arithmetic range") from exc
+    if not math.isfinite(mean) or not all(math.isfinite(v) for v in d) or not math.isfinite(s):
+        raise ValueError("observations exceed finite arithmetic range")
     for lag in range(1, lags + 1):
         weight = 1.0 - lag / (lags + 1.0)
         s += 2.0 * weight * fsum(d[t] * d[t - lag] for t in range(lag, n)) / n
+    if not math.isfinite(s):
+        raise ValueError("long-run variance exceeds finite arithmetic range")
     s = max(s, 0.0)
     se = math.sqrt(s / n)
     diff = mean - mu0
+    if not math.isfinite(diff):
+        raise ValueError("mean difference exceeds finite arithmetic range")
     if se == 0.0:
         t = 0.0 if diff == 0.0 else math.copysign(math.inf, diff)
     else:
@@ -295,6 +308,14 @@ def min_detectable_effect(sd: float, n: float, alpha: float = 0.05, power: float
 
 def required_n(effect: float, sd: float, alpha: float = 0.05, power: float = 0.80, two_sided: bool = True) -> float:
     """Independent observations needed to detect `effect` with the given power (inverse of min_detectable_effect)."""
+    if any(isinstance(v, bool) or not isinstance(v, (int, float)) or not math.isfinite(v) for v in (effect, sd)):
+        raise ValueError("effect and sd must be finite real numbers, excluding bool")
+    if sd < 0:
+        raise ValueError("sd must be non-negative")
+    if any(isinstance(v, bool) or not isinstance(v, (int, float)) or not math.isfinite(v) or not 0 < v < 1 for v in (alpha, power)):
+        raise ValueError("alpha and power must be finite and strictly between 0 and 1")
+    if not isinstance(two_sided, bool):
+        raise ValueError("two_sided must be bool")
     if effect == 0.0:
         return math.inf
     z_alpha = norm_ppf(1.0 - alpha / 2.0) if two_sided else norm_ppf(1.0 - alpha)
