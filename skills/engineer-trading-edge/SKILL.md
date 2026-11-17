@@ -176,7 +176,7 @@ A persona or a list of mathematical fields is not a decision record. End with th
 | [references/potential-edge-census.md](references/potential-edge-census.md) | Grading a whole estate of candidates by potential edge rather than proof: the E/M/D/A/S rubric, the standing register, and the item-by-item reexamination rule |
 | [references/typed-lens-panels.md](references/typed-lens-panels.md) | Using a typed model panel as a lens for finding edge: seven-lens panels, connection hunting, adversarial nulls, extraction and counterfactual reads, under the governance that keeps seats from judging |
 | [references/falsifier-integrity.md](references/falsifier-integrity.md) | Auditing a forward falsifier or shadow accrual before its window runs: the audit procedure and the seven defect classes |
-| [references/live-firing-audit.md](references/live-firing-audit.md) | Arming, promoting or resizing a rule; a silent strategy; a desk audit: the run-in-order audit, Gates A-E with pass lines, and the audit row template |
+| [references/live-firing-audit.md](references/live-firing-audit.md) | Arming, promoting or resizing a rule; a silent strategy; a desk audit: the run-in-order audit, Gates A-G with pass lines, and the audit row template |
 | [references/research-protocol.md](references/research-protocol.md) | Designing or judging a test |
 | [references/execution-edge.md](references/execution-edge.md) | Costs, latency, fills, capacity |
 | [references/truth-gates.md](references/truth-gates.md) | Reporting the status of work |

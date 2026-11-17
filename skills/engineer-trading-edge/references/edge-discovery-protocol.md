@@ -567,12 +567,13 @@ reinvestment instead.
 
 ---
 
-## 8. The practice catalogue (numbered practices 1 to 92)
+## 8. The practice catalogue (numbered practices 1 to 110)
 
 The program numbered its practices as rounds ran; parallel rounds reused 29-30 and 37-43, so practices 1-54 fill 63
 entries (the reused ones are marked a, b and c; 41c-43c come from the amendment in section 11). Practices 55-92 came
 from the promotion passes and desk audits of 15-16 November 2026: the research-side ones (59, 64-66, 68) are listed
-below; the rest are gates in [live-firing-audit.md](live-firing-audit.md) and section 12. One line each, grouped by
+below; the rest are gates in [live-firing-audit.md](live-firing-audit.md) and section 12. Practices 93-98 are order-path
+and book-consistency rules from a later correctness pass; 99-110 are runtime-regression rules. One line each, grouped by
 use. Evidence for each sits in the source program's round records.
 
 **Mechanism and search design**
@@ -644,6 +645,26 @@ use. Evidence for each sits in the source program's round records.
 68. A panel built from today's constituents is a survivorship snapshot even at level correlation 0.998; label it
     and re-test on point-in-time membership.
 
+**Order path and book consistency**
+93. A short is a side, not a sign. NEVER size a short as a negative quantity: a cash cap of the form min(qty × price,
+    cash) then goes negative and the order is refused forever. MUST normalize a negative quantity to side=sell with
+    the absolute quantity before sizing, and prove a dry-run through the real order path opens a short for every short
+    rule.
+94. When pooling rules by family, MUST respect each rule's direction. OR-ing sell-side dates into a long book cancels
+    the effect. Drop opposite-direction terms in the loader and report the two sides separately.
+95. Calibrate a stop from the rule's own trades, never a blanket number: stop = max(p95 own MAE, 1.5 × median range ×
+    sqrt(hold)), escalating p95 → p99 → 1.5× → 2× p99 until it costs at most 5 bp of the time-only mean; keep a
+    target only if it costs at most 2 bp.
+96. A calendar anchor on an instrument with no forced-flow link is a mined coincidence until the mechanism instrument
+    says otherwise. Twin on the instrument the mechanism acts on, pick the side on the in-sample half only, keep the
+    parent running, and report out-of-sample honestly.
+97. Dedupe from the live book, not from a side file. A claims file in a shared temporary path can leak across test
+    desks and block a legitimate entry. "Does another family member already hold this symbol?" must be answered from
+    the desk's own replayed book.
+98. A never-fired diagnosis needs a rate, not a verdict. Replay the rule's own condition and call it miscalibrated
+    only when at least two fires were expected in the window. NEVER treat every instrument string as belonging to one
+    venue.
+
 **Arming and operations**
 6. Twin, don't kill: near-misses go live as minimum-lot paper shadows with kill switches.
 8. Route failure is not impossibility; new routes turned 31 blocked items green.
@@ -654,8 +675,31 @@ use. Evidence for each sits in the source program's round records.
 45. Never let an uncommitted engine sit in the live tree while other workers reload.
 59. The red team is an overlay, not the selector: apply a verdict only when it is more conservative than the
     pre-registration; override only a factually wrong reason, recorded before any live result.
-29a, 30a, 45 and 55-92 (parity, feeds, timing, controls, silent strategies): run them as the gates of
-    [live-firing-audit.md](live-firing-audit.md); 72-76 are the arming rules of section 12.
+29a, 30a, 45, 55-92 and 93-110 (parity, feeds, timing, controls, silent strategies, order path, runtime):
+    run them as the gates of [live-firing-audit.md](live-firing-audit.md); 72-76 are the arming rules of section 12.
+99. Track every stage's p50 by day, not only the pass total, so a regression is visible the day it lands.
+100. Profile the live process before theorizing about the bottleneck.
+101. Shared state read once per consumer is an O(consumers × rows) trap. Parse once per file version, hand out shallow
+     copies, refresh the cache on your own write, and prove parity on a copy of the live file with a fixed clock
+     before going live.
+102. Skip expensive work whose inputs did not change, by content signature, and keep a forced refresh floor so
+     "unchanged" can never become "never".
+103. Do not assume the platform plan; read it from behaviour (cron count, CPU p99, error rate) and design limits from
+     that.
+104. An executor that must not double-trade needs a strongly consistent lock and deterministic order ids. Eventually
+     consistent stores are not a lock. Derive the same client order id on every path so a race produces one order.
+105. A step that returns an error dict instead of raising can freeze its artifact for hours while every pass looks
+     green. Check the artifact's mtime, not the pass's exit. Match file names with a strict pattern, not a prefix test.
+106. Compute only what is read. Trim and vectorize window math to the range callers actually use, and prove
+     byte-identical outputs.
+107. For a whole-file store rewritten on every small change, batch the writes per pass: keep the in-process view
+     authoritative, write once, and prove the same bytes on disk.
+108. Index by the key callers always filter on. A full scan of the book on every call is a regression waiting to be
+     measured.
+109. Make routine checks script-first: one cheap counts call, a local decider that saves the cursor, skip when nothing
+     arrived, fail open on bad input, and never seed the cursor (the first run must look back).
+110. After a host or workspace move, verify the runtime (virtualenv, output directories, write access) before
+     profiling or trusting a green loop.
 
 **Spending on paid LLM judgements**
 26. Before buying judgements, compute from the scoring formula what each answer can change; ask only where it can move
@@ -802,7 +846,7 @@ meaningful size is worth zero ([C20](field-casebook.md#c20-an-edge-that-never-ex
 
 ## Source and maintenance
 
-Distilled from one desk's edge-discovery playbook, discovery log and practice-enrichment table of 13-15 November 2026,
+Distilled from one desk's edge-discovery playbook, discovery log and practice-enrichment table of 13-17 November 2026,
 its potential-edge board standard, and the round records of rounds 7 to 17 and the full-combination search. Only
 aggregate statistics appear; no raw vendor data, accounts, machine paths or personal identifiers. New practices append
 to the source playbook first; this reference is revised when the protocol, the ranking or the vein map changes, and the

@@ -105,3 +105,19 @@ path; v1, v2 and v3 are unchanged. SKILL.md gains four rows in its section 9 fil
 sections 1 to 3 are untouched and the root prompt rebuilds byte for byte as before. README's list gains one
 bullet. `manifest.json` is regenerated in the commit that follows, with `previous_edge_commit` naming the head
 this addition builds on and `installed_skill_commit` naming the last commit that changed the skill.
+
+
+## Revision — 17 November 2026: practices 93-110
+
+The current skill absorbs practices 93-110 of the source desk's edge-discovery playbook (a correctness pass and a
+runtime-regression pass of 16 November 2026). `edge-discovery-protocol.md` section 8 now catalogues practices 1-110:
+93-98 (a short is a side, family pools respect direction, stops from own trades, twin on the mechanism instrument,
+dedupe from the live book, never-fired needs a rate) and 99-110 (per-stage p50, profile the live process, parse
+shared state once, skip unchanged work, read the platform plan from behaviour, strongly consistent locks, artifact
+mtime, compute only what is read, batch writes, index by the caller's key, script-first checks, verify the runtime
+after a move). `live-firing-audit.md` gains Gate F (order path and book consistency) and Gate G (runtime
+regressions); the audit row template records both. SKILL.md's Files row for the audit now says Gates A-G. Sections 1
+to 3 of SKILL.md are unchanged, so the root prompt is not rebuilt. Only aggregate method statements appear; no desk
+names, sleeve ids, machine paths, accounts or personal identifiers. `manifest.json` is regenerated in the commit that
+follows, with `previous_edge_commit` naming the head this addition builds on and `installed_skill_commit` naming the
+commit that changed the skill.

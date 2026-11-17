@@ -2,7 +2,7 @@
 
 An edge that never executes is worth zero ([C20](field-casebook.md#c20-an-edge-that-never-executes-is-zero)), and an
 edge that executes differently from its research is a different, untested strategy. This reference is the procedure
-that proves neither is happening: a run-in-order audit, five gates with pass lines, and a row template. Numbers are
+that proves neither is happening: a run-in-order audit, seven gates with pass lines, and a row template. Numbers are
 from one desk's promotion passes and two full audits, 14 to 16 November 2026, about 970 strategy rows on a paper desk
 with live quotes. They are that desk's observations, not market-wide estimates.
 
@@ -20,7 +20,9 @@ It assumes the engineering contracts in [desk-runtime.md](desk-runtime.md) and t
 6. Gate C: timing windows
 7. Gate D: code and controls
 8. Gate E: diagnosing a silent strategy
-9. Audit row template and pass rule
+9. Gate F: order path and book consistency
+10. Gate G: runtime regressions
+11. Audit row template and pass rule
 
 ## 1. When to run it
 
@@ -69,7 +71,8 @@ Every gate below exists because its failure cost this desk fires, a position or 
    latest state before comparing counts. Fix the input path, never the count.
 4. **Judge only completed sessions.** Drop the in-progress session and non-trading days from every firing window. An
    N-session rule needs N archived sessions; with fewer, the output is the date the rule can be judged.
-5. **Run Gates A–E** on every row that is not `fired` and on every row installed or resized since the last audit.
+5. **Run Gates A–G** on every row that is not `fired` and on every row installed or resized since the last audit.
+   Gate G may be run once per process rather than once per row.
 6. **Fix and re-run the failed check.** Done means the identical check now passes, the full suite is green, the change
    is committed and the live process runs the committed version. NEVER pause a strategy as a fix: pausing switches
    off the edge and keeps the bug. Repair it, or replace it with a recalibrated copy that trades.
@@ -188,7 +191,62 @@ design and is otherwise flagged dead forever.
 **E6. Load vendored modules by file path under a private name.** A vendored package with a generic top-level name hid
 a local module only when another adapter loaded first, so the failure appeared only in the live process order.
 
-## 9. Audit row template and pass rule
+
+## 9. Gate F: order path and book consistency
+
+**F1. A short is a side, not a sign.** If a rule emits a short as a negative quantity, a sizer of the form
+min(qty × price, cash) goes negative and refuses the order forever. MUST normalize a negative quantity to side=sell
+with the absolute quantity before sizing. Pass: a dry-run through the real order path opens a short for every short
+rule.
+
+**F2. Pooled family masks must respect direction.** OR-ing sell-side dates into a long book cancels the effect.
+MUST drop opposite-direction terms in the loader. Pass: buy-side and sell-side dates, scored separately, keep their
+own signs.
+
+**F3. Dedupe from the live book, not from a side file.** A claims file in a shared temporary path can leak across
+test desks and block a legitimate entry. Pass: "does another family member hold this symbol?" is answered from the
+desk's own replayed book.
+
+**F4. A never-fired diagnosis needs a rate.** Replay the rule's own condition. Call it miscalibrated only when at
+least two fires were expected in the window. NEVER treat every instrument string as belonging to one venue. Pass: the
+expected count, the observed count and the venue map are printed beside the verdict.
+
+**F5. Calibrate stops from the rule's own trades** (protocol practice 95). Pass: the stop and any target are computed
+from that rule's MAE/MFE and cost at most 5 bp / 2 bp of the time-only mean.
+
+**F6. Twin a calendar on the mechanism instrument** (protocol practice 96). Pass: the parent on the mechanism
+instrument is still running, the side was picked on the in-sample half only, and out-of-sample is reported honestly.
+
+## 10. Gate G: runtime regressions
+
+**G1. Track every stage's p50 by day, not only the pass total.** A single headline ("the box slept") can hide a
+stage that grew from under a second to tens of seconds over two days. Pass: a per-stage daily p50 is on disk.
+
+**G2. Profile the live process before theorizing.** A short read-only sample of the running process beats a code
+review guess. Pass: the named bottleneck came from a profile, not from intuition.
+
+**G3. Parse shared state once per file version** (mtime, size, inode), hand out shallow copies, and prove parity on a
+copy of the live file with a fixed clock before going live.
+
+**G4. Skip unchanged expensive work by content signature, with a forced refresh floor** so "unchanged" can never
+become "never".
+
+**G5. Do not assume the platform plan; read it from behaviour** (cron count, CPU p99, error rate) and design limits
+from that.
+
+**G6. Locks and order intents belong in a strongly consistent store with deterministic order ids.** Eventually
+consistent key-value stores are not a lock. The same client order id on every path makes a race produce one order.
+
+**G7. Check the artifact's mtime, not the pass's exit.** A step that returns an error dict instead of raising can
+freeze its output while every pass looks green. Match file names with a strict pattern, not a prefix test.
+
+**G8. Compute only what is read; batch whole-file writes; index by the caller's filter key.** Prove byte-identical
+outputs after a trim or a batch. After a host or workspace move, verify the runtime (environment, output directories,
+write access) before profiling or trusting a green loop. Make routine checks script-first: cheap counts, a saved
+cursor, skip when nothing arrived, fail open, and never seed the cursor.
+
+## 11. Audit row template and pass rule
+
 
 One JSON object per strategy per audit:
 
@@ -201,7 +259,7 @@ One JSON object per strategy per audit:
   "host": "",
   "blocker": "",
   "route_trading_meanwhile": "",
-  "gates": {"A_parity": "pass|fail|n/a", "B_data": "", "C_timing": "", "D_controls": "", "E_silent": ""},
+  "gates": {"A_parity": "pass|fail|n/a", "B_data": "", "C_timing": "", "D_controls": "", "E_silent": "", "F_order": "", "G_runtime": ""},
   "evidence": ["replay or log path"],
   "fix_commit": ""
 }
@@ -213,6 +271,6 @@ replay, or any check run on inputs other than the live process's makes the audit
 
 ## Source and maintenance
 
-Distilled from one desk's edge-discovery playbook (practices 55–92 and their honesty notes, 15–16 November 2026), its
-promotion ledgers and two desk audits. Aggregate facts only; no vendor data, accounts, machine paths or personal
+Distilled from one desk's edge-discovery playbook (practices 55–110 and their honesty notes, 15–17 November 2026), its
+promotion ledgers, two desk audits and a later correctness and runtime pass. Aggregate facts only; no vendor data, accounts, machine paths or personal
 identifiers. Revise when a gate changes and record the revision in PROVENANCE.md.
