@@ -1,6 +1,6 @@
 {
   "scope": "Complete Trading Edge Lab v1-v4 authored archive; repository-relative paths; manifest excludes itself",
-  "previous_edge_commit": "d475997c40638fe7464d9a0ff8dafa6c7ce43aae",
+  "previous_edge_commit": "bdc597645e0e1bfe40a7167b9279b4c5756a6233",
   "installed_skill_commit": "e580acdbc9401d01ddd5aea86057503ba5560cf1",
   "files": [
     {
@@ -11,9 +11,9 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 678,
-      "sha256": "a834e155b4d102c4e4cfa0c8d754456140e18e458eab5740ad493d6fa5b47d8d",
-      "git_blob_sha1": "71fd31a638fc7073cfa67433126319e5ecb517fb"
+      "bytes": 5297,
+      "sha256": "cfa7a172213c472e146e3b31ad41117372389046d3c968b42d0cd2c31247d2c4",
+      "git_blob_sha1": "0a855f83231b6591b29317325ba5dde5a89d51c8"
     },
     {
       "path": "CLAUDE.md",
@@ -23,15 +23,15 @@
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 14944,
-      "sha256": "86768c67b9ba4ba353486c181672073e753f2f576960817a65bfd9e84b42eb6a",
-      "git_blob_sha1": "60b83b79f6e3102f4242e3d9ed915211cb2efc61"
+      "bytes": 16038,
+      "sha256": "68e2bfe98a4cd3ff194d08a41947036669b262e9b1bbfa3b043e828cb586c54c",
+      "git_blob_sha1": "453940ec13749e896672f95e84d429ed724a6507"
     },
     {
       "path": "README.md",
-      "bytes": 6030,
-      "sha256": "05505b9dca3306211c221b7c89e2ea8200b9675ce4cc89d21f09c9c90b802be0",
-      "git_blob_sha1": "9fc620ac70f34861489e200590858abead3d9dd7"
+      "bytes": 8871,
+      "sha256": "6264ce5b65717013872e03a5db3c6c558c3fadfb2ea7b722328b8d9b2dac998e",
+      "git_blob_sha1": "873cd9980e352ab204fe48c79ab30b41bf83f551"
     },
     {
       "path": "Trading_Edge_Unified_Master_Prompt.txt",

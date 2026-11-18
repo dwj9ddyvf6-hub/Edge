@@ -74,6 +74,45 @@ Example request:
 | [v3/](v3/), [v2/](v2/), [v1/](v1/) | Earlier versions, unchanged: studies, prompts, skills, evaluations |
 | [PROVENANCE.md](PROVENANCE.md), [manifest.json](manifest.json) | History; file sizes and hashes |
 
+## Field record: what the method found (November 2026)
+
+The skill's November references (edge-find methods, the discovery protocol, the consensus
+lens, the potential-edge census, typed lens panels, falsifier integrity, the live firing
+audit) were distilled from a two-day alpha hunt and the grading program that followed it.
+The hunt's own record is 25 method autopsies: every find written up with the framework, the
+methods in order, what was done differently, and the reusable rule. The full evidence (the
+method ledger, the campaign registers, the census of 198 registered objects: 2 exam-passed,
+18 live candidates, 66 leads, 59 watch, 22 avoidance, 31 resolved-against) is held in the
+companion evidence repository, [Test](https://github.com/dwj9ddyvf6-hub/Test), under
+`research/gestalt/`. This repository carries the method; that one carries the proof.
+
+The headline outcomes, each with its limiting numbers:
+
+- **The overnight Focus-names edge.** The close-to-open leg of a 29-name focus basket:
+  DSR 0.99994 at the Wave 3 family count (the Wave 4 reprint at the pre-registered family
+  count of 10 is DSR 0.99910), SPA 0.001 against SPY and 0.002 against QQQ, PBO 0.067,
+  t 4.97, gross Sharpe 1.67 over 2,229 sessions from 2018 to 2026. The same basket's
+  intraday leg is worthless (Sharpe 0.01), and the premium survives only through the
+  opening and closing auctions: crossing spreads nets about minus 27 basis points a night,
+  the auction form about plus 19.5. Five names carry it after true auction costs (SNDK,
+  CRWV, RKLB, NVDA, AMD). Its forward falsifier runs 60 sessions from 16 November 2026:
+  demotion if the mean net of 5 basis points is not positive.
+- **RND-7, promoted under the fleet exam.** A range-rank gate on the same overnight form:
+  DSR 0.989 at the clustered count of 487, PBO 0.022, SPA 0.000 against both SPY and QQQ,
+  t 4.61, +20.48 basis points a night, gated Sharpe 1.549 against 1.163 ungated. Under the
+  laboratory's raw-count accounting the same object prints DSR 0.007; both accountings are
+  on the record, and the 60-session forward falsifier is the arbiter.
+- **The failures, kept.** The options expression of the overnight edge was rejected on real
+  chains. ON_fit_lo14 as stamped carried look-ahead; its honest point-in-time rebuild
+  stands FAIL as written (family PBO 0.222 against a 0.2 bar; leave-one-out median 0.2444
+  does not clear it). The insider-cluster build was rejected at DSR 0.579 against a 0.95
+  bar. FX-01 was rejected on paper and is carried as a forward watch only. Of the first 17
+  graded conversion exams: 1 promotion, 4 kills, 12 rejections. A method that hides its
+  kill rate is marketing, not measurement.
+
+Nothing here is shown to be profitable. The two surviving objects are prospective: their
+forward falsifiers, not their backtests, will decide them.
+
 ## Run the checks
 
 Python 3.10 or later, from the repository root:
